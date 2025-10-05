@@ -3,10 +3,10 @@
 define('APPLICATION', 'Catalog');
 
 // HTTP
-define('HTTP_SERVER', 'http://localhost:8888/opencart/');
+define('HTTP_SERVER', 'http://localhost:8888/opencart_dev/');
 
 // DIR
-define('DIR_OPENCART', 'C:/wamp64/www/opencart/');
+define('DIR_OPENCART', 'C:/wamp64/www/opencart_dev/');
 define('DIR_APPLICATION', DIR_OPENCART . 'catalog/');
 define('DIR_EXTENSION', DIR_OPENCART . 'extension/');
 define('DIR_IMAGE', DIR_OPENCART . 'image/');
