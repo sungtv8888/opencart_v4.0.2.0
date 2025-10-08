@@ -1,22 +1,22 @@
 <?php
 // Heading
-$_['heading_title']     = 'Events';
+$_['heading_title']     = 'Sự kiện (Events)';
 
 // Text
-$_['text_success']      = 'Success: You have modified events!';
-$_['text_list']         = 'Event List';
-$_['text_event']        = 'Events are used by extensions to override the default functionality of your store. If you have issues you can disable or enable the events here.';
-$_['text_info']         = 'Event Information';
+$_['text_success']      = 'Thành công: Bạn đã chỉnh sửa các sự kiện!';
+$_['text_list']         = 'Danh sách sự kiện';
+$_['text_event']        = 'Các sự kiện được sử dụng bởi các tiện ích mở rộng (extensions) để ghi đè lên chức năng mặc định của cửa hàng. Nếu bạn gặp sự cố, bạn có thể bật hoặc tắt các sự kiện tại đây.';
+$_['text_info']         = 'Thông tin sự kiện';
 
 // Column
-$_['column_code']       = 'Event Code';
-$_['column_sort_order'] = 'Sort Order';
-$_['column_action']     = 'Action';
+$_['column_code']       = 'Mã sự kiện';
+$_['column_sort_order'] = 'Thứ tự sắp xếp';
+$_['column_action']     = 'Hành động';
 
 // Entry
-$_['entry_description'] = 'Description';
-$_['entry_trigger']     = 'Trigger';
-$_['entry_action']      = 'Action';
+$_['entry_description'] = 'Mô tả';
+$_['entry_trigger']     = 'Kích hoạt';
+$_['entry_action']      = 'Hành động';
 
 // Error
-$_['error_permission']  = 'Warning: You do not have permission to modify the events!';
+$_['error_permission']  = 'Cảnh báo: Bạn không có quyền chỉnh sửa các sự kiện!';

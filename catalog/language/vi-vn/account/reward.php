@@ -1,14 +1,14 @@
 <?php
 // Heading
-$_['heading_title']      = 'Your Reward Points';
+$_['heading_title']      = 'Điểm thưởng của bạn';
 
 // Column
-$_['column_date_added']  = 'Date Added';
-$_['column_description'] = 'Description';
-$_['column_points']      = 'Points';
+$_['column_date_added']  = 'Ngày tạo';
+$_['column_description'] = 'Mô tả';
+$_['column_points']      = 'Điểm';
 
 // Text
-$_['text_account']       = 'Account';
-$_['text_reward']        = 'Reward Points';
-$_['text_total']         = 'Your total number of reward points is:';
-$_['text_no_results']    = 'You do not have any reward points!';
+$_['text_account']       = 'Tài khoản';
+$_['text_reward']        = 'Điểm thưởng';
+$_['text_total']         = 'Tổng số điểm thưởng của bạn là:';
+$_['text_no_results']    = 'Bạn chưa có điểm thưởng nào!';

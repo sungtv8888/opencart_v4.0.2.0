@@ -1,46 +1,46 @@
 <?php
 // Heading
-$_['heading_title']              = 'Order History';
+$_['heading_title']              = 'Lịch sử đơn hàng';
 
 // Text
-$_['text_account']               = 'Account';
-$_['text_order']                 = 'Order Information';
-$_['text_order_detail']          = 'Order Details';
-$_['text_invoice_no']            = 'Invoice No.:';
-$_['text_order_id']              = 'Order ID:';
-$_['text_date_added']            = 'Date Added:';
-$_['text_shipping_address']      = 'Shipping Address';
-$_['text_shipping_method']       = 'Shipping Method:';
-$_['text_payment_address']       = 'Payment Address';
-$_['text_payment_method']        = 'Payment Method:';
-$_['text_subscription']          = 'Subscription';
-$_['text_subscription_trial']    = '%s every %d %s(s) for %d payment(s) then ';
-$_['text_subscription_duration'] = '%s every %d %s(s) for %d payment(s)';
-$_['text_subscription_cancel']   = '%s every %d %s(s) until canceled';
-$_['text_day']                   = 'day';
-$_['text_week']                  = 'week';
-$_['text_semi_month']            = 'half-month';
-$_['text_month']                 = 'month';
-$_['text_year']                  = 'year';
-$_['text_comment']               = 'Order Comments';
-$_['text_history']               = 'Order History';
-$_['text_success']               = 'Success: You have added <a href="%s">%s</a> to your <a href="%s">shopping cart</a>!';
-$_['text_no_results']            = 'You have not made any previous orders!';
-$_['text_error']                 = 'The order you requested could not be found!';
+$_['text_account']               = 'Tài khoản';
+$_['text_order']                 = 'Thông tin đơn hàng';
+$_['text_order_detail']          = 'Chi tiết đơn hàng';
+$_['text_invoice_no']            = 'Số hóa đơn:';
+$_['text_order_id']              = 'Mã đơn hàng:';
+$_['text_date_added']            = 'Ngày tạo:';
+$_['text_shipping_address']      = 'Địa chỉ giao hàng';
+$_['text_shipping_method']       = 'Phương thức giao hàng:';
+$_['text_payment_address']       = 'Địa chỉ thanh toán';
+$_['text_payment_method']        = 'Phương thức thanh toán:';
+$_['text_subscription']          = 'Đăng ký';
+$_['text_subscription_trial']    = '%s mỗi %d %s(s) trong %d lần thanh toán đầu tiên, sau đó ';
+$_['text_subscription_duration'] = '%s mỗi %d %s(s) trong %d lần thanh toán';
+$_['text_subscription_cancel']   = '%s mỗi %d %s(s) cho đến khi hủy';
+$_['text_day']                   = 'ngày';
+$_['text_week']                  = 'tuần';
+$_['text_semi_month']            = 'nửa tháng';
+$_['text_month']                 = 'tháng';
+$_['text_year']                  = 'năm';
+$_['text_comment']               = 'Bình luận đơn hàng';
+$_['text_history']               = 'Lịch sử đơn hàng';
+$_['text_success']               = 'Thành công: Bạn đã thêm <a href="%s">%s</a> vào <a href="%s">giỏ hàng</a>!';
+$_['text_no_results']            = 'Bạn chưa thực hiện đơn hàng nào!';
+$_['text_error']                 = 'Không tìm thấy đơn hàng bạn yêu cầu!';
 
 // Column
-$_['column_order_id']            = 'Order ID';
-$_['column_customer']            = 'Customer';
-$_['column_product']             = 'No. of Products';
-$_['column_name']                = 'Product Name';
-$_['column_model']               = 'Model';
-$_['column_quantity']            = 'Quantity';
-$_['column_price']               = 'Price';
-$_['column_total']               = 'Total';
-$_['column_action']              = 'Action';
-$_['column_date_added']          = 'Date Added';
-$_['column_status']              = 'Status';
-$_['column_comment']             = 'Comment';
+$_['column_order_id']            = 'Mã đơn hàng';
+$_['column_customer']            = 'Khách hàng';
+$_['column_product']             = 'Số lượng sản phẩm';
+$_['column_name']                = 'Tên sản phẩm';
+$_['column_model']               = 'Mẫu';
+$_['column_quantity']            = 'Số lượng';
+$_['column_price']               = 'Giá';
+$_['column_total']               = 'Tổng';
+$_['column_action']              = 'Hành động';
+$_['column_date_added']          = 'Ngày tạo';
+$_['column_status']              = 'Trạng thái';
+$_['column_comment']             = 'Bình luận';
 
 // Error
-$_['error_reorder']              = '%s is not currently available to be reordered.';
+$_['error_reorder']              = '%s hiện không có sẵn để đặt lại.';

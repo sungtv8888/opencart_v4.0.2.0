@@ -1,8 +1,8 @@
 <?php
 // Heading
-$_['heading_title'] = 'Reports';
+$_['heading_title'] = 'Báo cáo';
 
 // Text
-$_['text_success']  = 'Success: You have modified reports!';
-$_['text_type']     = 'Choose the report type';
-$_['text_filter']   = 'Filter';
+$_['text_success']  = 'Thành công: Bạn đã chỉnh sửa báo cáo!';
+$_['text_type']     = 'Chọn loại báo cáo';
+$_['text_filter']   = 'Bộ lọc';

@@ -1,8 +1,8 @@
 <?php
 // Heading
-$_['heading_title'] = 'Your Account Has Been Created!';
+$_['heading_title'] = 'Tài khoản của bạn đã được tạo!';
 
 // Text
-$_['text_success']  = '<p>Congratulations! Your new account has been successfully created!</p> <p>You can now take advantage of member privileges to enhance your online shopping experience with us.</p> <p>If you have ANY questions about the operation of this online shop, please e-mail the store owner.</p> <p>A confirmation has been sent to the provided e-mail address. If you have not received it within the hour, please <a href="%s">contact us</a>.</p>';
-$_['text_approval'] = '<p>Thank you for registering with %s!</p><p>You will be notified by e-mail once your account has been activated by the store owner.</p><p>If you have ANY questions about the operation of this online shop, please <a href="%s">contact the store owner</a>.</p>';
-$_['text_account']  = 'Account';
+$_['text_success']  = '<p>Chúc mừng! Tài khoản mới của bạn đã được tạo thành công!</p> <p>Bây giờ bạn có thể tận dụng các quyền lợi thành viên để nâng cao trải nghiệm mua sắm trực tuyến với chúng tôi.</p> <p>Nếu bạn có BẤT KỲ câu hỏi nào về hoạt động của cửa hàng trực tuyến này, vui lòng gửi email cho chủ cửa hàng.</p> <p>Một email xác nhận đã được gửi đến địa chỉ email bạn cung cấp. Nếu bạn không nhận được trong vòng 1 giờ, vui lòng <a href="%s">liên hệ với chúng tôi</a>.</p>';
+$_['text_approval'] = '<p>Cảm ơn bạn đã đăng ký tại %s!</p><p>Bạn sẽ được thông báo qua email khi tài khoản của bạn được chủ cửa hàng kích hoạt.</p><p>Nếu bạn có BẤT KỲ câu hỏi nào về hoạt động của cửa hàng trực tuyến này, vui lòng <a href="%s">liên hệ với chủ cửa hàng</a>.</p>';
+$_['text_account']  = 'Tài khoản';

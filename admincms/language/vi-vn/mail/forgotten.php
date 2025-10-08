@@ -1,6 +1,6 @@
 <?php
 // Text
-$_['text_subject']  = '%s - Password reset request';
-$_['text_greeting'] = 'A new password was requested for %s administration.';
-$_['text_change']   = 'To reset your password click on the link below:';
-$_['text_ip']       = 'The IP used to make this request was:';
+$_['text_subject']  = '%s - Yêu cầu đặt lại mật khẩu';
+$_['text_greeting'] = 'Một yêu cầu đặt lại mật khẩu mới đã được gửi cho quản trị %s.';
+$_['text_change']   = 'Để đặt lại mật khẩu của bạn, hãy nhấp vào liên kết bên dưới:';
+$_['text_ip']       = 'Địa chỉ IP được sử dụng để thực hiện yêu cầu này là:';

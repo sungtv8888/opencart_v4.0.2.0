@@ -1,10 +1,10 @@
 <?php
 // Text
-$_['text_subject']      = '%s - Order %s';
-$_['text_received']     = 'You have received an order.';
-$_['text_order_id']     = 'Order ID:';
-$_['text_date_added']   = 'Date Added:';
-$_['text_order_status'] = 'Order Status:';
-$_['text_product']      = 'Products:';
-$_['text_total']        = 'Totals:';
-$_['text_comment']      = 'The comments for your order are:';
+$_['text_subject']      = '%s - Đơn hàng %s';
+$_['text_received']     = 'Bạn đã nhận được một đơn hàng.';
+$_['text_order_id']     = 'Mã Đơn hàng:';
+$_['text_date_added']   = 'Ngày tạo:';
+$_['text_order_status'] = 'Trạng thái Đơn hàng:';
+$_['text_product']      = 'Sản phẩm:';
+$_['text_total']        = 'Tổng cộng:';
+$_['text_comment']      = 'Những bình luận cho đơn hàng của bạn là:';

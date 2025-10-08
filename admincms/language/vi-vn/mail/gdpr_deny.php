@@ -1,12 +1,12 @@
 <?php
 // Text
-$_['text_subject']   = '%s - GDPR request denied!';
-$_['text_export']    = 'Account Export Data Request';
-$_['text_remove']    = 'Account Deletion Request';
-$_['text_hello']     = 'Hello <strong>%s</strong>,';
-$_['text_user']      = 'User';
-$_['text_contact']   = 'Unfortunately your request has been denied. For more information you can contact the store here:';
-$_['text_thanks']    = 'Thanks,';
+$_['text_subject']   = '%s - Yêu cầu GDPR của bạn đã bị từ chối!';
+$_['text_export']    = 'Yêu cầu xuất dữ liệu tài khoản';
+$_['text_remove']    = 'Yêu cầu xóa tài khoản';
+$_['text_hello']     = 'Xin chào <strong>%s</strong>,';
+$_['text_user']      = 'Người dùng';
+$_['text_contact']   = 'Rất tiếc, yêu cầu của bạn đã bị từ chối. Để biết thêm thông tin, bạn có thể liên hệ với cửa hàng tại đây:';
+$_['text_thanks']    = 'Cảm ơn,';
 
 // Button
-$_['button_contact'] = 'Contact Us';
+$_['button_contact'] = 'Liên hệ với chúng tôi';

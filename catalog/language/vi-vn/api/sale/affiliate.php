@@ -1,7 +1,7 @@
 <?php
 // Text
-$_['text_success']    = 'Success: Affiliate commission will be appliyed to this order!';
-$_['text_remove']     = 'Success: Your affiliate commission has been removed!';
+$_['text_success']    = 'Thành công: Hoa hồng affiliate sẽ được áp dụng cho đơn hàng này!';
+$_['text_remove']     = 'Thành công: Hoa hồng affiliate của bạn đã bị xóa!';
 
 // Error
-$_['error_affiliate'] = 'Warning: Affiliate could not be found!';
+$_['error_affiliate'] = 'Cảnh báo: Không tìm thấy affiliate!';

@@ -1,9 +1,9 @@
 <?php
 // Text
-$_['text_success']           = 'Success: Shipping method has been set!';
+$_['text_success']           = 'Thành công: Phương thức giao hàng đã được thiết lập!';
 
 // Error
-$_['error_shipping_address'] = 'Warning: Shipping address required!';
-$_['error_shipping_method']  = 'Warning: Shipping method required!';
-$_['error_no_shipping']      = 'Warning: No Shipping options are available!';
-$_['error_shipping']         = 'Warning: There are no products that require shipping';
+$_['error_shipping_address'] = 'Cảnh báo: Cần địa chỉ giao hàng!';
+$_['error_shipping_method']  = 'Cảnh báo: Cần chọn phương thức giao hàng!';
+$_['error_no_shipping']      = 'Cảnh báo: Không có tùy chọn giao hàng nào!';
+$_['error_shipping']         = 'Cảnh báo: Không có sản phẩm nào cần giao hàng';

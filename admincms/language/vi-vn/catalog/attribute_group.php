@@ -1,25 +1,25 @@
 <?php
 // Heading
-$_['heading_title']     = 'Attribute Groups';
+$_['heading_title']     = 'Nhóm Thuộc Tính';
 
 // Text
-$_['text_success']      = 'Success: You have modified attribute groups!';
-$_['text_list']         = 'Attribute Group List';
-$_['text_add']          = 'Add Attribute Group';
-$_['text_edit']         = 'Edit Attribute Group';
+$_['text_success']      = 'Thành công: Bạn đã chỉnh sửa nhóm thuộc tính!';
+$_['text_list']         = 'Danh sách Nhóm Thuộc Tính';
+$_['text_add']          = 'Thêm Nhóm Thuộc Tính';
+$_['text_edit']         = 'Chỉnh sửa Nhóm Thuộc Tính';
 
 // Column
-$_['column_name']       = 'Attribute Group Name';
-$_['column_sort_order'] = 'Sort Order';
-$_['column_action']     = 'Action';
+$_['column_name']       = 'Tên Nhóm Thuộc Tính';
+$_['column_sort_order'] = 'Thứ tự sắp xếp';
+$_['column_action']     = 'Hành động';
 
 // Entry
-$_['entry_name']        = 'Attribute Group Name';
-$_['entry_sort_order']  = 'Sort Order';
+$_['entry_name']        = 'Tên Nhóm Thuộc Tính';
+$_['entry_sort_order']  = 'Thứ tự sắp xếp';
 
 // Error
-$_['error_warning']     = 'Warning: Please check the form carefully for errors!';
-$_['error_permission']  = 'Warning: You do not have permission to modify attribute groups!';
-$_['error_name']        = 'Attribute Group Name must be between 1 and 64 characters!';
-$_['error_attribute']   = 'Warning: This attribute group cannot be deleted as it is currently assigned to %s attributes!';
-$_['error_product']     = 'Warning: This attribute group cannot be deleted as it is currently assigned to %s products!';
+$_['error_warning']     = 'Cảnh báo: Vui lòng kiểm tra kỹ biểu mẫu để tránh lỗi!';
+$_['error_permission']  = 'Cảnh báo: Bạn không có quyền chỉnh sửa nhóm thuộc tính!';
+$_['error_name']        = 'Tên Nhóm Thuộc Tính phải có từ 1 đến 64 ký tự!';
+$_['error_attribute']   = 'Cảnh báo: Nhóm thuộc tính này không thể xóa vì hiện đang được gán cho %s thuộc tính!';
+$_['error_product']     = 'Cảnh báo: Nhóm thuộc tính này không thể xóa vì hiện đang được gán cho %s sản phẩm!';

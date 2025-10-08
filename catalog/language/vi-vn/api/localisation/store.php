@@ -1,6 +1,6 @@
 <?php
 // Text
-$_['text_success'] = 'Success: Store has been changed!';
+$_['text_success'] = 'Thành công: Cửa hàng đã được thay đổi!';
 
 // Error
-$_['error_store']  = 'Warning: Store could not be found!';
+$_['error_store']  = 'Cảnh báo: Không tìm thấy cửa hàng!';

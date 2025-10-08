@@ -1,14 +1,14 @@
 <?php
 // Text
-$_['text_subject']  = '%s - GDPR Export/Deletion Request!';
-$_['text_export']   = 'Export Data Request';
-$_['text_remove']   = 'Account Deletion Request';
-$_['text_gdpr']     = 'A GDPR request from this email address, To confirm this action please click on the link below:';
-$_['text_ip']       = 'The IP used to make this request was:';
-$_['text_contact']  = 'If you did not make this request please contact the store owner here:';
-$_['text_thanks']   = 'Thanks,';
-$_['text_ignore']   = 'If you did not created this request, please ignore this email.';
+$_['text_subject']  = '%s - Yêu cầu Xuất/Xóa dữ liệu GDPR!';
+$_['text_export']   = 'Yêu cầu Xuất Dữ liệu';
+$_['text_remove']   = 'Yêu cầu Xóa Tài khoản';
+$_['text_gdpr']     = 'Một yêu cầu GDPR từ địa chỉ email này. Để xác nhận hành động này, vui lòng nhấp vào liên kết bên dưới:';
+$_['text_ip']       = 'Địa chỉ IP đã sử dụng để thực hiện yêu cầu này là:';
+$_['text_contact']  = 'Nếu bạn không thực hiện yêu cầu này, vui lòng liên hệ với chủ cửa hàng tại đây:';
+$_['text_thanks']   = 'Cảm ơn,';
+$_['text_ignore']   = 'Nếu bạn không tạo yêu cầu này, vui lòng bỏ qua email này.';
 
 // Button
-$_['button_export'] = 'I confirm export my data';
-$_['button_remove'] = 'I confirm delete my account';
+$_['button_export'] = 'Tôi xác nhận xuất dữ liệu của tôi';
+$_['button_remove'] = 'Tôi xác nhận xóa tài khoản của tôi';

@@ -1,15 +1,15 @@
 <?php
 // Heading
-$_['heading_title']    = 'Themes';
+$_['heading_title']    = 'Giao diện';
 
 // Text
-$_['text_success']     = 'Success: You have modified themes!';
+$_['text_success']     = 'Thành công: Bạn đã chỉnh sửa các giao diện!';
 
 // Column
-$_['column_name']      = 'Theme Name';
-$_['column_status']    = 'Status';
-$_['column_action']    = 'Action';
+$_['column_name']      = 'Tên giao diện';
+$_['column_status']    = 'Trạng thái';
+$_['column_action']    = 'Hành động';
 
 // Error
-$_['error_permission'] = 'Warning: You do not have permission to modify themes!';
-$_['error_extension']  = 'Warning: Extension does not exist!';
+$_['error_permission'] = 'Cảnh báo: Bạn không có quyền chỉnh sửa các giao diện!';
+$_['error_extension']  = 'Cảnh báo: Tiện ích mở rộng không tồn tại!';

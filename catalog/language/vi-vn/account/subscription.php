@@ -1,46 +1,46 @@
 <?php
 // Heading
-$_['heading_title']                        = 'Subscriptions';
+$_['heading_title']                        = 'Đăng ký';
 
 // Text
-$_['text_account']                         = 'Account';
-$_['text_subscription']                    = 'Subscription';
-$_['text_subscription_id']                 = 'Subscription ID';
-$_['text_subscription_detail']             = 'Subscription Payment Details';
-$_['text_date_added']                      = 'Date Added:';
-$_['text_status']                          = 'Status:';
-$_['text_payment_method']                  = 'Payment Method:';
-$_['text_order_id']                        = 'Order ID:';
-$_['text_product']                         = 'Product:';
-$_['text_quantity']                        = 'Quantity:';
-$_['text_description']                     = 'Description';
-$_['text_reference']                       = 'Reference';
-$_['text_transaction']                     = 'Transactions';
-$_['text_transaction_date_added']          = 'Created';
-$_['text_transaction_payment']             = 'Payment';
-$_['text_transaction_outstanding_payment'] = 'Outstanding payment';
-$_['text_transaction_skipped']             = 'Payment skipped';
-$_['text_transaction_failed']              = 'Payment failed';
-$_['text_transaction_cancelled']           = 'Cancelled';
-$_['text_transaction_suspended']           = 'Suspended';
-$_['text_transaction_suspended_failed']    = 'Suspended from failed payment';
-$_['text_transaction_outstanding_failed']  = 'Outstanding payment failed';
-$_['text_transaction_expired']             = 'Expired';
-$_['text_no_results']                      = 'No subscriptions found!';
-$_['text_error']                           = 'The recurring order you requested could not be found!';
-$_['text_cancelled']                       = 'Recurring payment has been cancelled';
+$_['text_account']                         = 'Tài khoản';
+$_['text_subscription']                    = 'Đăng ký';
+$_['text_subscription_id']                 = 'Mã đăng ký';
+$_['text_subscription_detail']             = 'Chi tiết thanh toán đăng ký';
+$_['text_date_added']                      = 'Ngày tạo:';
+$_['text_status']                          = 'Trạng thái:';
+$_['text_payment_method']                  = 'Phương thức thanh toán:';
+$_['text_order_id']                        = 'Mã đơn hàng:';
+$_['text_product']                         = 'Sản phẩm:';
+$_['text_quantity']                        = 'Số lượng:';
+$_['text_description']                     = 'Mô tả';
+$_['text_reference']                       = 'Tham chiếu';
+$_['text_transaction']                     = 'Giao dịch';
+$_['text_transaction_date_added']          = 'Ngày tạo';
+$_['text_transaction_payment']             = 'Thanh toán';
+$_['text_transaction_outstanding_payment'] = 'Thanh toán chưa hoàn thành';
+$_['text_transaction_skipped']             = 'Bỏ qua thanh toán';
+$_['text_transaction_failed']              = 'Thanh toán thất bại';
+$_['text_transaction_cancelled']           = 'Đã hủy';
+$_['text_transaction_suspended']           = 'Tạm ngưng';
+$_['text_transaction_suspended_failed']    = 'Tạm ngưng do thanh toán thất bại';
+$_['text_transaction_outstanding_failed']  = 'Thanh toán chưa hoàn thành thất bại';
+$_['text_transaction_expired']             = 'Hết hạn';
+$_['text_no_results']                      = 'Không tìm thấy đăng ký nào!';
+$_['text_error']                           = 'Không tìm thấy đơn hàng định kỳ bạn yêu cầu!';
+$_['text_cancelled']                       = 'Thanh toán định kỳ đã bị hủy';
 
 // Column
-$_['column_subscription_id']               = 'Subscription ID';
-$_['column_product']                       = 'Product';
-$_['column_status']                        = 'Status';
-$_['column_date_added']                    = 'Date Added';
-$_['column_type']                          = 'Type';
-$_['column_amount']                        = 'Amount';
+$_['column_subscription_id']               = 'Mã đăng ký';
+$_['column_product']                       = 'Sản phẩm';
+$_['column_status']                        = 'Trạng thái';
+$_['column_date_added']                    = 'Ngày tạo';
+$_['column_type']                          = 'Loại';
+$_['column_amount']                        = 'Số tiền';
 
 // Button
-$_['button_return']                        = 'Return';
+$_['button_return']                        = 'Quay lại';
 
 // Error
-$_['error_not_cancelled']                  = 'Error: %s';
-$_['error_not_found']                      = 'Could not cancel subscription';
+$_['error_not_cancelled']                  = 'Lỗi: %s';
+$_['error_not_found']                      = 'Không thể hủy đăng ký';

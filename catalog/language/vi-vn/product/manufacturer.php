@@ -1,21 +1,21 @@
 <?php
 // Heading
-$_['heading_title']    = 'Find Your Favorite Brand';
+$_['heading_title']    = 'Tìm Thương Hiệu Yêu Thích Của Bạn';
 
 // Text
-$_['text_brand']       = 'Brand';
-$_['text_index']       = 'Brand Index:';
-$_['text_error']       = 'Brand not found!';
-$_['text_no_results']  = 'There are no products to list.';
-$_['text_compare']     = 'Product Compare (%s)';
-$_['text_sort']        = 'Sort By';
-$_['text_default']     = 'Default';
-$_['text_name_asc']    = 'Name (A - Z)';
-$_['text_name_desc']   = 'Name (Z - A)';
-$_['text_price_asc']   = 'Price (Low &gt; High)';
-$_['text_price_desc']  = 'Price (High &gt; Low)';
-$_['text_rating_asc']  = 'Rating (Lowest)';
-$_['text_rating_desc'] = 'Rating (Highest)';
-$_['text_model_asc']   = 'Model (A - Z)';
-$_['text_model_desc']  = 'Model (Z - A)';
-$_['text_limit']       = 'Show';
+$_['text_brand']       = 'Thương hiệu';
+$_['text_index']       = 'Danh sách Thương hiệu:';
+$_['text_error']       = 'Không tìm thấy thương hiệu!';
+$_['text_no_results']  = 'Không có sản phẩm nào để hiển thị.';
+$_['text_compare']     = 'So sánh sản phẩm (%s)';
+$_['text_sort']        = 'Sắp xếp theo';
+$_['text_default']     = 'Mặc định';
+$_['text_name_asc']    = 'Tên (A - Z)';
+$_['text_name_desc']   = 'Tên (Z - A)';
+$_['text_price_asc']   = 'Giá (Thấp &gt; Cao)';
+$_['text_price_desc']  = 'Giá (Cao &gt; Thấp)';
+$_['text_rating_asc']  = 'Đánh giá (Thấp nhất)';
+$_['text_rating_desc'] = 'Đánh giá (Cao nhất)';
+$_['text_model_asc']   = 'Mã sản phẩm (A - Z)';
+$_['text_model_desc']  = 'Mã sản phẩm (Z - A)';
+$_['text_limit']       = 'Hiển thị';

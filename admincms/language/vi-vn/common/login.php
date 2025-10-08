@@ -1,19 +1,19 @@
 <?php
 // Heading
-$_['heading_title']  = 'Administration';
+$_['heading_title']  = 'Quản trị';
 
 // Text
-$_['text_heading']   = 'Administration';
-$_['text_login']     = 'Please enter your login details.';
-$_['text_forgotten'] = 'Forgotten Password';
+$_['text_heading']   = 'Quản trị';
+$_['text_login']     = 'Vui lòng nhập thông tin đăng nhập của bạn.';
+$_['text_forgotten'] = 'Quên mật khẩu';
 
 // Entry
-$_['entry_username'] = 'Username';
-$_['entry_password'] = 'Password';
+$_['entry_username'] = 'Tên đăng nhập';
+$_['entry_password'] = 'Mật khẩu';
 
 // Button
-$_['button_login']   = 'Login';
+$_['button_login']   = 'Đăng nhập';
 
 // Error
-$_['error_login']    = 'No match for Username and/or Password.';
-$_['error_token']    = 'Invalid token session. Please login again.';
+$_['error_login']    = 'Sai tên đăng nhập và/hoặc mật khẩu.';
+$_['error_token']    = 'Phiên đăng nhập không hợp lệ. Vui lòng đăng nhập lại.';

@@ -1,33 +1,33 @@
 <?php
 // Heading
-$_['heading_title']      = 'Backup &amp; Restore';
+$_['heading_title']      = 'Sao lưu &amp; Khôi phục';
 
 // Text
-$_['text_success']       = 'Success: You have successfully modified your database!';
+$_['text_success']       = 'Thành công: Bạn đã chỉnh sửa cơ sở dữ liệu thành công!';
 
-$_['text_backup']        = 'Backing up table %s records %s to %s records';
-$_['text_restore']       = 'Restoring %s of %s';
-$_['text_option']        = 'Backup Options';
-$_['text_history']       = 'Backup History';
-$_['text_progress']      = 'Progress';
-$_['text_import']        = 'For large backup files it is better to upload the SQL file via FTP to the <strong>~/storage/backup/</strong> directory.';
+$_['text_backup']        = 'Đang sao lưu bảng %s từ bản ghi %s đến bản ghi %s';
+$_['text_restore']       = 'Đang khôi phục %s của %s';
+$_['text_option']        = 'Tùy chọn sao lưu';
+$_['text_history']       = 'Lịch sử sao lưu';
+$_['text_progress']      = 'Tiến trình';
+$_['text_import']        = 'Đối với các tệp sao lưu lớn, tốt hơn nên tải lên tệp SQL qua FTP vào thư mục <strong>~/storage/backup/</strong>.';
 
 // Column
-$_['column_filename']    = 'Filename';
-$_['column_size']        = 'Size';
-$_['column_date_added']  = 'Date Added';
-$_['column_action']      = 'Action';
+$_['column_filename']    = 'Tên tệp';
+$_['column_size']        = 'Kích thước';
+$_['column_date_added']  = 'Ngày thêm';
+$_['column_action']      = 'Thao tác';
 
 // Entry
-$_['entry_progress']     = 'Progress';
-$_['entry_export']       = 'Export';
+$_['entry_progress']     = 'Tiến trình';
+$_['entry_export']       = 'Xuất';
 
 // Error
-$_['error_permission']   = 'Warning: You do not have permission to modify Backup &amp; Restore!';
-$_['error_export']       = 'Warning: You must select at least one table to export!';
-$_['error_table']        = 'Table %s is not in the allowed list!';
-$_['error_file']         = 'File could not be found!';
-$_['error_directory']    = 'Directory could not be found!';
-$_['error_not_found']    = 'Error: Could not find file %s !';
-$_['error_headers_sent'] = 'Error: Headers already sent out!';
-$_['error_upload_size']  = 'Upload file cannot be larger than %s!';
+$_['error_permission']   = 'Cảnh báo: Bạn không có quyền chỉnh sửa Sao lưu &amp; Khôi phục!';
+$_['error_export']       = 'Cảnh báo: Bạn phải chọn ít nhất một bảng để xuất!';
+$_['error_table']        = 'Bảng %s không nằm trong danh sách được phép!';
+$_['error_file']         = 'Không tìm thấy tệp!';
+$_['error_directory']    = 'Không tìm thấy thư mục!';
+$_['error_not_found']    = 'Lỗi: Không thể tìm thấy tệp %s!';
+$_['error_headers_sent'] = 'Lỗi: Header đã được gửi ra trước đó!';
+$_['error_upload_size']  = 'Tệp tải lên không được lớn hơn %s!';

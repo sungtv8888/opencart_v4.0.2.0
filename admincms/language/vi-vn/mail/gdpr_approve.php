@@ -1,11 +1,11 @@
 <?php
 // Text
-$_['text_subject'] = '%s - GDPR request approved!';
-$_['text_request'] = 'Account Deletion Request';
-$_['text_hello']   = 'Hello <strong>%s</strong>,';
-$_['text_user']    = 'User';
-$_['text_gdpr']    = 'Your GDPR data deletion request has been approved and will be deleted in <strong>%s Days</strong>.';
-$_['text_q']       = 'Q. Why do we not delete your data straight away?';
-$_['text_a']       = 'A. Account deletion requests will process after <strong>%s days</strong> so any refunds, chargebacks or fraud detection can be processed.';
-$_['text_delete']  = 'You will receive a email informing you when your account has been deleted.';
-$_['text_thanks']  = 'Thanks,';
+$_['text_subject'] = '%s - Yêu cầu GDPR đã được chấp thuận!';
+$_['text_request'] = 'Yêu cầu xóa tài khoản';
+$_['text_hello']   = 'Xin chào <strong>%s</strong>,';
+$_['text_user']    = 'Người dùng';
+$_['text_gdpr']    = 'Yêu cầu xóa dữ liệu GDPR của bạn đã được chấp thuận và sẽ bị xóa trong vòng <strong>%s ngày</strong>.';
+$_['text_q']       = 'Hỏi: Tại sao chúng tôi không xóa dữ liệu của bạn ngay lập tức?';
+$_['text_a']       = 'Đáp: Các yêu cầu xóa tài khoản sẽ được xử lý sau <strong>%s ngày</strong> để đảm bảo có thể hoàn tiền, xử lý khiếu nại hoặc phát hiện gian lận nếu có.';
+$_['text_delete']  = 'Bạn sẽ nhận được email thông báo khi tài khoản của bạn đã bị xóa.';
+$_['text_thanks']  = 'Cảm ơn,';

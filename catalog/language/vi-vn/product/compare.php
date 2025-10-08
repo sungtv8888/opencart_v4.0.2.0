@@ -1,25 +1,25 @@
 <?php
 // Heading
-$_['heading_title']     = 'Product Comparison';
+$_['heading_title']     = 'So sánh sản phẩm';
 
 // Text
-$_['text_product']      = 'Product Details';
-$_['text_name']         = 'Product';
-$_['text_image']        = 'Image';
-$_['text_price']        = 'Price';
-$_['text_model']        = 'Model';
-$_['text_manufacturer'] = 'Brand';
-$_['text_availability'] = 'Availability';
-$_['text_instock']      = 'In Stock';
-$_['text_rating']       = 'Rating';
-$_['text_reviews']      = 'Based on %s reviews.';
-$_['text_summary']      = 'Summary';
-$_['text_weight']       = 'Weight';
-$_['text_dimension']    = 'Dimensions (L x W x H)';
-$_['text_compare']      = 'Product Compare (%s)';
-$_['text_success']      = 'Success: You have added <a href="%s">%s</a> to your <a href="%s">product comparison</a>!';
-$_['text_remove']       = 'Success: You have modified your product comparison!';
-$_['text_no_results']   = 'You have not chosen any products to compare.';
+$_['text_product']      = 'Chi tiết sản phẩm';
+$_['text_name']         = 'Sản phẩm';
+$_['text_image']        = 'Hình ảnh';
+$_['text_price']        = 'Giá';
+$_['text_model']        = 'Mã sản phẩm';
+$_['text_manufacturer'] = 'Thương hiệu';
+$_['text_availability'] = 'Tình trạng';
+$_['text_instock']      = 'Còn hàng';
+$_['text_rating']       = 'Đánh giá';
+$_['text_reviews']      = 'Dựa trên %s đánh giá.';
+$_['text_summary']      = 'Tóm tắt';
+$_['text_weight']       = 'Trọng lượng';
+$_['text_dimension']    = 'Kích thước (D x R x C)';
+$_['text_compare']      = 'So sánh sản phẩm (%s)';
+$_['text_success']      = 'Thành công: Bạn đã thêm <a href="%s">%s</a> vào <a href="%s">so sánh sản phẩm</a>!';
+$_['text_remove']       = 'Thành công: Bạn đã thay đổi danh sách so sánh sản phẩm!';
+$_['text_no_results']   = 'Bạn chưa chọn sản phẩm nào để so sánh.';
 
 // Error
-$_['error_product']     = 'Warning: Product could not be found!';
+$_['error_product']     = 'Cảnh báo: Không tìm thấy sản phẩm!';

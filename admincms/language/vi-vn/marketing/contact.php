@@ -1,37 +1,38 @@
 <?php
 // Heading
-$_['heading_title']        = 'Mail';
+$_['heading_title']        = 'Thư';
 
 // Text
-$_['text_mail']            = 'Send e-mail\'s to customers';
-$_['text_success']         = 'Your message has been successfully sent!';
-$_['text_sent']            = 'Your message has been successfully sent to %s - %s recipients!';
-$_['text_default']         = 'Default';
-$_['text_newsletter']      = 'All Newsletter Subscribers';
-$_['text_customer_all']    = 'All Customers';
-$_['text_customer_group']  = 'Customer Group';
-$_['text_customer']        = 'Customers';
-$_['text_affiliate_all']   = 'All Affiliates';
-$_['text_affiliate']       = 'Affiliates';
-$_['text_product']         = 'Products';
+$_['text_mail']            = 'Gửi email đến khách hàng';
+$_['text_success']         = 'Tin nhắn của bạn đã được gửi thành công!';
+$_['text_sent']            = 'Tin nhắn của bạn đã được gửi thành công đến %s - %s người nhận!';
+$_['text_default']         = 'Mặc định';
+$_['text_newsletter']      = 'Tất cả người đăng ký nhận bản tin';
+$_['text_customer_all']    = 'Tất cả khách hàng';
+$_['text_customer_group']  = 'Nhóm khách hàng';
+$_['text_customer']        = 'Khách hàng';
+$_['text_affiliate_all']   = 'Tất cả cộng tác viên';
+$_['text_affiliate']       = 'Cộng tác viên';
+$_['text_product']         = 'Sản phẩm';
 
 // Entry
-$_['entry_store']          = 'From';
-$_['entry_to']             = 'To';
-$_['entry_customer_group'] = 'Customer Group';
-$_['entry_customer']       = 'Customer';
-$_['entry_affiliate']      = 'Affiliate';
-$_['entry_product']        = 'Products';
-$_['entry_subject']        = 'Subject';
-$_['entry_message']        = 'Message';
+$_['entry_store']          = 'Từ';
+$_['entry_to']             = 'Đến';
+$_['entry_customer_group'] = 'Nhóm khách hàng';
+$_['entry_customer']       = 'Khách hàng';
+$_['entry_affiliate']      = 'Cộng tác viên';
+$_['entry_product']        = 'Sản phẩm';
+$_['entry_subject']        = 'Chủ đề';
+$_['entry_message']        = 'Nội dung';
 
 // Help
-$_['help_customer']        = '(Autocomplete)';
-$_['help_affiliate']       = '(Autocomplete)';
-$_['help_product']         = 'Send only to customers who have ordered products in the list. (Autocomplete)';
+$_['help_customer']        = '(Tự động hoàn thành)';
+$_['help_affiliate']       = '(Tự động hoàn thành)';
+$_['help_product']         = 'Chỉ gửi đến khách hàng đã đặt mua các sản phẩm trong danh sách. (Tự động hoàn thành)';
 
 // Error
-$_['error_permission']     = 'Warning: You do not have permission to send E-Mails!';
-$_['error_subject']        = 'E-Mail Subject required!';
-$_['error_message']        = 'E-Mail Message required!';
-$_['error_email']          = 'No E-Mail recipients!';
+$_['error_permission']     = 'Cảnh báo: Bạn không có quyền gửi email!';
+$_['error_subject']        = 'Yêu cầu nhập chủ đề email!';
+$_['error_message']        = 'Yêu cầu nhập nội dung email!';
+$_['error_email']          = 'Không có người nhận email!';
+?>

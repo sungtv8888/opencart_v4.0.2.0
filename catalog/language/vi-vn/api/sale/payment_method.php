@@ -1,9 +1,9 @@
 <?php
 // Text
-$_['text_success']          = 'Success: Payment method has been set!';
+$_['text_success']          = 'Thành công: Phương thức thanh toán đã được thiết lập!';
 
 // Error
-$_['error_payment_address'] = 'Warning: Payment address required!';
-$_['error_payment_method']  = 'Warning: Payment method required!';
-$_['error_no_payment']      = 'Warning: No payment options are available!';
-$_['error_product']         = 'Warning: Products required!';
+$_['error_payment_address'] = 'Cảnh báo: Địa chỉ thanh toán là bắt buộc!';
+$_['error_payment_method']  = 'Cảnh báo: Phương thức thanh toán là bắt buộc!';
+$_['error_no_payment']      = 'Cảnh báo: Không có tùy chọn thanh toán nào khả dụng!';
+$_['error_product']         = 'Cảnh báo: Sản phẩm là bắt buộc!';

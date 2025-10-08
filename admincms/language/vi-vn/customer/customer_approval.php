@@ -1,32 +1,32 @@
 <?php
 // Heading
-$_['heading_title']         = 'Customer Approvals';
+$_['heading_title']         = 'Duyệt khách hàng';
 
 // Text
-$_['text_success']          = 'Success: You have modified customer approvals!';
-$_['text_list']             = 'Customer Approval List';
-$_['text_default']          = 'Default';
-$_['text_customer']         = 'Customer';
-$_['text_affiliate']        = 'Affiliate';
-$_['text_filter']           = 'Filter';
-$_['text_approve']          = 'Approve';
-$_['text_deny']             = 'Deny';
+$_['text_success']          = 'Thành công: Bạn đã chỉnh sửa phê duyệt khách hàng!';
+$_['text_list']             = 'Danh sách phê duyệt khách hàng';
+$_['text_default']          = 'Mặc định';
+$_['text_customer']         = 'Khách hàng';
+$_['text_affiliate']        = 'Đối tác liên kết';
+$_['text_filter']           = 'Bộ lọc';
+$_['text_approve']          = 'Phê duyệt';
+$_['text_deny']             = 'Từ chối';
 
 // Column
-$_['column_customer']       = 'Customer';
+$_['column_customer']       = 'Khách hàng';
 $_['column_email']          = 'E-Mail';
-$_['column_customer_group'] = 'Customer Group';
-$_['column_type']           = 'Type';
-$_['column_date_added']     = 'Date Added';
-$_['column_action']         = 'Action';
+$_['column_customer_group'] = 'Nhóm khách hàng';
+$_['column_type']           = 'Loại';
+$_['column_date_added']     = 'Ngày thêm';
+$_['column_action']         = 'Hành động';
 
 // Entry
-$_['entry_customer']        = 'Customer';
+$_['entry_customer']        = 'Khách hàng';
 $_['entry_email']           = 'E-Mail';
-$_['entry_customer_group']  = 'Customer Group';
-$_['entry_type']            = 'Type';
-$_['entry_date_from']       = 'Date From';
-$_['entry_date_to']         = 'Date To';
+$_['entry_customer_group']  = 'Nhóm khách hàng';
+$_['entry_type']            = 'Loại';
+$_['entry_date_from']       = 'Từ ngày';
+$_['entry_date_to']         = 'Đến ngày';
 
 // Error
-$_['error_permission']      = 'Warning: You do not have permission to modify customer approvals!';
+$_['error_permission']      = 'Cảnh báo: Bạn không có quyền chỉnh sửa phê duyệt khách hàng!';

@@ -1,30 +1,30 @@
 <?php
 // Heading
-$_['heading_title']        = 'Upgrade';
+$_['heading_title']        = 'Nâng cấp';
 
 // Text
-$_['text_success']         = 'Success: You are using the latest version %s!';
-$_['text_upgrade']         = 'Check Latest Version';
-$_['text_information']     = 'Version Information';
-$_['text_current_version'] = 'Current Version';
-$_['text_latest_version']  = 'Latest Version';
-$_['text_date_added']      = 'Release Date';
-$_['text_change']          = 'Change Log';
-$_['text_status']          = 'Upgrade Status';
-$_['text_ready']           = 'Click the upgrade button to upgrade to the latest version...';
-$_['text_download']        = 'Downloading latest...';
-$_['text_install']         = 'Copying files...';
-$_['text_patch']           = 'Applying patches...';
+$_['text_success']         = 'Thành công: Bạn đang sử dụng phiên bản mới nhất %s!';
+$_['text_upgrade']         = 'Kiểm tra phiên bản mới nhất';
+$_['text_information']     = 'Thông tin phiên bản';
+$_['text_current_version'] = 'Phiên bản hiện tại';
+$_['text_latest_version']  = 'Phiên bản mới nhất';
+$_['text_date_added']      = 'Ngày phát hành';
+$_['text_change']          = 'Nhật ký thay đổi';
+$_['text_status']          = 'Trạng thái nâng cấp';
+$_['text_ready']           = 'Nhấn nút nâng cấp để cập nhật lên phiên bản mới nhất...';
+$_['text_download']        = 'Đang tải phiên bản mới nhất...';
+$_['text_install']         = 'Đang sao chép tệp...';
+$_['text_patch']           = 'Đang áp dụng bản vá...';
 
 // Button
-$_['button_upgrade']       = 'Upgrade';
+$_['button_upgrade']       = 'Nâng cấp';
 
 // Error
-$_['error_permission']     = 'Warning: You do not have permission to modify upgrades!';
-$_['error_connection']     = 'Could not connect to the upgrade server!';
-$_['error_version']        = 'Version is lower than the current version!';
-$_['error_download']       = 'Upgrade could not be downloaded!';
-$_['error_file']           = 'Upgrade file could not be found!';
-$_['error_directory']      = 'Could not create directory %s!';
-$_['error_copy']           = 'Could not copy file %s to %s!';
-$_['error_unzip']          = 'Zip file could not be opened!';
+$_['error_permission']     = 'Cảnh báo: Bạn không có quyền chỉnh sửa nâng cấp!';
+$_['error_connection']     = 'Không thể kết nối tới máy chủ nâng cấp!';
+$_['error_version']        = 'Phiên bản thấp hơn phiên bản hiện tại!';
+$_['error_download']       = 'Không thể tải xuống bản nâng cấp!';
+$_['error_file']           = 'Không tìm thấy tệp nâng cấp!';
+$_['error_directory']      = 'Không thể tạo thư mục %s!';
+$_['error_copy']           = 'Không thể sao chép tệp %s đến %s!';
+$_['error_unzip']          = 'Không thể mở tệp zip!';

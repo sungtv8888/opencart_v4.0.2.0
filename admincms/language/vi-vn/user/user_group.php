@@ -1,25 +1,25 @@
 <?php
 // Heading
-$_['heading_title']    = 'User Groups';
+$_['heading_title']    = 'Nhóm người dùng';
 
 // Text
-$_['text_success']     = 'Success: You have modified user groups!';
-$_['text_list']        = 'User Group';
-$_['text_add']         = 'Add User Group';
-$_['text_edit']        = 'Edit User Group';
-$_['text_access']      = 'Access';
-$_['text_modify']      = 'Modify';
+$_['text_success']     = 'Thành công: Bạn đã chỉnh sửa nhóm người dùng!';
+$_['text_list']        = 'Danh sách nhóm người dùng';
+$_['text_add']         = 'Thêm nhóm người dùng';
+$_['text_edit']        = 'Chỉnh sửa nhóm người dùng';
+$_['text_access']      = 'Truy cập';
+$_['text_modify']      = 'Chỉnh sửa';
 
 // Column
-$_['column_name']      = 'User Group Name';
-$_['column_action']    = 'Action';
+$_['column_name']      = 'Tên nhóm người dùng';
+$_['column_action']    = 'Thao tác';
 
 // Entry
-$_['entry_name']       = 'User Group Name';
-$_['entry_permission'] = 'Permissions';
-$_['entry_extension']  = 'Extensions';
+$_['entry_name']       = 'Tên nhóm người dùng';
+$_['entry_permission'] = 'Quyền hạn';
+$_['entry_extension']  = 'Tiện ích mở rộng';
 
 // Error
-$_['error_permission'] = 'Warning: You do not have permission to modify user groups!';
-$_['error_name']       = 'User Group Name must be between 3 and 64 characters!';
-$_['error_user']       = 'Warning: This user group cannot be deleted as it is currently assigned to %s users!';
+$_['error_permission'] = 'Cảnh báo: Bạn không có quyền chỉnh sửa nhóm người dùng!';
+$_['error_name']       = 'Tên nhóm người dùng phải có từ 3 đến 64 ký tự!';
+$_['error_user']       = 'Cảnh báo: Không thể xóa nhóm người dùng này vì hiện đang được gán cho %s người dùng!';

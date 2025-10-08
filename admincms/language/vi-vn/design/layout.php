@@ -1,38 +1,38 @@
 <?php
 // Heading
-$_['heading_title']       = 'Layouts';
+$_['heading_title']       = 'Bố cục';
 
 // Text
-$_['text_success']        = 'Success: You have modified layouts!';
-$_['text_list']           = 'Layout List';
-$_['text_add']            = 'Add Layout';
-$_['text_edit']           = 'Edit Layout';
-$_['text_remove']         = 'Remove';
-$_['text_route']          = 'Choose the store and routes to be used with this layout';
-$_['text_module']         = 'Choose the position of the modules';
-$_['text_default']        = 'Default';
-$_['text_content_top']    = 'Content Top';
-$_['text_content_bottom'] = 'Content Bottom';
-$_['text_column_left']    = 'Column Left';
-$_['text_column_right']   = 'Column Right';
+$_['text_success']        = 'Thành công: Bạn đã chỉnh sửa bố cục!';
+$_['text_list']           = 'Danh sách bố cục';
+$_['text_add']            = 'Thêm bố cục';
+$_['text_edit']           = 'Chỉnh sửa bố cục';
+$_['text_remove']         = 'Xóa';
+$_['text_route']          = 'Chọn cửa hàng và đường dẫn sử dụng bố cục này';
+$_['text_module']         = 'Chọn vị trí của các module';
+$_['text_default']        = 'Mặc định';
+$_['text_content_top']    = 'Nội dung trên';
+$_['text_content_bottom'] = 'Nội dung dưới';
+$_['text_column_left']    = 'Cột trái';
+$_['text_column_right']   = 'Cột phải';
 
 // Column
-$_['column_name']         = 'Layout Name';
-$_['column_action']       = 'Action';
+$_['column_name']         = 'Tên bố cục';
+$_['column_action']       = 'Hành động';
 
 // Entry
-$_['entry_name']          = 'Layout Name';
-$_['entry_store']         = 'Store';
-$_['entry_route']         = 'Route';
+$_['entry_name']          = 'Tên bố cục';
+$_['entry_store']         = 'Cửa hàng';
+$_['entry_route']         = 'Đường dẫn';
 $_['entry_module']        = 'Module';
 
 // Error
-$_['error_permission']    = 'Warning: You do not have permission to modify layouts!';
-$_['error_name']          = 'Layout Name must be between 3 and 64 characters!';
-$_['error_module']        = 'Module required!';
-$_['error_default']       = 'Warning: This layout cannot be deleted as it is currently assigned as the default store layout!';
-$_['error_store']         = 'Warning: This layout cannot be deleted as it is currently assigned to %s stores!';
-$_['error_product']       = 'Warning: This layout cannot be deleted as it is currently assigned to %s products!';
-$_['error_category']      = 'Warning: This layout cannot be deleted as it is currently assigned to %s categories!';
-$_['error_manufacturer']  = 'Warning: This layout cannot be deleted as it is currently assigned to %s manufacturers!';
-$_['error_information']   = 'Warning: This layout cannot be deleted as it is currently assigned to %s information pages!';
+$_['error_permission']    = 'Cảnh báo: Bạn không có quyền chỉnh sửa bố cục!';
+$_['error_name']          = 'Tên bố cục phải từ 3 đến 64 ký tự!';
+$_['error_module']        = 'Cần chọn module!';
+$_['error_default']       = 'Cảnh báo: Bố cục này không thể xóa vì đang được dùng làm bố cục mặc định của cửa hàng!';
+$_['error_store']         = 'Cảnh báo: Bố cục này không thể xóa vì đang được gán cho %s cửa hàng!';
+$_['error_product']       = 'Cảnh báo: Bố cục này không thể xóa vì đang được gán cho %s sản phẩm!';
+$_['error_category']      = 'Cảnh báo: Bố cục này không thể xóa vì đang được gán cho %s danh mục!';
+$_['error_manufacturer']  = 'Cảnh báo: Bố cục này không thể xóa vì đang được gán cho %s nhà sản xuất!';
+$_['error_information']   = 'Cảnh báo: Bố cục này không thể xóa vì đang được gán cho %s trang thông tin!';

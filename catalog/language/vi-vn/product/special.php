@@ -1,18 +1,18 @@
 <?php
 // Heading
-$_['heading_title']    = 'Special Offers';
+$_['heading_title']    = 'Khuyến Mãi';
 
 // Text
-$_['text_no_results']  = 'There are no special offer products to list.';
-$_['text_compare']     = 'Product Compare (%s)';
-$_['text_sort']        = 'Sort By';
-$_['text_default']     = 'Default';
-$_['text_name_asc']    = 'Name (A - Z)';
-$_['text_name_desc']   = 'Name (Z - A)';
-$_['text_price_asc']   = 'Price (Low &gt; High)';
-$_['text_price_desc']  = 'Price (High &gt; Low)';
-$_['text_rating_asc']  = 'Rating (Lowest)';
-$_['text_rating_desc'] = 'Rating (Highest)';
-$_['text_model_asc']   = 'Model (A - Z)';
-$_['text_model_desc']  = 'Model (Z - A)';
-$_['text_limit']       = 'Show';
+$_['text_no_results']  = 'Không có sản phẩm khuyến mãi nào để hiển thị.';
+$_['text_compare']     = 'So sánh sản phẩm (%s)';
+$_['text_sort']        = 'Sắp xếp theo';
+$_['text_default']     = 'Mặc định';
+$_['text_name_asc']    = 'Tên (A - Z)';
+$_['text_name_desc']   = 'Tên (Z - A)';
+$_['text_price_asc']   = 'Giá (Thấp &gt; Cao)';
+$_['text_price_desc']  = 'Giá (Cao &gt; Thấp)';
+$_['text_rating_asc']  = 'Đánh giá (Thấp nhất)';
+$_['text_rating_desc'] = 'Đánh giá (Cao nhất)';
+$_['text_model_asc']   = 'Mã sản phẩm (A - Z)';
+$_['text_model_desc']  = 'Mã sản phẩm (Z - A)';
+$_['text_limit']       = 'Hiển thị';

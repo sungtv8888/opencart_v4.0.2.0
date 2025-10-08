@@ -3,26 +3,26 @@
 $_['heading_title']    = 'Banners';
 
 // Text
-$_['text_success']     = 'Success: You have modified banners!';
-$_['text_list']        = 'Banner List';
-$_['text_add']         = 'Add Banner';
-$_['text_edit']        = 'Edit Banner';
-$_['text_default']     = 'Default';
+$_['text_success']     = 'Thành công: Bạn đã chỉnh sửa biểu ngữ!';
+$_['text_list']        = 'Danh sách Banner';
+$_['text_add']         = 'Thêm Banner';
+$_['text_edit']        = 'Sửa Banner';
+$_['text_default']     = 'Mặc định';
 
 // Column
-$_['column_name']      = 'Banner Name';
-$_['column_status']    = 'Status';
-$_['column_action']    = 'Action';
+$_['column_name']      = 'Tên Banner';
+$_['column_status']    = 'Trạng thái';
+$_['column_action']    = 'Hành động';
 
 // Entry
-$_['entry_name']       = 'Banner Name';
-$_['entry_title']      = 'Title';
-$_['entry_link']       = 'Link';
-$_['entry_image']      = 'Image';
-$_['entry_status']     = 'Status';
-$_['entry_sort_order'] = 'Sort Order';
+$_['entry_name']       = 'Tên Banner';
+$_['entry_title']      = 'Tiêu đề';
+$_['entry_link']       = 'Liên kết';
+$_['entry_image']      = 'Hình ảnh';
+$_['entry_status']     = 'Trạng thái';
+$_['entry_sort_order'] = 'Thứ tự';
 
 // Error
-$_['error_permission'] = 'Warning: You do not have permission to modify banners!';
-$_['error_name']       = 'Banner Name must be between 3 and 64 characters!';
-$_['error_title']      = 'Banner Title must be between 2 and 64 characters!';
+$_['error_permission'] = 'Cảnh báo: Bạn không có quyền chỉnh sửa biểu ngữ!';
+$_['error_name']       = 'Tên biểu ngữ phải từ 3 đến 64 ký tự!';
+$_['error_title']      = 'Tiêu đề biểu ngữ phải từ 2 đến 64 ký tự!';

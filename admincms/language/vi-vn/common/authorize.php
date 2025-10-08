@@ -1,20 +1,20 @@
 <?php
 // Heading
-$_['heading_title'] = 'Protect your account';
+$_['heading_title'] = 'Bảo vệ tài khoản của bạn';
 
 // Text
-$_['text_security'] = 'You must answer security question whenever you login from an unknown device or computer.';
-$_['text_code']     = 'An email has been sent to your email account with a security code. Enter the code below to continue.';
-$_['text_locked']   = 'Your account has been locked!';
-$_['text_unlock']   = 'Your account has been locked because of to many incorrect attempts at entering the security code. Click the reset button to receive a reset link via your email account.';
-$_['text_unlocked'] = 'Success: Your account has been unlocked!';
-$_['text_link']     = 'Success: An email with a reset link has been sent your email address!';
-$_['text_resend']   = 'Success: An email has been sent to your email account with a security code!';
+$_['text_security'] = 'Bạn phải trả lời câu hỏi bảo mật mỗi khi đăng nhập từ thiết bị hoặc máy tính lạ.';
+$_['text_code'] = 'Một email đã được gửi đến tài khoản email của bạn kèm theo mã bảo mật. Nhập mã bên dưới để tiếp tục.';
+$_['text_locked'] = 'Tài khoản của bạn đã bị khóa!';
+$_['text_unlock'] = 'Tài khoản của bạn đã bị khóa do nhập sai mã bảo mật quá nhiều lần. Nhấn nút đặt lại để nhận liên kết đặt lại qua email.';
+$_['text_unlocked'] = 'Thành công: Tài khoản của bạn đã được mở khóa!';
+$_['text_link'] = 'Thành công: Một email kèm liên kết đặt lại đã được gửi đến địa chỉ email của bạn!';
+$_['text_resend'] = 'Thành công: Một email kèm mã bảo mật đã được gửi đến tài khoản email của bạn!';
 
 // Entry
-$_['entry_code']    = 'Security Code';
+$_['entry_code'] = 'Mã bảo mật';
 
 // Error
-$_['error_warning'] = 'You have exceeded the allowed number of security code attempts!';
-$_['error_code']    = 'Security code does not match!';
-$_['error_reset']   = 'Warning: Could not reset your security code!';
+$_['error_warning'] = 'Bạn đã vượt quá số lần nhập mã bảo mật cho phép!';
+$_['error_code'] = 'Mã bảo mật không khớp!';
+$_['error_reset'] = 'Cảnh báo: Không thể đặt lại mã bảo mật của bạn!';

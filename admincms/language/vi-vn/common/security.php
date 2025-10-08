@@ -1,35 +1,35 @@
 <?php
 // Heading
-$_['heading_title']             = 'Important Security Notification!';
+$_['heading_title'] = 'Thông báo bảo mật quan trọng!';
 
 // Text
-$_['text_install']              = 'Installation directory';
-$_['text_install_description']  = 'Your installation directory needs deleting!';
-$_['text_install_success']      = 'Success: Install directory has been deleted!';
-$_['text_storage']              = 'Storage path';
-$_['text_storage_description']  = 'It is very important that you move the storage directory outside of the web directory (e.g. public_html, www or htdocs).';
-$_['text_storage_success']      = 'Success: Storage directory has been moved!';
-$_['text_admin']                = 'Rename admin directory';
-$_['text_admin_description']    = 'Please type in a new admin directory name in the field below.';
-$_['text_admin_success']        = 'Success: Admin directory has been renamed!';
-$_['text_path']                 = 'Path';
+$_['text_install'] = 'Thư mục cài đặt';
+$_['text_install_description'] = 'Bạn cần xóa thư mục cài đặt!';
+$_['text_install_success'] = 'Thành công: Thư mục cài đặt đã được xóa!';
+$_['text_storage'] = 'Đường dẫn lưu trữ';
+$_['text_storage_description'] = 'Rất quan trọng: bạn nên di chuyển thư mục lưu trữ ra ngoài thư mục web (ví dụ public_html, www hoặc htdocs).';
+$_['text_storage_success'] = 'Thành công: Thư mục lưu trữ đã được di chuyển!';
+$_['text_admin'] = 'Đổi tên thư mục admin';
+$_['text_admin_description'] = 'Vui lòng nhập tên mới cho thư mục admin vào ô bên dưới.';
+$_['text_admin_success'] = 'Thành công: Thư mục admin đã được đổi tên!';
+$_['text_path'] = 'Đường dẫn';
 
 // Entry
-$_['entry_path']                = 'Path';
-$_['entry_path_current']        = 'Current Path';
-$_['entry_path_new']            = 'New Path';
-$_['entry_name']                = 'Directory Name';
+$_['entry_path'] = 'Đường dẫn';
+$_['entry_path_current'] = 'Đường dẫn hiện tại';
+$_['entry_path_new'] = 'Đường dẫn mới';
+$_['entry_name'] = 'Tên thư mục';
 
 // Button
-$_['button_move']               = 'Move';
-$_['button_rename']             = 'Rename';
+$_['button_move'] = 'Di chuyển';
+$_['button_rename'] = 'Đổi tên';
 
 // Error
-$_['error_permission']          = 'Warning: You do not have permission to modify security!';
-$_['error_install']             = 'Warning: Install directory does not exist!';
-$_['error_storage']             = 'Warning: Storage directory does not exist!';
-$_['error_storage_exists']      = 'Warning: Storage folder name already exists!';
-$_['error_admin']               = 'Warning: Admin directory does not exist!';
-$_['error_admin_exists']        = 'Warning: Admin folder name already exists!';
-$_['error_admin_name']          = 'Warning: Admin name cannot be `admin` as it is available to the public!';
-$_['error_writable']            = 'Warning: config.php and admin/config.php need to be made writable!';
+$_['error_permission'] = 'Cảnh báo: Bạn không có quyền chỉnh sửa bảo mật!';
+$_['error_install'] = 'Cảnh báo: Thư mục cài đặt không tồn tại!';
+$_['error_storage'] = 'Cảnh báo: Thư mục lưu trữ không tồn tại!';
+$_['error_storage_exists'] = 'Cảnh báo: Tên thư mục lưu trữ đã tồn tại!';
+$_['error_admin'] = 'Cảnh báo: Thư mục admin không tồn tại!';
+$_['error_admin_exists'] = 'Cảnh báo: Tên thư mục admin đã tồn tại!';
+$_['error_admin_name'] = 'Cảnh báo: Tên admin không thể là "admin" vì nó có thể truy cập công khai!';
+$_['error_writable'] = 'Cảnh báo: Cần cấp quyền ghi cho config.php và admin/config.php!';

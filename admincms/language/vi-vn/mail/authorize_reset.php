@@ -1,7 +1,7 @@
 <?php
 // Text
-$_['text_subject'] = 'Reset security code attempts';
-$_['text_reset']   = 'Some one entered the security code wrongly more than 3 times.';
-$_['text_link']    = 'Click on the link below to reset account security:';
-$_['text_ip']      = 'IP:';
-$_['text_regards'] = 'Best Regards';
+$_['text_subject'] = 'Đặt lại số lần nhập mã bảo mật';
+$_['text_reset']   = 'Ai đó đã nhập sai mã bảo mật hơn 3 lần.';
+$_['text_link']    = 'Nhấp vào liên kết bên dưới để đặt lại bảo mật tài khoản:';
+$_['text_ip']      = 'Địa chỉ IP:';
+$_['text_regards'] = 'Trân trọng,';

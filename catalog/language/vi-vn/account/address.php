@@ -1,40 +1,40 @@
 <?php
 // Heading
-$_['heading_title']      = 'Address Book';
+$_['heading_title']      = 'Sổ địa chỉ';
 
 // Text
-$_['text_account']       = 'Account';
-$_['text_address_book']  = 'Address Book Entries';
-$_['text_address_add']   = 'Add Address';
-$_['text_address_edit']  = 'Edit Address';
-$_['text_add']           = 'Your address has been successfully added';
-$_['text_edit']          = 'Your address has been successfully updated';
-$_['text_delete']        = 'Your address has been successfully deleted';
-$_['text_no_results']    = 'You have no addresses in your account.';
+$_['text_account']       = 'Tài khoản';
+$_['text_address_book']  = 'Các địa chỉ';
+$_['text_address_add']   = 'Thêm địa chỉ';
+$_['text_address_edit']  = 'Chỉnh sửa địa chỉ';
+$_['text_add']           = 'Địa chỉ của bạn đã được thêm thành công';
+$_['text_edit']          = 'Địa chỉ của bạn đã được cập nhật thành công';
+$_['text_delete']        = 'Địa chỉ của bạn đã được xóa thành công';
+$_['text_no_results']    = 'Bạn chưa có địa chỉ nào trong tài khoản của mình.';
 
 // Entry
-$_['entry_firstname']    = 'First Name';
-$_['entry_lastname']     = 'Last Name';
-$_['entry_company']      = 'Company';
-$_['entry_address_1']    = 'Address 1';
-$_['entry_address_2']    = 'Address 2';
-$_['entry_postcode']     = 'Post Code';
-$_['entry_city']         = 'City';
-$_['entry_country']      = 'Country';
-$_['entry_zone']         = 'Region / State';
-$_['entry_default']      = 'Default Address';
+$_['entry_firstname']    = 'Họ';
+$_['entry_lastname']     = 'Tên';
+$_['entry_company']      = 'Công ty';
+$_['entry_address_1']    = 'Địa chỉ 1';
+$_['entry_address_2']    = 'Địa chỉ 2';
+$_['entry_postcode']     = 'Mã bưu điện';
+$_['entry_city']         = 'Thành phố';
+$_['entry_country']      = 'Quốc gia';
+$_['entry_zone']         = 'Tỉnh / Thành phố';
+$_['entry_default']      = 'Địa chỉ mặc định';
 
 // Error
-$_['error_token']        = 'Warning: Address token invalid!';
-$_['error_subscription'] = 'Warning: Address is still being used by %s active subscriptions!';
-$_['error_default']      = 'Warning: Default address required!';
-$_['error_delete']       = 'Warning: You must have at least one address!';
-$_['error_firstname']    = 'First Name must be between 1 and 32 characters!';
-$_['error_lastname']     = 'Last Name must be between 1 and 32 characters!';
-$_['error_address_1']    = 'Address must be between 3 and 128 characters!';
-$_['error_postcode']     = 'Postcode must be between 2 and 10 characters!';
-$_['error_city']         = 'City must be between 2 and 128 characters!';
-$_['error_country']      = 'Please select a country!';
-$_['error_zone']         = 'Please select a region / state!';
-$_['error_custom_field'] = '%s required!';
-$_['error_regex']        = '%s is not a valid input!';
+$_['error_token']        = 'Cảnh báo: Mã địa chỉ không hợp lệ!';
+$_['error_subscription'] = 'Cảnh báo: Địa chỉ vẫn đang được sử dụng cho %s đăng ký hoạt động!';
+$_['error_default']      = 'Cảnh báo: Cần có địa chỉ mặc định!';
+$_['error_delete']       = 'Cảnh báo: Bạn phải có ít nhất một địa chỉ!';
+$_['error_firstname']    = 'Họ phải từ 1 đến 32 ký tự!';
+$_['error_lastname']     = 'Tên phải từ 1 đến 32 ký tự!';
+$_['error_address_1']    = 'Địa chỉ phải từ 3 đến 128 ký tự!';
+$_['error_postcode']     = 'Mã bưu điện phải từ 2 đến 10 ký tự!';
+$_['error_city']         = 'Thành phố phải từ 2 đến 128 ký tự!';
+$_['error_country']      = 'Vui lòng chọn quốc gia!';
+$_['error_zone']         = 'Vui lòng chọn tỉnh / thành phố!';
+$_['error_custom_field'] = '%s bắt buộc!';
+$_['error_regex']        = '%s không hợp lệ!';

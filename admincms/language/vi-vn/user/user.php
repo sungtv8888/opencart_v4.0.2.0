@@ -1,50 +1,50 @@
 <?php
 // Heading
-$_['heading_title']         = 'Users';
+$_['heading_title']         = 'Người dùng';
 
 // Text
-$_['text_success']          = 'Success: You have modified users!';
-$_['text_list']             = 'User List';
-$_['text_add']              = 'Add User';
-$_['text_edit']             = 'Edit User';
-$_['text_user']             = 'Users Details';
-$_['text_password']         = 'Password';
-$_['text_other']            = 'Other';
-$_['text_login']            = 'Login History';
-$_['text_authorize']        = 'Authorize History';
+$_['text_success']          = 'Thành công: Bạn đã chỉnh sửa người dùng!';
+$_['text_list']             = 'Danh sách người dùng';
+$_['text_add']              = 'Thêm người dùng';
+$_['text_edit']             = 'Chỉnh sửa người dùng';
+$_['text_user']             = 'Chi tiết người dùng';
+$_['text_password']         = 'Mật khẩu';
+$_['text_other']            = 'Khác';
+$_['text_login']            = 'Lịch sử đăng nhập';
+$_['text_authorize']        = 'Lịch sử ủy quyền';
 
 // Column
-$_['column_username']       = 'Username';
-$_['column_status']         = 'Status';
+$_['column_username']       = 'Tên đăng nhập';
+$_['column_status']         = 'Trạng thái';
 $_['column_ip']             = 'IP';
-$_['column_user_agent']     = 'User Agent';
-$_['column_date_added']     = 'Date Added';
-$_['column_action']         = 'Action';
+$_['column_user_agent']     = 'Trình duyệt';
+$_['column_date_added']     = 'Ngày tạo';
+$_['column_action']         = 'Hành động';
 
 // Entry
-$_['entry_username']        = 'Username';
-$_['entry_user_group']      = 'User Group';
-$_['entry_password']        = 'Password';
-$_['entry_confirm']         = 'Confirm';
-$_['entry_firstname']       = 'First Name';
-$_['entry_lastname']        = 'Last Name';
-$_['entry_email']           = 'E-Mail';
-$_['entry_image']           = 'Image';
-$_['entry_status']          = 'Status';
+$_['entry_username']        = 'Tên đăng nhập';
+$_['entry_user_group']      = 'Nhóm người dùng';
+$_['entry_password']        = 'Mật khẩu';
+$_['entry_confirm']         = 'Xác nhận mật khẩu';
+$_['entry_firstname']       = 'Họ';
+$_['entry_lastname']        = 'Tên';
+$_['entry_email']           = 'Email';
+$_['entry_image']           = 'Hình ảnh';
+$_['entry_status']          = 'Trạng thái';
 
 // Tab
-$_['tab_authorize']         = 'Authorize';
-$_['tab_login']             = 'Login';
+$_['tab_authorize']         = 'Ủy quyền';
+$_['tab_login']             = 'Đăng nhập';
 
 // Error
-$_['error_permission']      = 'Warning: You do not have permission to modify users!';
-$_['error_account']         = 'Warning: You cannot delete your own account!';
-$_['error_login']           = 'Warning: User login does not exist!';
-$_['error_username']        = 'Username must be between 3 and 20 characters!';
-$_['error_username_exists'] = 'Warning: Username is already in use!';
-$_['error_firstname']       = 'First Name must be between 1 and 32 characters!';
-$_['error_lastname']        = 'Last Name must be between 1 and 32 characters!';
-$_['error_email']           = 'E-Mail Address does not appear to be valid!';
-$_['error_email_exists']    = 'Warning: E-Mail Address is already registered!';
-$_['error_password']        = 'Password must be between 4 and 20 characters!';
-$_['error_confirm']         = 'Password and password confirmation do not match!';
+$_['error_permission']      = 'Cảnh báo: Bạn không có quyền chỉnh sửa người dùng!';
+$_['error_account']         = 'Cảnh báo: Bạn không thể xóa tài khoản của chính mình!';
+$_['error_login']           = 'Cảnh báo: Người dùng không tồn tại!';
+$_['error_username']        = 'Tên đăng nhập phải từ 3 đến 20 ký tự!';
+$_['error_username_exists'] = 'Cảnh báo: Tên đăng nhập đã được sử dụng!';
+$_['error_firstname']       = 'Họ phải từ 1 đến 32 ký tự!';
+$_['error_lastname']        = 'Tên phải từ 1 đến 32 ký tự!';
+$_['error_email']           = 'Địa chỉ email không hợp lệ!';
+$_['error_email_exists']    = 'Cảnh báo: Email đã được đăng ký!';
+$_['error_password']        = 'Mật khẩu phải từ 4 đến 20 ký tự!';
+$_['error_confirm']         = 'Mật khẩu và xác nhận mật khẩu không khớp!';

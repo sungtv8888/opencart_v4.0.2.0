@@ -1,7 +1,7 @@
 <?php
 // Text
-$_['text_subject']  = '%s - Your affiliate account has been activated!';
-$_['text_welcome']  = 'Welcome and thank you for registering at %s!';
-$_['text_login']    = 'Your account has now been approved and you can log in by using your email address and password by visiting our website or at the following URL:';
-$_['text_service']  = 'Upon logging in, you will be able to generate tracking codes, track commission payments and edit your account information.';
-$_['text_thanks']   = 'Thanks,';
+$_['text_subject']  = '%s - Tài khoản đại lý của bạn đã được kích hoạt!';
+$_['text_welcome']  = 'Chào mừng và cảm ơn bạn đã đăng ký tại %s!';
+$_['text_login']    = 'Tài khoản của bạn đã được phê duyệt. Bạn có thể đăng nhập bằng địa chỉ email và mật khẩu của mình trên trang web của chúng tôi hoặc tại liên kết sau:';
+$_['text_service']  = 'Sau khi đăng nhập, bạn có thể tạo mã theo dõi, theo dõi thanh toán hoa hồng và chỉnh sửa thông tin tài khoản của mình.';
+$_['text_thanks']   = 'Xin cảm ơn,';

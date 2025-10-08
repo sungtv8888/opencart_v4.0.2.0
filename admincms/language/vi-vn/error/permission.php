@@ -1,6 +1,6 @@
 <?php
 // Heading
-$_['heading_title']   = 'Permission Denied!';
+$_['heading_title']   = 'Từ chối truy cập!';
 
 // Text
-$_['text_permission'] = 'You do not have permission to access this page, please refer to your system administrator.';
+$_['text_permission'] = 'Bạn không có quyền truy cập trang này, vui lòng liên hệ với quản trị viên hệ thống.';

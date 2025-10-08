@@ -1,16 +1,16 @@
 <?php
 // Heading
-$_['heading_title']    = 'Languages';
+$_['heading_title']    = 'Ngôn ngữ';
 
 // Text
-$_['text_success']     = 'Success: You have modified languages!';
-$_['text_list']        = 'Language List';
+$_['text_success']     = 'Thành công: Bạn đã chỉnh sửa ngôn ngữ!';
+$_['text_list']        = 'Danh sách ngôn ngữ';
 
 // Column
-$_['column_name']      = 'Language Name';
-$_['column_status']    = 'Status';
-$_['column_action']    = 'Action';
+$_['column_name']      = 'Tên ngôn ngữ';
+$_['column_status']    = 'Trạng thái';
+$_['column_action']    = 'Thao tác';
 
 // Error
-$_['error_permission'] = 'Warning: You do not have permission to modify languages!';
-$_['error_extension']  = 'Warning: Extension does not exist!';
+$_['error_permission'] = 'Cảnh báo: Bạn không có quyền chỉnh sửa ngôn ngữ!';
+$_['error_extension']  = 'Cảnh báo: Tiện ích mở rộng không tồn tại!';

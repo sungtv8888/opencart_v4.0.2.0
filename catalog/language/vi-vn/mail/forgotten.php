@@ -1,9 +1,9 @@
 <?php
 // Text
-$_['text_subject']  = '%s - Password reset request';
-$_['text_greeting'] = 'A new password was requested for %s customer account.';
-$_['text_change']   = 'To reset your password click on the link below:';
-$_['text_ip']       = 'The IP used to make this request was:';
+$_['text_subject']  = '%s - Yêu cầu đặt lại mật khẩu';
+$_['text_greeting'] = 'Một mật khẩu mới đã được yêu cầu cho tài khoản khách hàng %s.';
+$_['text_change']   = 'Để đặt lại mật khẩu, hãy nhấp vào liên kết bên dưới:';
+$_['text_ip']       = 'Địa chỉ IP đã được sử dụng để thực hiện yêu cầu này là:';
 
 // Button
-$_['button_reset']  = 'Reset Password';
+$_['button_reset']  = 'Đặt lại Mật khẩu';

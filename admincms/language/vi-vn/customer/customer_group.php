@@ -1,30 +1,30 @@
 <?php
 // Heading
-$_['heading_title']     = 'Customer Groups';
+$_['heading_title']     = 'Nhóm khách hàng';
 
 // Text
-$_['text_success']      = 'Success: You have modified customer groups!';
-$_['text_list']         = 'Customer Group List';
-$_['text_add']          = 'Add Customer Group';
-$_['text_edit']         = 'Edit Customer Group';
+$_['text_success']      = 'Thành công: Bạn đã chỉnh sửa nhóm khách hàng!';
+$_['text_list']         = 'Danh sách nhóm khách hàng';
+$_['text_add']          = 'Thêm nhóm khách hàng';
+$_['text_edit']         = 'Chỉnh sửa nhóm khách hàng';
 
 // Column
-$_['column_name']       = 'Customer Group Name';
-$_['column_sort_order'] = 'Sort Order';
-$_['column_action']     = 'Action';
+$_['column_name']       = 'Tên nhóm khách hàng';
+$_['column_sort_order'] = 'Thứ tự sắp xếp';
+$_['column_action']     = 'Hành động';
 
 // Entry
-$_['entry_name']        = 'Customer Group Name';
-$_['entry_description'] = 'Description';
-$_['entry_approval']    = 'Approve New Customers';
-$_['entry_sort_order']  = 'Sort Order';
+$_['entry_name']        = 'Tên nhóm khách hàng';
+$_['entry_description'] = 'Mô tả';
+$_['entry_approval']    = 'Phê duyệt khách hàng mới';
+$_['entry_sort_order']  = 'Thứ tự sắp xếp';
 
 // Help
-$_['help_approval']     = 'Customers must be approved by an administrator before they can login.';
+$_['help_approval']     = 'Khách hàng phải được quản trị viên phê duyệt trước khi có thể đăng nhập.';
 
 // Error
-$_['error_permission']  = 'Warning: You do not have permission to modify customer groups!';
-$_['error_name']        = 'Customer Group Name must be between 3 and 32 characters!';
-$_['error_default']     = 'Warning: This customer group cannot be deleted as it is currently assigned as the default store customer group!';
-$_['error_store']       = 'Warning: This customer group cannot be deleted as it is currently assigned to %s stores!';
-$_['error_customer']    = 'Warning: This customer group cannot be deleted as it is currently assigned to %s customers!';
+$_['error_permission']  = 'Cảnh báo: Bạn không có quyền chỉnh sửa nhóm khách hàng!';
+$_['error_name']        = 'Tên nhóm khách hàng phải từ 3 đến 32 ký tự!';
+$_['error_default']     = 'Cảnh báo: Không thể xóa nhóm khách hàng này vì nó đang được đặt làm nhóm mặc định của cửa hàng!';
+$_['error_store']       = 'Cảnh báo: Không thể xóa nhóm khách hàng này vì nó đang được gán cho %s cửa hàng!';
+$_['error_customer']    = 'Cảnh báo: Không thể xóa nhóm khách hàng này vì nó đang được gán cho %s khách hàng!';

@@ -1,31 +1,31 @@
 <?php
 // Heading
-$_['heading_title']        = 'APIs';
+$_['heading_title']        = 'API';
 
 // Text
-$_['text_success']         = 'Success: You have modified APIs!';
-$_['text_list']            = 'API List';
-$_['text_add']             = 'Add API';
-$_['text_edit']            = 'Edit API';
-$_['text_ip']              = 'Below you can create a list of IP\'s allowed to access the API. Your current IP is %s';
+$_['text_success']         = 'Thành công: Bạn đã chỉnh sửa API!';
+$_['text_list']            = 'Danh sách API';
+$_['text_add']             = 'Thêm API';
+$_['text_edit']            = 'Chỉnh sửa API';
+$_['text_ip']              = 'Bên dưới bạn có thể tạo danh sách các địa chỉ IP được phép truy cập API. IP hiện tại của bạn là %s';
 
 // Column
-$_['column_username']      = 'API Username';
-$_['column_status']        = 'Status';
-$_['column_token']         = 'Token';
-$_['column_ip']            = 'IP';
-$_['column_date_added']    = 'Date Added';
-$_['column_date_modified'] = 'Date Modified';
-$_['column_action']        = 'Action';
+$_['column_username']      = 'Tên người dùng API';
+$_['column_status']        = 'Trạng thái';
+$_['column_token']         = 'Mã Token';
+$_['column_ip']            = 'Địa chỉ IP';
+$_['column_date_added']    = 'Ngày thêm';
+$_['column_date_modified'] = 'Ngày chỉnh sửa';
+$_['column_action']        = 'Thao tác';
 
 // Entry
-$_['entry_username']       = 'API Username';
-$_['entry_key']            = 'API Key';
-$_['entry_status']         = 'Status';
-$_['entry_ip']             = 'IP';
+$_['entry_username']       = 'Tên người dùng API';
+$_['entry_key']            = 'Khóa API';
+$_['entry_status']         = 'Trạng thái';
+$_['entry_ip']             = 'Địa chỉ IP';
 
 // Error
-$_['error_permission']     = 'Warning: You do not have permission to modified APIs!';
-$_['error_username']       = 'API Username must be between 3 and 20 characters!';
-$_['error_key']            = 'API Key must be between 64 and 256 characters!';
-$_['error_ip']             = 'You must have at least one IP added to the allowed list!';
+$_['error_permission']     = 'Cảnh báo: Bạn không có quyền chỉnh sửa API!';
+$_['error_username']       = 'Tên người dùng API phải có từ 3 đến 20 ký tự!';
+$_['error_key']            = 'Khóa API phải có từ 64 đến 256 ký tự!';
+$_['error_ip']             = 'Bạn phải thêm ít nhất một địa chỉ IP vào danh sách cho phép!';

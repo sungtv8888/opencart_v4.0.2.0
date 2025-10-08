@@ -1,8 +1,7 @@
-<?php
 // Text
-$_['text_upload']     = 'Your file was successfully uploaded!';
+$_['text_upload']     = 'Tệp của bạn đã được tải lên thành công!';
 
 // Error
-$_['error_filename']  = 'Filename must be between 3 and 64 characters!';
-$_['error_file_type'] = 'Invalid file type!';
-$_['error_upload']    = 'Upload required!';
+$_['error_filename']  = 'Tên tệp phải từ 3 đến 64 ký tự!';
+$_['error_file_type'] = 'Loại tệp không hợp lệ!';
+$_['error_upload']    = 'Bạn phải tải lên tệp!';

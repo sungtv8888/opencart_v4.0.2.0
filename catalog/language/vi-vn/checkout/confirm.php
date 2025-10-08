@@ -1,19 +1,19 @@
 <?php
 // Text
-$_['text_points']                = 'Reward Points';
-$_['text_subscription']          = 'Subscription';
-$_['text_subscription_trial']    = '%s every %d %s(s) for %d payment(s) then ';
-$_['text_subscription_duration'] = '%s every %d %s(s) for %d payment(s)';
-$_['text_subscription_cancel']   = '%s every %d %s(s) until canceled';
-$_['text_day']                   = 'day';
-$_['text_week']                  = 'week';
-$_['text_semi_month']            = 'half-month';
-$_['text_month']                 = 'month';
-$_['text_year']                  = 'year';
+$_['text_points']                = 'Điểm Thưởng';
+$_['text_subscription']          = 'Đăng ký';
+$_['text_subscription_trial']    = '%s mỗi %d %s cho %d lần thanh toán rồi ';
+$_['text_subscription_duration'] = '%s mỗi %d %s cho %d lần thanh toán';
+$_['text_subscription_cancel']   = '%s mỗi %d %s cho đến khi hủy';
+$_['text_day']                   = 'ngày';
+$_['text_week']                  = 'tuần';
+$_['text_semi_month']            = 'nửa tháng';
+$_['text_month']                 = 'tháng';
+$_['text_year']                  = 'năm';
 
 // Column
-$_['column_name']                = 'Product Name';
-$_['column_model']               = 'Model';
-$_['column_quantity']            = 'Quantity';
-$_['column_price']               = 'Unit Price';
-$_['column_total']               = 'Total';
+$_['column_name']                = 'Tên Sản Phẩm';
+$_['column_model']               = 'Mã Sản Phẩm';
+$_['column_quantity']            = 'Số Lượng';
+$_['column_price']               = 'Đơn Giá';
+$_['column_total']               = 'Tổng Cộng';

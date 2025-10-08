@@ -1,39 +1,39 @@
 <?php
 // Heading
-$_['heading_title']          = 'Extension Installer';
+$_['heading_title']          = 'Trình cài đặt tiện ích mở rộng';
 
 // Text
-$_['text_upload']            = 'Success: The extension has been uploaded!';
-$_['text_success']           = 'Success: You have modified extensions!';
-$_['text_progress']          = 'Install Progress';
-$_['text_installed']         = 'Installed Extensions';
+$_['text_upload']            = 'Thành công: Tiện ích mở rộng đã được tải lên!';
+$_['text_success']           = 'Thành công: Bạn đã chỉnh sửa các tiện ích mở rộng!';
+$_['text_progress']          = 'Tiến trình cài đặt';
+$_['text_installed']         = 'Các tiện ích mở rộng đã cài đặt';
 
 // Column
-$_['column_image']           = 'Image';
-$_['column_name']            = 'Extension Name';
-$_['column_version']         = 'Version';
-$_['column_date_added']      = 'Date Added';
-$_['column_action']          = 'Action';
+$_['column_image']           = 'Hình ảnh';
+$_['column_name']            = 'Tên tiện ích mở rộng';
+$_['column_version']         = 'Phiên bản';
+$_['column_date_added']      = 'Ngày thêm';
+$_['column_action']          = 'Thao tác';
 
 // Entry
-$_['entry_progress']         = 'Progress';
+$_['entry_progress']         = 'Tiến trình';
 
 // Error
-$_['error_permission']       = 'Warning: You do not have permission to modify extensions!';
-$_['error_install']          = 'Warning: Could not find install.json!';
-$_['error_default']          = 'Default extension could not be uninstalled or deleted!';
-$_['error_extension']        = 'Installed extension could not be found!';
-$_['error_installed']        = 'Extension already installed!';
-$_['error_uninstall']        = 'There are %s extensions that need to be uninstalled before this extension can be safely removed!';
-$_['error_name']             = 'Name must be between 3 and 128 characters!';
-$_['error_version']          = 'Version must be between 3 and 128 characters!';
-$_['error_author']           = 'Author must be between 3 and 128 characters!';
-$_['error_link']             = 'Link must be between 3 and 128 characters!';
-$_['error_filename']         = 'Filename must be between 3 and 128 characters!';
-$_['error_file']             = 'Install file %s could not be found!';
-$_['error_file_exists']      = 'File already exist!';
-$_['error_file_type']        = 'Invalid file type!';
-$_['error_directory']        = 'Install directory %s could not be found!';
-$_['error_directory_exists'] = 'Path %s already exists!';
-$_['error_unzip']            = 'Zip file could not be opened!';
-$_['error_upload']           = 'File could not be uploaded!';
+$_['error_permission']       = 'Cảnh báo: Bạn không có quyền chỉnh sửa các tiện ích mở rộng!';
+$_['error_install']          = 'Cảnh báo: Không tìm thấy tệp install.json!';
+$_['error_default']          = 'Không thể gỡ hoặc xóa tiện ích mở rộng mặc định!';
+$_['error_extension']        = 'Không tìm thấy tiện ích mở rộng đã cài đặt!';
+$_['error_installed']        = 'Tiện ích mở rộng đã được cài đặt!';
+$_['error_uninstall']        = 'Có %s tiện ích mở rộng cần được gỡ cài đặt trước khi xóa tiện ích này!';
+$_['error_name']             = 'Tên phải có độ dài từ 3 đến 128 ký tự!';
+$_['error_version']          = 'Phiên bản phải có độ dài từ 3 đến 128 ký tự!';
+$_['error_author']           = 'Tác giả phải có độ dài từ 3 đến 128 ký tự!';
+$_['error_link']             = 'Liên kết phải có độ dài từ 3 đến 128 ký tự!';
+$_['error_filename']         = 'Tên tệp phải có độ dài từ 3 đến 128 ký tự!';
+$_['error_file']             = 'Không thể tìm thấy tệp cài đặt %s!';
+$_['error_file_exists']      = 'Tệp đã tồn tại!';
+$_['error_file_type']        = 'Loại tệp không hợp lệ!';
+$_['error_directory']        = 'Không thể tìm thấy thư mục cài đặt %s!';
+$_['error_directory_exists'] = 'Đường dẫn %s đã tồn tại!';
+$_['error_unzip']            = 'Không thể mở tệp zip!';
+$_['error_upload']           = 'Không thể tải tệp lên!';

@@ -1,6 +1,6 @@
 <?php
 // Text
-$_['text_subject'] = '%s - Your affiliate account has been denied!';
-$_['text_welcome'] = 'Welcome and thank you for registering at %s!';
-$_['text_denied']  = 'Unfortunately your request has been denied. For more information you can contact the store owner here:';
-$_['text_thanks']  = 'Thanks,';
+$_['text_subject'] = '%s - Tài khoản đại lý của bạn đã bị từ chối!';
+$_['text_welcome'] = 'Chào mừng và cảm ơn bạn đã đăng ký tại %s!';
+$_['text_denied']  = 'Rất tiếc, yêu cầu của bạn đã bị từ chối. Để biết thêm thông tin, bạn có thể liên hệ với chủ cửa hàng tại đây:';
+$_['text_thanks']  = 'Xin cảm ơn,';

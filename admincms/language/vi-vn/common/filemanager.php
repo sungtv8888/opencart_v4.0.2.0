@@ -1,23 +1,23 @@
 <?php
 // Heading
-$_['heading_title']    = 'Image Manager';
+$_['heading_title'] = 'Quản lý Hình ảnh';
 
 // Text
-$_['text_uploaded']    = 'Success: Your file has been uploaded!';
-$_['text_directory']   = 'Success: Directory created!';
-$_['text_delete']      = 'Success: Your file or directory has been deleted!';
+$_['text_uploaded'] = 'Thành công: Tệp của bạn đã được tải lên!';
+$_['text_directory'] = 'Thành công: Thư mục đã được tạo!';
+$_['text_delete'] = 'Thành công: Tệp hoặc thư mục của bạn đã bị xóa!';
 
 // Entry
-$_['entry_search']     = 'Search..';
-$_['entry_folder']     = 'Folder Name';
+$_['entry_search'] = 'Tìm kiếm..';
+$_['entry_folder'] = 'Tên Thư mục';
 
 // Error
-$_['error_permission'] = 'Warning: Permission Denied!';
-$_['error_filename']   = 'Warning: Filename must be between 3 and 255!';
-$_['error_folder']     = 'Warning: Folder name must be between 3 and 255!';
-$_['error_exists']     = 'Warning: A file or directory with the same name already exists!';
-$_['error_directory']  = 'Warning: Directory does not exist!';
-$_['error_filesize']   = 'Warning: Incorrect file size!';
-$_['error_file_type']  = 'Warning: Incorrect file type!';
-$_['error_upload']     = 'Warning: File could not be uploaded for an unknown reason!';
-$_['error_delete']     = 'Warning: You cannot delete this directory!';
+$_['error_permission'] = 'Cảnh báo: Không có quyền truy cập!';
+$_['error_filename'] = 'Cảnh báo: Tên tệp phải từ 3 đến 255 ký tự!';
+$_['error_folder'] = 'Cảnh báo: Tên thư mục phải từ 3 đến 255 ký tự!';
+$_['error_exists'] = 'Cảnh báo: Tệp hoặc thư mục cùng tên đã tồn tại!';
+$_['error_directory'] = 'Cảnh báo: Thư mục không tồn tại!';
+$_['error_filesize'] = 'Cảnh báo: Kích thước tệp không hợp lệ!';
+$_['error_file_type'] = 'Cảnh báo: Loại tệp không hợp lệ!';
+$_['error_upload'] = 'Cảnh báo: Tệp không thể tải lên vì lý do không xác định!';
+$_['error_delete'] = 'Cảnh báo: Bạn không thể xóa thư mục này!';

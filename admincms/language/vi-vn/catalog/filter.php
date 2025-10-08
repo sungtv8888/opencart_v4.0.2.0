@@ -1,28 +1,28 @@
 <?php
 // Heading
-$_['heading_title']     = 'Filters';
+$_['heading_title']     = 'Bộ lọc';
 
 // Text
-$_['text_success']      = 'Success: You have modified filters!';
-$_['text_list']         = 'Filter List';
-$_['text_add']          = 'Add Filter';
-$_['text_edit']         = 'Edit Filter';
-$_['text_group']        = 'Filter Group';
-$_['text_value']        = 'Filter Values';
+$_['text_success']      = 'Thành công: Bạn đã chỉnh sửa bộ lọc!';
+$_['text_list']         = 'Danh sách Bộ lọc';
+$_['text_add']          = 'Thêm Bộ lọc';
+$_['text_edit']         = 'Chỉnh sửa Bộ lọc';
+$_['text_group']        = 'Nhóm Bộ lọc';
+$_['text_value']        = 'Giá trị Bộ lọc';
 
 // Column
-$_['column_group']      = 'Filter Group';
-$_['column_sort_order'] = 'Sort Order';
-$_['column_action']     = 'Action';
+$_['column_group']      = 'Nhóm Bộ lọc';
+$_['column_sort_order'] = 'Thứ tự sắp xếp';
+$_['column_action']     = 'Hành động';
 
 // Entry
-$_['entry_group']       = 'Filter Group Name';
-$_['entry_name']        = 'Filter Name';
-$_['entry_sort_order']  = 'Sort Order';
+$_['entry_group']       = 'Tên Nhóm Bộ lọc';
+$_['entry_name']        = 'Tên Bộ lọc';
+$_['entry_sort_order']  = 'Thứ tự sắp xếp';
 
 // Error
-$_['error_warning']     = 'Warning: Please check the form carefully for errors!';
-$_['error_permission']  = 'Warning: You do not have permission to modify filters!';
-$_['error_group']       = 'Filter Group Name must be between 1 and 64 characters!';
-$_['error_name']        = 'Filter Name must be between 1 and 64 characters!';
-$_['error_values']      = 'Warning: Filter Values required!';
+$_['error_warning']     = 'Cảnh báo: Vui lòng kiểm tra kỹ biểu mẫu để tránh lỗi!';
+$_['error_permission']  = 'Cảnh báo: Bạn không có quyền chỉnh sửa bộ lọc!';
+$_['error_group']       = 'Tên Nhóm Bộ lọc phải có từ 1 đến 64 ký tự!';
+$_['error_name']        = 'Tên Bộ lọc phải có từ 1 đến 64 ký tự!';
+$_['error_values']      = 'Cảnh báo: Yêu cầu nhập Giá trị Bộ lọc!';

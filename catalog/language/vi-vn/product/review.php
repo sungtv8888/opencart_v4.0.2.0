@@ -1,27 +1,27 @@
 <?php
 // Text
-$_['text_reviews']    = '%s reviews';
-$_['text_write']      = 'Write a review';
-$_['text_login']      = 'Please <a href="%s">login</a> or <a href="%s">register</a> to review';
-$_['text_no_results'] = 'There are no reviews for this product.';
-$_['text_note']       = '<span class="text-danger">Note:</span> HTML is not translated!';
-$_['text_success']    = 'Thank you for your review. It has been submitted to the webmaster for approval.';
+$_['text_reviews']    = '%s đánh giá';
+$_['text_write']      = 'Viết đánh giá';
+$_['text_login']      = 'Vui lòng <a href="%s">đăng nhập</a> hoặc <a href="%s">đăng ký</a> để đánh giá';
+$_['text_no_results'] = 'Sản phẩm này chưa có đánh giá nào.';
+$_['text_note']       = '<span class="text-danger">Lưu ý:</span> HTML sẽ không được dịch!';
+$_['text_success']    = 'Cảm ơn bạn đã đánh giá. Đánh giá của bạn đã được gửi tới quản trị viên để phê duyệt.';
 
 // Entry
-$_['entry_name']       = 'Your Name';
-$_['entry_review']     = 'Your Review';
-$_['entry_rating']     = 'Rating';
-$_['entry_good']       = 'Good';
-$_['entry_bad']        = 'Bad';
+$_['entry_name']       = 'Tên của bạn';
+$_['entry_review']     = 'Đánh giá của bạn';
+$_['entry_rating']     = 'Đánh giá';
+$_['entry_good']       = 'Tốt';
+$_['entry_bad']        = 'Kém';
 
 // Tabs
-$_['tab_review']       = 'Reviews (%s)';
+$_['tab_review']       = 'Đánh giá (%s)';
 
 // Error
-$_['error_token']      = 'Warning: Review token invalid!';
-$_['error_product']    = 'Warning: Product could not be found!';
-$_['error_name']       = 'Review Name must be between 3 and 25 characters!';
-$_['error_text']       = 'Review Text must be between 25 and 1000 characters!';
-$_['error_rating']     = 'Please select a review rating!';
-$_['error_guest']      = 'You must login to review the product!';
-$_['error_purchased']  = 'You must have purchased this product before you can write a review!';
+$_['error_token']      = 'Cảnh báo: Mã đánh giá không hợp lệ!';
+$_['error_product']    = 'Cảnh báo: Không tìm thấy sản phẩm!';
+$_['error_name']       = 'Tên đánh giá phải từ 3 đến 25 ký tự!';
+$_['error_text']       = 'Nội dung đánh giá phải từ 25 đến 1000 ký tự!';
+$_['error_rating']     = 'Vui lòng chọn mức đánh giá!';
+$_['error_guest']      = 'Bạn phải đăng nhập để đánh giá sản phẩm!';
+$_['error_purchased']  = 'Bạn phải mua sản phẩm này trước khi viết đánh giá!';

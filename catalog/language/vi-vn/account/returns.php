@@ -1,64 +1,64 @@
 <?php
 // Heading
-$_['heading_title']      = 'Product Returns';
+$_['heading_title']      = 'Trả hàng sản phẩm';
 
 // Text
-$_['text_account']       = 'Account';
-$_['text_return']        = 'Return Information';
-$_['text_return_detail'] = 'Return Details';
-$_['text_description']   = 'Please complete the form below to request an RMA number.';
-$_['text_order']         = 'Order Information';
-$_['text_product']       = 'Product Information';
-$_['text_reason']        = 'Reason for Return';
-$_['text_message']       = '<p>Thank you for submitting your return request. Your request has been sent to the relevant department for processing.</p><p> You will be notified via e-mail as to the status of your request.</p>';
-$_['text_return_id']     = 'Return ID:';
-$_['text_orders_id']     = 'Order ID:';
-$_['text_date_ordered']  = 'Order Date:';
-$_['text_status']        = 'Status:';
-$_['text_date_added']    = 'Date Added:';
-$_['text_comment']       = 'Return Comments';
-$_['text_history']       = 'Return History';
-$_['text_no_results']    = 'You have not made any previous returns!';
-$_['text_agree']         = 'I have read and agree to the <a href="%s" class="modal-link"><b>%s</b></a>';
+$_['text_account']       = 'Tài khoản';
+$_['text_return']        = 'Thông tin trả hàng';
+$_['text_return_detail'] = 'Chi tiết trả hàng';
+$_['text_description']   = 'Vui lòng điền vào mẫu dưới đây để yêu cầu số RMA.';
+$_['text_order']         = 'Thông tin đơn hàng';
+$_['text_product']       = 'Thông tin sản phẩm';
+$_['text_reason']        = 'Lý do trả hàng';
+$_['text_message']       = '<p>Cảm ơn bạn đã gửi yêu cầu trả hàng. Yêu cầu của bạn đã được gửi đến bộ phận xử lý liên quan.</p><p>Bạn sẽ được thông báo qua email về trạng thái yêu cầu của mình.</p>';
+$_['text_return_id']     = 'Mã trả hàng:';
+$_['text_orders_id']     = 'Mã đơn hàng:';
+$_['text_date_ordered']  = 'Ngày đặt hàng:';
+$_['text_status']        = 'Trạng thái:';
+$_['text_date_added']    = 'Ngày tạo:';
+$_['text_comment']       = 'Bình luận trả hàng';
+$_['text_history']       = 'Lịch sử trả hàng';
+$_['text_no_results']    = 'Bạn chưa thực hiện trả hàng nào trước đây!';
+$_['text_agree']         = 'Tôi đã đọc và đồng ý với <a href="%s" class="modal-link"><b>%s</b></a>';
 
 // Column
-$_['column_return_id']   = 'Return ID';
-$_['column_order_id']    = 'Order ID';
-$_['column_status']      = 'Status';
-$_['column_date_added']  = 'Date Added';
-$_['column_customer']    = 'Customer';
-$_['column_product']     = 'Product Name';
-$_['column_model']       = 'Model';
-$_['column_quantity']    = 'Quantity';
-$_['column_price']       = 'Price';
-$_['column_opened']      = 'Opened';
-$_['column_comment']     = 'Comment';
-$_['column_reason']      = 'Reason';
-$_['column_action']      = 'Action';
+$_['column_return_id']   = 'Mã trả hàng';
+$_['column_order_id']    = 'Mã đơn hàng';
+$_['column_status']      = 'Trạng thái';
+$_['column_date_added']  = 'Ngày tạo';
+$_['column_customer']    = 'Khách hàng';
+$_['column_product']     = 'Tên sản phẩm';
+$_['column_model']       = 'Mã sản phẩm';
+$_['column_quantity']    = 'Số lượng';
+$_['column_price']       = 'Giá';
+$_['column_opened']      = 'Đã mở';
+$_['column_comment']     = 'Bình luận';
+$_['column_reason']      = 'Lý do';
+$_['column_action']      = 'Hành động';
 
 // Entry
-$_['entry_order_id']     = 'Order ID';
-$_['entry_date_ordered'] = 'Order Date';
-$_['entry_firstname']    = 'First Name';
-$_['entry_lastname']     = 'Last Name';
-$_['entry_email']        = 'E-Mail';
-$_['entry_telephone']    = 'Telephone';
-$_['entry_product']      = 'Product Name';
-$_['entry_model']        = 'Product Code';
-$_['entry_quantity']     = 'Quantity';
-$_['entry_reason']       = 'Reason for Return';
-$_['entry_opened']       = 'Product is opened';
-$_['entry_fault_detail'] = 'Faulty or other details';
+$_['entry_order_id']     = 'Mã đơn hàng';
+$_['entry_date_ordered'] = 'Ngày đặt hàng';
+$_['entry_firstname']    = 'Họ';
+$_['entry_lastname']     = 'Tên';
+$_['entry_email']        = 'Email';
+$_['entry_telephone']    = 'Điện thoại';
+$_['entry_product']      = 'Tên sản phẩm';
+$_['entry_model']        = 'Mã sản phẩm';
+$_['entry_quantity']     = 'Số lượng';
+$_['entry_reason']       = 'Lý do trả hàng';
+$_['entry_opened']       = 'Sản phẩm đã mở';
+$_['entry_fault_detail'] = 'Sản phẩm lỗi hoặc thông tin khác';
 
 // Error
-$_['text_error']         = 'The returns you requested could not be found!';
-$_['error_token']        = 'Warning: Reset token invalid!';
-$_['error_order_id']     = 'Order ID required!';
-$_['error_firstname']    = 'First Name must be between 1 and 32 characters!';
-$_['error_lastname']     = 'Last Name must be between 1 and 32 characters!';
-$_['error_email']        = 'E-Mail Address does not appear to be valid!';
-$_['error_telephone']    = 'Telephone must be between 3 and 32 characters!';
-$_['error_product']      = 'Product Name must be greater than 3 and less than 255 characters!';
-$_['error_model']        = 'Product Model must be greater than 3 and less than 64 characters!';
-$_['error_reason']       = 'You must select a return product reason!';
-$_['error_agree']        = 'Warning: You must agree to the %s!';
+$_['text_error']         = 'Không tìm thấy yêu cầu trả hàng bạn yêu cầu!';
+$_['error_token']        = 'Cảnh báo: Mã đặt lại không hợp lệ!';
+$_['error_order_id']     = 'Mã đơn hàng bắt buộc!';
+$_['error_firstname']    = 'Họ phải từ 1 đến 32 ký tự!';
+$_['error_lastname']     = 'Tên phải từ 1 đến 32 ký tự!';
+$_['error_email']        = 'Địa chỉ Email không hợp lệ!';
+$_['error_telephone']    = 'Số điện thoại phải từ 3 đến 32 ký tự!';
+$_['error_product']      = 'Tên sản phẩm phải lớn hơn 3 và nhỏ hơn 255 ký tự!';
+$_['error_model']        = 'Mã sản phẩm phải lớn hơn 3 và nhỏ hơn 64 ký tự!';
+$_['error_reason']       = 'Bạn phải chọn lý do trả sản phẩm!';
+$_['error_agree']        = 'Cảnh báo: Bạn phải đồng ý với %s!';

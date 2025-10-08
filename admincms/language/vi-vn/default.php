@@ -8,7 +8,6 @@ $_['time_format']                   = 'h:i:s A';
 $_['datetime_format']               = 'd/m/Y H:i:s';
 $_['decimal_point']                 = '.';
 $_['thousand_point']                = ',';
-
 // Text
 $_['text_yes']                      = 'Yes';
 $_['text_no']                       = 'No';

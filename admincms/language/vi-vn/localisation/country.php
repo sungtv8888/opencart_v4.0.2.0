@@ -1,33 +1,33 @@
 <?php
 // Heading
-$_['heading_title']           = 'Countries';
+$_['heading_title']           = 'Quốc gia';
 
 // Text
-$_['text_success']            = 'Success: You have modified countries!';
-$_['text_list']               = 'Country List';
-$_['text_add']                = 'Add Country';
-$_['text_edit']               = 'Edit Country';
-$_['text_filter']             = 'Filter';
+$_['text_success']            = 'Thành công: Bạn đã cập nhật các quốc gia!';
+$_['text_list']               = 'Danh sách quốc gia';
+$_['text_add']                = 'Thêm quốc gia';
+$_['text_edit']               = 'Chỉnh sửa quốc gia';
+$_['text_filter']             = 'Bộ lọc';
 
 // Column
-$_['column_name']             = 'Country Name';
-$_['column_iso_code_2']       = 'ISO Code (2)';
-$_['column_iso_code_3']       = 'ISO Code (3)';
-$_['column_action']           = 'Action';
+$_['column_name']             = 'Tên quốc gia';
+$_['column_iso_code_2']       = 'Mã ISO (2)';
+$_['column_iso_code_3']       = 'Mã ISO (3)';
+$_['column_action']           = 'Thao tác';
 
 // Entry
-$_['entry_name']              = 'Country Name';
-$_['entry_iso_code_2']        = 'ISO Code (2)';
-$_['entry_iso_code_3']        = 'ISO Code (3)';
-$_['entry_address_format']    = 'Address Format';
-$_['entry_postcode_required'] = 'Postcode Required';
-$_['entry_status']            = 'Status';
+$_['entry_name']              = 'Tên quốc gia';
+$_['entry_iso_code_2']        = 'Mã ISO (2)';
+$_['entry_iso_code_3']        = 'Mã ISO (3)';
+$_['entry_address_format']    = 'Định dạng địa chỉ';
+$_['entry_postcode_required'] = 'Yêu cầu mã bưu điện';
+$_['entry_status']            = 'Trạng thái';
 
 // Error
-$_['error_permission']        = 'Warning: You do not have permission to modify countries!';
-$_['error_name']              = 'Country Name must be between 1 and 128 characters!';
-$_['error_default']           = 'Warning: This country cannot be deleted as it is currently assigned as the default store country!';
-$_['error_store']             = 'Warning: This country cannot be deleted as it is currently assigned to %s stores!';
-$_['error_address']           = 'Warning: This country cannot be deleted as it is currently assigned to %s address book entries!';
-$_['error_zone']              = 'Warning: This country cannot be deleted as it is currently assigned to %s zones!';
-$_['error_zone_to_geo_zone']  = 'Warning: This country cannot be deleted as it is currently assigned to %s zones to geo zones!';
+$_['error_permission']        = 'Cảnh báo: Bạn không có quyền chỉnh sửa quốc gia!';
+$_['error_name']              = 'Tên quốc gia phải có từ 1 đến 128 ký tự!';
+$_['error_default']           = 'Cảnh báo: Không thể xóa quốc gia này vì nó đang được đặt làm quốc gia mặc định của cửa hàng!';
+$_['error_store']             = 'Cảnh báo: Không thể xóa quốc gia này vì nó đang được gán cho %s cửa hàng!';
+$_['error_address']           = 'Cảnh báo: Không thể xóa quốc gia này vì nó đang được gán cho %s sổ địa chỉ!';
+$_['error_zone']              = 'Cảnh báo: Không thể xóa quốc gia này vì nó đang được gán cho %s vùng!';
+$_['error_zone_to_geo_zone']  = 'Cảnh báo: Không thể xóa quốc gia này vì nó đang được gán cho %s vùng địa lý!';

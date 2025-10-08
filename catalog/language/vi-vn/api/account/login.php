@@ -1,8 +1,8 @@
 <?php
 // Text
-$_['text_success']     = 'Success: API session successfully started!';
+$_['text_success']     = 'Thành công: Phiên API đã được khởi tạo thành công!';
 
 // Error
-$_['error_permission'] = 'Warning: You do not have permission to access the API!';
-$_['error_key']        = 'Warning: Incorrect API Key!';
-$_['error_ip']         = 'Warning: Your IP %s is not allowed to access this API!';
+$_['error_permission'] = 'Cảnh báo: Bạn không có quyền truy cập API!';
+$_['error_key']        = 'Cảnh báo: API Key không đúng!';
+$_['error_ip']         = 'Cảnh báo: IP của bạn %s không được phép truy cập API này!';

@@ -1,17 +1,17 @@
 <?php
 // Heading
-$_['heading_title']  = 'Change Password';
+$_['heading_title']  = 'Đổi mật khẩu';
 
 // Text
-$_['text_account']   = 'Account';
-$_['text_password']  = 'Your Password';
-$_['text_success']   = 'Success: Your password has been successfully updated.';
+$_['text_account']   = 'Tài khoản';
+$_['text_password']  = 'Mật khẩu của bạn';
+$_['text_success']   = 'Thành công: Mật khẩu của bạn đã được cập nhật!';
 
 // Entry
-$_['entry_password'] = 'Password';
-$_['entry_confirm']  = 'Password Confirm';
+$_['entry_password'] = 'Mật khẩu';
+$_['entry_confirm']  = 'Xác nhận mật khẩu';
 
 // Error
-$_['error_token']    = 'Warning: Password token invalid!';
-$_['error_password'] = 'Password must be between 4 and 20 characters!';
-$_['error_confirm']  = 'Password confirmation does not match password!';
+$_['error_token']    = 'Cảnh báo: Mã đổi mật khẩu không hợp lệ!';
+$_['error_password'] = 'Mật khẩu phải từ 4 đến 20 ký tự!';
+$_['error_confirm']  = 'Xác nhận mật khẩu không khớp với mật khẩu!';

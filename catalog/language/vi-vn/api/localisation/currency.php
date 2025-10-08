@@ -1,6 +1,6 @@
 <?php
 // Text
-$_['text_success']   = 'Success: Your currency has been changed!';
+$_['text_success']   = 'Thành công: Tiền tệ của bạn đã được thay đổi!';
 
 // Error
-$_['error_currency'] = 'Warning: Currency could not be found!';
+$_['error_currency'] = 'Cảnh báo: Không tìm thấy tiền tệ!';

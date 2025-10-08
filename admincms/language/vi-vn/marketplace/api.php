@@ -1,16 +1,16 @@
 <?php
 // Heading
-$_['heading_title']    = 'OpenCart Marketplace API';
+$_['heading_title']    = 'API Marketplace của OpenCart';
 
 // Text
-$_['text_success']     = 'Success: You have modified your API information!';
-$_['text_signup']      = 'Please enter your OpenCart API information which you can obtain <a href="https://www.opencart.com/index.php?route=account/store" target="_blank" class="alert-link">here</a>.';
+$_['text_success']     = 'Thành công: Bạn đã cập nhật thông tin API của mình!';
+$_['text_signup']      = 'Vui lòng nhập thông tin API OpenCart của bạn, bạn có thể lấy thông tin này <a href="https://www.opencart.com/index.php?route=account/store" target="_blank" class="alert-link">tại đây</a>.';
 
 // Entry
-$_['entry_username']   = 'Username';
-$_['entry_secret']     = 'Secret';
+$_['entry_username']   = 'Tên người dùng';
+$_['entry_secret']     = 'Mã bảo mật (Secret)';
 
 // Error
-$_['error_permission'] = 'Warning: You do not have permission to modify marketplace API!';
-$_['error_username']   = 'Username required!';
-$_['error_secret']     = 'Secret required!';
+$_['error_permission'] = 'Cảnh báo: Bạn không có quyền chỉnh sửa API Marketplace!';
+$_['error_username']   = 'Vui lòng nhập tên người dùng!';
+$_['error_secret']     = 'Vui lòng nhập mã bảo mật (Secret)!';

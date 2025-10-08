@@ -1,24 +1,24 @@
 <?php
 // Heading
-$_['heading_title']         = 'Statistics';
+$_['heading_title']         = 'Thống kê';
 
 // Text
-$_['text_success']          = 'Success: You have modified statistics!';
-$_['text_list']             = 'Statistics List';
-$_['text_order_sale']       = 'Order Sales';
-$_['text_order_processing'] = 'Orders Processing';
-$_['text_order_complete']   = 'Orders Complete';
-$_['text_order_other']      = 'Orders Other';
-$_['text_returns']          = 'Returns';
-$_['text_customer']         = 'Customers Waiting for Approval';
-$_['text_affiliate']        = 'Affiliates Waiting for Approval';
-$_['text_product']          = 'Out of stock products';
-$_['text_review']           = 'Pending Reviews';
+$_['text_success']          = 'Thành công: Bạn đã chỉnh sửa thống kê!';
+$_['text_list']             = 'Danh sách thống kê';
+$_['text_order_sale']       = 'Doanh số đơn hàng';
+$_['text_order_processing'] = 'Đơn hàng đang xử lý';
+$_['text_order_complete']   = 'Đơn hàng đã hoàn thành';
+$_['text_order_other']      = 'Đơn hàng khác';
+$_['text_returns']          = 'Trả hàng';
+$_['text_customer']         = 'Khách hàng chờ phê duyệt';
+$_['text_affiliate']        = 'Đối tác liên kết chờ phê duyệt';
+$_['text_product']          = 'Sản phẩm hết hàng';
+$_['text_review']           = 'Đánh giá đang chờ duyệt';
 
 // Column
-$_['column_name']           = 'Statistics Name';
-$_['column_value']          = 'Value';
-$_['column_action']         = 'Action';
+$_['column_name']           = 'Tên thống kê';
+$_['column_value']          = 'Giá trị';
+$_['column_action']         = 'Thao tác';
 
 // Error
-$_['error_permission']      = 'Warning: You do not have permission to modify statistics!';
+$_['error_permission']      = 'Cảnh báo: Bạn không có quyền chỉnh sửa thống kê!';
