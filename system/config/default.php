@@ -3,8 +3,10 @@
 $_['site_url']             = '';
 
 // Language
-$_['language_code']        = 'en-gb';
-
+//update by sungtv on 20251007 start
+//$_['language_code']        = 'en-gb';
+$_['language_code']        = 'vi-vn';
+//update by sungtv on 20251007 end
 // Date
 $_['date_timezone']        = 'UTC';
 
