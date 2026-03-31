@@ -1,0 +1,166 @@
+{% if categories %}
+{#<div class="container">
+    <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div id="category" class="d-block d-sm-block d-lg-none">{{ text_category }}</div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#narbar-menu"><i
+                class="fa-solid fa-bars"></i></button>
+        <div class="collapse navbar-collapse" id="narbar-menu">
+            <ul class="nav navbar-nav">
+                {% for category in categories %}
+                {% if category.children %}
+                <li class="nav-item dropdown"><a href="{{ category.href }}" class="nav-link dropdown-toggle"
+                        data-bs-toggle="dropdown">{{ category.name }}</a>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-inner">
+                            {% for children in category.children|batch(category.children|length /
+                            category.column|round(1, 'ceil')) %}
+                            <ul class="list-unstyled">
+                                {% for child in children %}
+                                <li><a href="{{ child.href }}" class="nav-link">{{ child.name }}</a></li>
+                                {% endfor %}
+                            </ul>
+                            {% endfor %}
+                        </div>
+                        <a href="{{ category.href }}" class="see-all">{{ text_all }} {{ category.name }}</a>
+                    </div>
+                </li>
+                {% else %}
+                <li class="nav-item"><a href="{{ category.href }}" class="nav-link">{{ category.name }}</a></li>
+                {% endif %}
+                {% endfor %}
+            </ul>
+        </div>
+    </nav>
+</div>
+#}
+
+{#<ul id="menu_top">
+    {% for category in categories %}
+    {% if category.children %}
+    <li><a href="{{ category.href }}">{{ category.name }}</a>
+        {% for children in category.children|batch(category.children|length / category.column|round(1, 'ceil')) %}
+        <ul>
+            {% for child in children %}
+            <li><a href="{{ child.href }}">{{ child.name }}</a></li>
+            {% endfor %}
+        </ul>
+        {% endfor %}
+    </li>
+    {% else %}
+    <li><a href="{{ category.href }}">{{ category.name }}</a></li>
+    {% endif %}
+    {% endfor%}
+    #}
+
+    <!--start menu-->
+    <div class="row header-bottom">
+        <div class="col col-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 hide-for-mobile clear-padding">
+
+                        <nav>
+                            <ul class="nav nav-pills nav-fill">
+                                {% set is_exist = 0 %}
+                                {% for category in categories %}
+                                {% if category.children %}
+                                <li class="nav-item active">
+                                    {% if is_exist == 0 %}
+                                    <a class="link-none link-black-white" href="https://shome.vn/#"><i
+                                            class="fa fa-bars" aria-hidden="true"></i><span
+                                            class="mobile-hide">&nbsp;Tất cả danh mục |</span> </a>
+                                    {% set is_exist = 1 %}
+                                    {% endif %}
+
+                                    <ul id="menu-desktop" class="list-group lv-1" data-control-load="checkHeight">
+
+                                        <li class="list-group-item">
+
+                                            <div class="row-menu-category">
+
+
+                                                {#<span>
+                                                    <a href="https://shome.vn/bon-tam"
+                                                        class="justify-content-between align-items-center">
+                                                        Bồn Tắm
+                                                    </a>
+                                                </span>
+
+                                                -#}
+                                                <span>
+                                                    <a class="justify-content-between align-items-center"
+                                                        href="{{ category.href }}">{{ category.name }}</a>
+
+                                                </span>
+
+                                                {#
+                                                <span class="right ">
+
+                                                    <img
+                                                        src="./Hệ thống gạch ốp lát, thiết bị vệ sinh và nhà bếp uy tín - S.Home_files/right.svg">
+                                                </span>
+                                                #}
+                                            </div>
+                                            <div class="menu-list-box" style="top: -37px; min-height: 648px;">
+                                                <div class="menu-list-box-3">
+
+                                                    {% set is_exist_sub = 0 %}
+                                                    {% for children in category.children|batch(category.children|length
+                                                    / category.column|round(1, 'ceil')) %}
+                                                    <div class="col-menu-box">
+                                                        <div class="row">
+                                                            {% for child in children %}
+                                                            <div class="col-12">
+                                                                <div class="item-col-menu-box">
+                                                                    <a href="{{ child.href }}"
+                                                                        class="d-flex justify-content-between align-items-center href-menu-level">{{
+                                                                        child.name }}</a>
+
+                                                                </div>
+                                                            </div>
+                                                            {% endfor %}
+                                                        </div>
+                                                    </div>
+
+                                    </ul>
+                                    {% endfor %}
+
+
+
+
+                    </div>
+                    <div style="width:260px;" data-control-load="isDesktop" class="mr-2">
+
+
+                        <a href="https://shome.vn/tin-tuc/tra-gop-lai-suat-0-thoai-mai-mua-sam-thiet-bo-chuan-au"
+                            class="banner-side-bar-icon right">
+                            <img src="./Hệ thống gạch ốp lát, thiết bị vệ sinh và nhà bếp uy tín - S.Home_files/tra-gop.jpg"
+                                title="" class="img-fluid my-1 bdr-3" alt="">
+                        </a>
+
+                    </div>
+                </div>
+                </li>
+
+    </ul>
+    </li>
+    {% else %}
+    <li><a class="link-none link-black-white" href="{{ category.href }}">{{ category.name }}</a></li>
+    {% endif %}
+    {% endfor%}
+    </ul>
+</nav>
+
+</div>
+
+<!--start mobile-->
+
+
+<!--end mobile-->
+</div>
+</div>
+</div>
+</div>
+<!--end menu-->
+
+{% endif %}
