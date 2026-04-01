@@ -76,7 +76,17 @@ class Footer extends \Opencart\System\Engine\Controller {
 		$data['scripts'] = $this->document->getScripts('footer');
 
 		$data['cookie'] = $this->load->controller('common/cookie');
+        
+		$data['footer_html'] = '';
+		$module_id = 5; // ⚠️ thay bằng ID module HTML thực tế (xem phần dưới)
 
+		$this->load->model('setting/module');
+		$module_info = $this->model_setting_module->getModule($module_id);
+
+		if ($module_info && $module_info['status']) {
+			$data['footer_html'] = $this->load->controller('extension/opencart/module/html', $module_info);
+		} 
+		$data['config_url'] = $this->config->get('config_url') ;
 		return $this->load->view('common/footer', $data);
 	}
 }
