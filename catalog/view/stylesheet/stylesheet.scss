@@ -1,8 +1,8 @@
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', sans-serif !important;
   font-weight: 400;
   color: #666;
-  font-size: 12px;
+  font-size: 16px;
   line-height: 20px;
   width: 100%;
 }
@@ -194,9 +194,12 @@ div.required .col-form-label:before, div.required .form-label:before {
   background-color: #EEEEEE;
   border-bottom: 1px solid #e2e2e2;
   padding: 10px 0;
+  //delete by SungTV on 20251011 start
   margin: 0 0 20px 0;
+  //delete by SungTV on 20251011 end
   min-height: 44px;
   position: relative;
+
 
   .nav {
     > .list-inline {

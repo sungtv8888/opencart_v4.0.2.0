@@ -1,17 +1,20 @@
 </main>
-<footer>
+
+  {#
+  <footer>
   <div class="container">
     <div class="row">
-      {% if informations %}
+       
+      
         <div class="col-sm-3">
-          <h5>{{ text_information }}</h5>
-          <ul class="list-unstyled">
-            {% for information in informations %}
-              <li><a href="{{ information.href }}">{{ information.title }}</a></li>
-            {% endfor %}
-          </ul>
+         <div class="footer_intro">
+
+						 {{ footer_html|raw }}
+					</div>
         </div>
-      {% endif %}
+       
+       
+      
       <div class="col-sm-3">
         <h5>{{ text_service }}</h5>
         <ul class="list-unstyled">
@@ -46,15 +49,267 @@
     </div>
     <hr>
     <p>{{ powered }}</p>
-    <!--
-OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
-Please donate via PayPal to donate@opencart.com
-//-->
+     
   </div>
-</footer>
-{{ cookie }}
-<script src="{{ bootstrap }}" type="text/javascript"></script>
-{% for script in scripts %}
-  <script src="{{ script.href }}" type="text/javascript"></script>
-{% endfor %}
+  </footer>
+  #}
+   
+
+<footer class="row background-white">
+            <div class="container" style="padding-right: 15px!important; padding-left: 15px!important;">
+                <div class="row">
+                    <div class="col col-12">
+                        <a href="https://shome.vn/" class="link-none">
+                            <img src="./Hệ thống gạch ốp lát, thiết bị vệ sinh và nhà bếp uy tín - S.Home_files/logo.svg"
+                                style="width: 252px" class="img-fluid" alt="logo">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="row" style="margin-bottom: 70px">
+                    <div class="col col-md-3 col-12">
+                        <div class="row">
+                            <div class="col col-12 footer-title">
+                                <strong>Tổng đài</strong>
+                            </div>
+                            <div class="col-md-6 col-5" style="padding-right: 0px">
+                                <p class="footer-link-none link-black">
+                                    <i class="fa fa-phone"
+                                                    aria-hidden="true"></i>
+                                    &nbsp;&nbsp;&nbsp;Mua hàng:
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-7" style="padding-left: 0px">
+                                <p class="footer-link-none link-black"><a class="footer-link-none link-black"
+                                        href="tel:0812.882.992">0812.882.992</a></p>
+                            </div>
+                            <div class="col-md-6 col-5" style="padding-right: 0px">
+                                <p class="footer-link-none link-black">
+                                      <i class="fa fa-headphones"
+                                                    aria-hidden="true"></i>
+                                    &nbsp;&nbsp;&nbsp;CSKH:
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-7" style="padding-left: 0px">
+                                <p class="footer-link-none link-black"><a class="footer-link-none link-black"
+                                        href="tel:19000.55536">19000.55536</a></p>
+                            </div>
+
+                            <div class="col-md-6 col-5" style="padding-right: 0px">
+                                <p class="footer-link-none link-black">
+                                    <i class="fa fa-email"
+                                                    aria-hidden="true"></i>&nbsp;&nbsp;&nbsp;Email:
+                                </p>
+                            </div>
+                            <div class="col-md-6 col-7" style="padding-left: 0px">
+                                <p class="footer-link-none link-black"><a class="footer-link-none link-black"
+                                        href="mailto:cskh@shome.vn">cskh@shome.vn</a></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12" style="padding-top: 30px">
+                                <p class="footer-link-none link-black">Kết nối với chúng tôi:</p>
+                            </div>
+                            <div class="col-12" style="padding: 15px 15px 30px 15px">
+                                <i class="fa fa-facebook-square" style="font-size: 35px;"
+                                                    aria-hidden="true"></i>
+                                <a rel="nofollow" href="https://www.facebook.com/shomesolution" target="_blank">
+                                     
+
+                                </a>
+                                <a rel="nofollow" href="https://www.youtube.com/@Shomesolution" target="_blank">
+                                    <img class="img-fluid" style="width: 35px;" alt="youtube" title=""
+                                        src="./Hệ thống gạch ốp lát, thiết bị vệ sinh và nhà bếp uy tín - S.Home_files/Youtube0.png">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-3">
+                        <div class="row">
+                            <div class="col col-12 footer-title">
+                                <strong>Thông tin công ty</strong>
+                            </div>
+                            <div class="col col-12">
+                                <a class="footer-link-none link-black" href="https://shome.vn/he-thong-cua-hang">Xem hệ
+                                    thống cửa hàng</a>
+                            </div>
+
+                            <div class="col col-12">
+                                <a class="footer-link-none link-black"
+                                    href="https://shome.vn/thong-tin-cong-ty/gioi-thieu-cong-ty">Giới thiệu công ty</a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col col-md-3">
+                        <div class="row">
+                            <div class="col col-12 footer-title">
+                                <strong>Tin tức</strong>
+                            </div>
+
+                            <div class="col col-12">
+                                <a class="footer-link-none link-black" target="_blank"
+                                    href="https://shome.vn/tin-tuc/tuyen-dung" rel="nofollow">Tuyển dụng S.HOME</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-md-3 col-12">
+                        <div class="row">
+                            <div class="col col-12 footer-title">
+                                <strong>Hỗ trợ</strong>
+                            </div>
+
+                            <div class="col col-12">
+                                <a class="footer-link-none link-black"
+                                    href="https://shome.vn/ho-tro-khach-hang/chinh-sach-doi-tra-hang-va-hoan-tien"
+                                    rel="nofollow">Chính sách đổi trả hàng và hoàn tiền</a>
+                            </div>
+
+                            <div class="col col-12">
+                                <a class="footer-link-none link-black"
+                                    href="https://shome.vn/ho-tro-khach-hang/chinh-sach-kiem-hang" rel="nofollow">Chính
+                                    sách kiểm hàng</a>
+                            </div>
+
+                            <div class="col col-12">
+                                <a class="footer-link-none link-black"
+                                    href="https://shome.vn/ho-tro-khach-hang/chinh-sach-lap-dat" rel="nofollow">Chính
+                                    sách lắp đặt</a>
+                            </div>
+
+                            <div class="col col-12">
+                                <a class="footer-link-none link-black"
+                                    href="https://shome.vn/ho-tro-khach-hang/chinh-sach-van-chuyen-va-giao-hang"
+                                    rel="nofollow">Chính sách vận chuyển và giao hàng</a>
+                            </div>
+
+                            <div class="col col-12">
+                                <a class="footer-link-none link-black"
+                                    href="https://shome.vn/ho-tro-khach-hang/thong-tin-ve-dieu-kien-giao-dich-chung"
+                                    rel="nofollow">Thông tin về điều kiện giao dịch chung</a>
+                            </div>
+
+                            <div class="col col-12">
+                                <a class="footer-link-none link-black"
+                                    href="https://shome.vn/ho-tro-khach-hang/quy-dinh-bao-mat-tai-shome-solution"
+                                    rel="nofollow">Quy định bảo mật tại S.Home Solution</a>
+                            </div>
+
+                            <div class="col col-12">
+                                <a class="footer-link-none link-black"
+                                    href="https://shome.vn/ho-tro-khach-hang/quy-dinh-hinh-thuc-thanh-toan"
+                                    rel="nofollow">Quy định hình thức thanh toán</a>
+                            </div>
+
+                            <div class="col col-12">
+                                <a class="footer-link-none link-black"
+                                    href="https://shome.vn/ho-tro-khach-hang/chinh-sach-bao-hanh-san-pham"
+                                    rel="nofollow">Chính sách bảo hành sản phẩm</a>
+                            </div>
+
+                            <div class="col col-12">
+                                <a class="footer-link-none link-black"
+                                    href="https://shome.vn/ho-tro-khach-hang/dieu-khoan-mua-ban-hang-hoa"
+                                    rel="nofollow">Điều khoản mua bán hàng hóa</a>
+                            </div>
+
+                            <div class="col col-12">
+                                <a class="footer-link-none link-black" target="_blank" href="https://baohanh.shome.vn/"
+                                    rel="nofollow">Kích hoạt và tra cứu bảo hành</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12" style="padding-top: 30px">
+                                <p class="footer-link-none link-black"><b>Hỗ trợ thanh toán</b></p>
+                            </div>
+                            <div class="col-12  padding-top-15">
+                                <img class="img-fluid" style="width: 50px;" alt="visa" title=""
+                                    src="./Hệ thống gạch ốp lát, thiết bị vệ sinh và nhà bếp uy tín - S.Home_files/visa.png">
+                                <img class="img-fluid" style="width: 50px;" alt="jcb" title=""
+                                    src="./Hệ thống gạch ốp lát, thiết bị vệ sinh và nhà bếp uy tín - S.Home_files/jcb.png">
+                                <img class="img-fluid" style="width: 50px;" alt="mastercard" title=""
+                                    src="./Hệ thống gạch ốp lát, thiết bị vệ sinh và nhà bếp uy tín - S.Home_files/mastercard.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12" style="background-color: #f6f6f6">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9 col-12">
+                            {{ powered }}
+                        </div>
+                        <div class="col-md-3 col-12" style="text-align:center">
+                             
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+
+            </div>
+        </footer>
+
+
+
+
+        <div id="button-contact-vr" class="">
+            <div id="gom-all-in-one">
+
+                <div id="viber-vr" class="button-contact hide">
+                    <div class="phone-vr">
+                        <div class="phone-vr-circle-fill"></div>
+                        <div class="phone-vr-img-circle">
+                            <img src="./Hệ thống gạch ốp lát, thiết bị vệ sinh và nhà bếp uy tín - S.Home_files/Full.png"
+                                alt="logo">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="zalo-vr" class="button-contact">
+                    <div class="phone-vr">
+                        <div class="phone-vr-circle-fill"></div>
+                        <div class="phone-vr-img-circle">
+                            <a target="_blank" href="https://zalo.me/0828556569">
+                                <img src="{{config_url}}/Content/designs/zalo.png"
+                                    alt="zalo">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="phone-vr" class="button-contact">
+                    <div class="phone-vr">
+                        <div class="phone-vr-circle-fill"></div>
+                        <div class="phone-vr-img-circle">
+                            <a href="tel:0828.558.569">
+                                <img src="{{config_url}}/Content/designs/phone.png"
+                                    alt="phone">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <style>
+                    #button-contact-vr {
+                        padding-bottom: 90px;
+                        padding-right: 10px;
+                    }
+                </style>
+            </div>
+
+
+        </div>
+
+
+
+
+
+        
+        <div class="hide" data-query="page">
+            {"ModuleName":"Home","lang":"2","prefix":"Home","pageVirtualUrl":"trang-chu","pId":"5","UrlEngine":"UrlByPageUrlEngine","site":"1"}
+        </div>
+    </div>
 </body></html>

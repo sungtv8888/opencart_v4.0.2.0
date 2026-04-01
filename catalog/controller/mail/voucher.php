@@ -59,8 +59,11 @@ class Voucher extends \Opencart\System\Engine\Controller {
 						$data['text_redeem'] = sprintf($this->language->get('mail_text_redeem'), $voucher['code']);
 
 						if (is_file(DIR_IMAGE . $voucher['image'])) {
-							$data['image'] = $this->config->get('config_url') . 'image/' . $voucher['image'];
-						} else {
+							//edit by SungTV on 20260322 start
+							//$data['image'] = $this->config->get('config_url') . 'image/' . $voucher['image'];
+							$data['image'] = $this->config->get('config_url') . basename(rtrim(DIR_IMAGE, '/')) . '/' . $voucher['image'];
+							//edit by SungTV on 20260322 end
+							} else {
 							$data['image'] = '';
 						}
 

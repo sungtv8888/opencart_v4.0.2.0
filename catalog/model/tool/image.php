@@ -15,7 +15,10 @@ class Image extends \Opencart\System\Engine\Model {
 			list($width_orig, $height_orig, $image_type) = getimagesize(DIR_IMAGE . $image_old);
 				 
 			if (!in_array($image_type, [IMAGETYPE_PNG, IMAGETYPE_JPEG, IMAGETYPE_GIF, IMAGETYPE_WEBP])) {
-				return $this->config->get('config_url') . 'image/' . $image_old;
+				//edit by SungTV on 20260322 start
+				//return $this->config->get('config_url') . 'image/' . $image_old;
+				return $this->config->get('config_url') . basename(rtrim(DIR_IMAGE, '/')) . '/' . $image_old;
+				//edit by SungTV on 20260322 end
 			}
 						
 			$path = '';
@@ -45,6 +48,6 @@ class Image extends \Opencart\System\Engine\Model {
 		
 		$image_new = str_replace(' ', '%20', $image_new);  // fix bug when attach image on email (gmail.com). it is automatically changing space from " " to +
 		
-		return $this->config->get('config_url') . 'image/' . $image_new;
+		return $this->config->get('config_url') . basename(rtrim(DIR_IMAGE, '/')) . '/' . $image_new;
 	}
 }

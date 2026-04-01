@@ -1,5 +1,6 @@
 {% if categories %}
-  <div class="container">
+{#
+<div class="container">
     <nav id="menu" class="navbar navbar-expand-lg navbar-light bg-primary">
       <div id="category" class="d-block d-sm-block d-lg-none">{{ text_category }}</div>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#narbar-menu"><i class="fa-solid fa-bars"></i></button>
@@ -29,4 +30,170 @@
       </div>
     </nav>
   </div>
+#}
+
+{% set categories_with_children = [] %}
+{% set categories_without_children = [] %}
+{% for category in categories %}
+{% if category.children %}
+{% set categories_with_children = categories_with_children|merge([category]) %}
+{% else %}
+{% set categories_without_children = categories_without_children|merge([category]) %}
+{% endif %}
+{% endfor %}
+
+    <!--start menu-->
+    <div class="row header-bottom">
+        <div class="col col-12">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-12 hide-for-mobile clear-padding">
+
+                        <nav>
+                            <ul class="nav nav-pills nav-fill">
+                                
+                                {% if categories_with_children %}
+                                <li class="nav-item active">
+                                    
+                                    <a class="link-none link-black-white" href="https://shome.vn/#"><i
+                                            class="fa fa-bars" aria-hidden="true"></i><span
+                                            class="mobile-hide">&nbsp;Tất cả danh mục |</span> </a>
+                                             									
+                                    <ul id="menu-desktop" class="list-group lv-1" data-control-load="checkHeight">
+                                        {% for category in categories_with_children %}
+                                        <li class="list-group-item">
+
+                                            <div class="row-menu-category">
+                                                <span>
+                                                    <a class="justify-content-between align-items-center"
+                                                        href="{{ category.href }}">{{ category.name }}</a>
+
+                                                </span>
+
+                                                
+                                            </div>
+                                            <div class="menu-list-box" style="top: -37px; min-height: 648px;">
+                                                <div class="menu-list-box-3">
+
+                                                    {% for child in category.children %}
+                                                    <div class="col-menu-box">
+                                                         
+                                                       
+                                                            
+                                                                    <a href="{{ child.href }}"
+                                                                        class="title-col-menu-box">{{
+                                                                        child.name }}</a>
+                                                                    <div class="dropdown-divider"></div>
+                                                                    <div class="row">
+                                                                    {%for sub in child.children%}
+                                                                        <div class="col-12">
+                                                                            <div class="item-col-menu-box">
+                                                                                <a  href="{{ sub.href }}"
+                                                                                    class="d-flex justify-content-between align-items-center href-menu-level">{{sub.name}}</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    {%endfor%}
+                                                                    </div>
+ 
+                                                    </div>
+													{% endfor %}
+													<div style="width:260px;" data-control-load="isDesktop" class="mr-2">
+
+
+														<a href="https://shome.vn/tin-tuc/tra-gop-lai-suat-0-thoai-mai-mua-sam-thiet-bo-chuan-au"
+															class="banner-side-bar-icon right">
+															<img src="./Hệ thống gạch ốp lát, thiết bị vệ sinh và nhà bếp uy tín - S.Home_files/tra-gop.jpg"
+																title="" class="img-fluid my-1 bdr-3" alt="">
+														</a>
+
+													</div>
+												</div>
+											</div>
+										</li>
+                                        {% endfor %}
+									</ul>
+                                </li>
+                                {% endif %}
+                                {% for category in categories_without_children %}
+                                <li><a class="link-none link-black-white" href="{{ category.href }}">{{ category.name }}</a></li>
+                                {% endfor %}
+                            
+                            </ul>
+</nav>
+
+</div>
+<div class="col col-12 only-for-mobile">
+
+
+    <div class="menu-mobile-full-screen">
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col col-7" style="padding: 20px 12px">
+                    <a href="https://shome.vn/" class="link-none">
+                        <img src="./Hệ thống gạch ốp lát, thiết bị vệ sinh và nhà bếp uy tín - S.Home_files/logo.svg"
+                            class="img-fluid" alt="logo">
+                    </a>
+                </div>
+                <div class="col-5 text-right" style="color: black; padding: 20px 30px">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
+                <div class="col col-9">
+                    <strong style="padding-left: 12px; color: black">Danh mục sản phẩm</strong>
+                    <ul data-control-load="menuMobile">
+                        {% for category in categories_with_children %}
+                        <li class="list-group-item-mobile">
+                            <a href="{{ category.href }}" class="d-flex justify-content-between align-items-center">{{
+                                category.name }}
+                                <span class="right ">
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                           {% set column_count = category.column > 0 ? category.column : 1 %}
+{% for children in category.children|batch(category.children|length /
+                            column_count|round(1, 'ceil')) %}
+                            <ul style="margin-bottom: 12px">
+                                {% for child in children %}
+                                <li><a href="{{ child.href }}">{{ child.name }}</a></li>
+                                <li style="height: 40px; line-height: 35px;">
+                                    <a style=" color: black;" href="{{ child.href }}">
+                                        <strong>{{ child.name }}</strong>
+
+                                    </a>
+                                </li>
+                                {% endfor %}
+                            </ul>
+                            {% endfor %}
+                        </li>
+                        {% endfor %}
+                        {% for category in categories_without_children %}
+                        <li class="list-group-item-mobile list-master-group-item">
+                            <a href="{{ category.href }}" class="d-flex justify-content-between align-items-center">
+                                {{ category.name }}
+                                <span class="right">
+                                    <i class="fa fa-chevron-right" aria-hidden="true"></i>
+                                </span>
+                            </a>
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    </ul>
+
+                </div>
+
+                <div class="col col-4"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--end menu-->
+
 {% endif %}

@@ -30,6 +30,9 @@ class Header extends \Opencart\System\Engine\Controller {
 		$data['icons'] = 'catalog/view/stylesheet/fonts/fontawesome/css/all.min.css';
 		$data['stylesheet'] = 'catalog/view/stylesheet/stylesheet.css';
 
+		//add by SungTV on 20251011 start
+		$data['mystylesheet'] = 'catalog/view/Content/css/style.css';
+		//add by SungTV on 20251011 end
 		// Hard coding scripts so they can be replaced via the event's system.
 		$data['jquery'] = 'catalog/view/javascript/jquery/jquery-3.6.1.min.js';
 
@@ -38,9 +41,12 @@ class Header extends \Opencart\System\Engine\Controller {
 		$data['scripts'] = $this->document->getScripts('header');
 
 		$data['name'] = $this->config->get('config_name');
-
+	 
 		if (is_file(DIR_IMAGE . $this->config->get('config_logo'))) {
-			$data['logo'] = $this->config->get('config_url') . 'image/' . $this->config->get('config_logo');
+			//edit by SungTV on 20260322 start
+			//$data['logo'] = $this->config->get('config_url') . 'image/' . $this->config->get('config_logo');
+			$data['logo'] = $this->config->get('config_url') . basename(rtrim(DIR_IMAGE, '/')) . '/' . $this->config->get('config_logo');
+			//edit by SungTV on 20260322 end
 		} else {
 			$data['logo'] = '';
 		}
@@ -81,7 +87,7 @@ class Header extends \Opencart\System\Engine\Controller {
 		$data['search'] = $this->load->controller('common/search');
 		$data['cart'] = $this->load->controller('common/cart');
 		$data['menu'] = $this->load->controller('common/menu');
-
+		 
 		return $this->load->view('common/header', $data);
 	}
 }

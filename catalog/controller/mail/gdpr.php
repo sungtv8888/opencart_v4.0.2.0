@@ -30,7 +30,10 @@ class Gdpr extends \Opencart\System\Engine\Controller {
 		$store_name = html_entity_decode($this->config->get('config_name'), ENT_QUOTES, 'UTF-8');
 
 		if ($this->config->get('config_logo')) {
-			$data['logo'] = $this->config->get('config_url') . 'image/' . html_entity_decode($this->config->get('config_logo'), ENT_QUOTES, 'UTF-8');
+			//edit by SungTV on 20260322 start
+			//$data['logo'] = $this->config->get('config_url') . 'image/' . html_entity_decode($this->config->get('config_logo'), ENT_QUOTES, 'UTF-8');
+			$data['logo'] = $this->config->get('config_url') . basename(rtrim(DIR_IMAGE, '/')) . '/' . html_entity_decode($this->config->get('config_logo'), ENT_QUOTES, 'UTF-8');
+			//edit by SungTV on 20260322 end
 		} else {
 			$data['logo'] = '';
 		}
@@ -128,8 +131,11 @@ class Gdpr extends \Opencart\System\Engine\Controller {
 			$this->load->model('tool/image');
 
 			if (is_file(DIR_IMAGE . $store_logo)) {
-				$data['logo'] = $store_url . 'image/' . $store_logo;
-			} else {
+				//edit by SungTV on 20260322 start
+				//$data['logo'] = $store_url . 'image/' . $store_logo;
+				$data['logo'] = $store_url . basename(rtrim(DIR_IMAGE, '/')) . '/' . $store_logo;
+				//edit by SungTV on 20260322 end
+				} else {
 				$data['logo'] = '';
 			}
 
