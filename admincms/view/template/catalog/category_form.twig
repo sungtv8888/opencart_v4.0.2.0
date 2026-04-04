@@ -217,6 +217,22 @@
   </div>
 </div>
 <script type="text/javascript"><!--
+//add by SungTV on 20260401 start to perform event keyup binding to box title, description, keyword
+$('#input-name-{{ languages|first.language_id }}').keyup(function() {
+   
+     //var content = removevietnamesign($('#input-name-{{ languages|first.language_id }}').val());
+     var content=$('#input-name-{{ languages|first.language_id }}').val();
+     var rm_vn=removevietnamesign(content);
+     
+                $("#input-meta-title-{{ languages|first.language_id }}").val(content);
+                $("#input-meta-description-{{ languages|first.language_id }}").val(content);
+                $("#input-meta-keyword-{{ languages|first.language_id }}").val(content);
+                $("#input-keyword-{{ stores|first.store_id }}-{{ languages|first.language_id }}").val(rm_vn);
+                 
+                //$("#txtseokeyword").val($("#txtname").val());
+               // $("#txtseodescription").val($("#txtname").val());
+});
+//add by SungTV on 20260401 end to perform event keyup binding to box title, description, keyword
 $('textarea[data-oc-toggle=\'ckeditor\']').ckeditor({
     language: '{{ ckeditor }}'
 });
