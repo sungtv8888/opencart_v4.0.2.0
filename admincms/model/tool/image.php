@@ -15,7 +15,8 @@ class Image extends \Opencart\System\Engine\Model {
 			list($width_orig, $height_orig, $image_type) = getimagesize(DIR_IMAGE . $image_old);
 				 
 			if (!in_array($image_type, [IMAGETYPE_PNG, IMAGETYPE_JPEG, IMAGETYPE_GIF, IMAGETYPE_WEBP])) {
-				return HTTP_CATALOG . 'image/' . $image_old;
+				//return HTTP_CATALOG . 'image/' . $image_old;
+				return HTTP_CATALOG .  basename(rtrim(DIR_IMAGE, '/')) . '/' . $image_old;
 			}
 
 			$path = '';
@@ -43,6 +44,7 @@ class Image extends \Opencart\System\Engine\Model {
 			}
 		}
 
-		return HTTP_CATALOG . 'image/' . $image_new;
+		// return HTTP_CATALOG . 'image/' . $image_new;
+		return HTTP_CATALOG .  basename(rtrim(DIR_IMAGE, '/')) . '/' . $image_new;
 	}
 }

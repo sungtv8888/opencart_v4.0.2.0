@@ -47,7 +47,7 @@ class Setting extends \Opencart\System\Engine\Controller {
 				'value' => $extension['code']
 			];
 		}
-
+	
 		$data['config_theme'] = $this->config->get('config_theme');
 
 		$this->load->model('design/layout');
