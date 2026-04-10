@@ -189,7 +189,8 @@ class Subscription extends \Opencart\System\Engine\Controller {
 									$this->load->model('tool/image');
 
 									if (is_file(DIR_IMAGE . $store_logo)) {
-										$data['logo'] = $store_url . 'image/' . $store_logo;
+										// $data['logo'] = $store_url . 'image/' . $store_logo;
+										$data['logo'] = $store_url .  basename(rtrim(DIR_IMAGE, '/')) . '/' . $store_logo;
 									} else {
 										$data['logo'] = '';
 									}
