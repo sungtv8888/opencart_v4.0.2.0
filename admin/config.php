@@ -3,12 +3,12 @@
 define('APPLICATION', 'Admin');
 
 // HTTP
-define('HTTP_SERVER', 'http://localhost:8888/opencart_dev/admincms/');
-define('HTTP_CATALOG', 'http://localhost:8888/opencart_dev/');
+define('HTTP_SERVER', 'http://localhost:8888/opencart_main/opencart_v4.0.2.0/admin');
+define('HTTP_CATALOG', 'http://localhost:8888/opencart_main/opencart_v4.0.2.0/');
 
 // DIR
-define('DIR_OPENCART', 'C:/wamp64/www/opencart_dev/');
-define('DIR_APPLICATION', DIR_OPENCART . 'admincms/');
+define('DIR_OPENCART', 'C:/wamp64/www/opencart_main/opencart_v4.0.2.0/');
+define('DIR_APPLICATION', DIR_OPENCART . 'admin/');
 define('DIR_EXTENSION', DIR_OPENCART . 'extension/');
 define('DIR_IMAGE', DIR_OPENCART . 'image/');
 define('DIR_SYSTEM', DIR_OPENCART . 'system/');
