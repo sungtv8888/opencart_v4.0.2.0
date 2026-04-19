@@ -3,7 +3,7 @@ namespace Opencart\Catalog\Controller\Extension\Hotproducts\Module;
 use \Opencart\System\Helper AS Helper;
 class Hot extends \Opencart\System\Engine\Controller {
 	public function index(array $setting): string {
-		$this->load->language('extension/hot/module/hot');
+		$this->load->language('extension/hotproducts/module/hot');
 
 		$data['axis'] = $setting['axis'];
 
