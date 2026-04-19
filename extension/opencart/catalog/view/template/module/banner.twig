@@ -1,43 +1,58 @@
-<div id="carousel-banner-{{ module }}" class="carousel slide{% if effect == 'fade' %} carousel-fade{% endif %}" data-bs-ride="carousel">
-  {% if indicators and banners|batch(items)|length > 1 %}
-    <div class="carousel-indicators">
-      {% set banner_row = 0 %}
-      {% for banner in banners|batch(items) %}
-        <button type="button" data-bs-target="#carousel-banner-{{ module }}" data-bs-slide-to="{{ banner_row }}"{% if banner_row == 0 %} class="active"{% endif %}></button>
-        {% set banner_row = banner_row + 1 %}
-      {% endfor %}
-    </div>
-  {% endif %}
-  <div class="carousel-inner">
-    {% set banner_row = 0 %}
-    {% for carousel in banners|batch(items) %}
-      <div class="carousel-item{% if banner_row == 0 %} active{% endif %}">
-        <div class="row justify-content-center">
-          {% for banner in carousel %}
-            <div class="col-{{ (12 / items)|round }} text-center">
-              {% if banner.link %}
-                <a href="{{ banner.link }}"><img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-fluid"/></a>
-              {% else %}
-                <img src="{{ banner.image }}" alt="{{ banner.title }}" class="img-fluid"/>
-              {% endif %}
+<!--start slideshow-->
+
+        <div class="row background-topic"
+            style="background-color:#8bbcfd;background-size: 100%;   background-repeat: no-repeat; background-position-x: center;">
+
+            <div class="container" style="padding-bottom: 10px; margin-bottom: 10px;">
+                <div class="row-custom-web">
+
+                    <div class="col-12 background-white pt-1 pr-1 pl-1 br-5">
+                        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+                            class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden"
+                            data-control-load="activeSwipperThumb">
+                            <div class="swiper-wrapper" id="swiper-wrapper-7d7587741de8026d" aria-live="off"
+                                style="transition-duration: 0ms; transform: translate3d(-1192px, 0px, 0px); transition-delay: 0ms;">
+
+									 {% for banner in banners %}
+										<div class="swiper-slide" role="group" style="width: 1192px;">
+											{% if banner.link %}
+											<a href="{{ banner.link }}">
+												<img src="{{ banner.image }}" title="{{ banner.title }}" class="img-fluid" alt="{{ banner.title }}">
+											</a>
+											{% else %}
+											<img src="{{ banner.image }}" title="{{ banner.title }}" class="img-fluid" alt="{{ banner.title }}">
+											{% endif %}
+										</div>
+										{% endfor %}
+
+
+
+                            </div>
+                            <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide"
+                                aria-controls="swiper-wrapper-7d7587741de8026d" aria-disabled="false"></div>
+                            <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide"
+                                aria-controls="swiper-wrapper-7d7587741de8026d" aria-disabled="false"></div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                        <div thumbsslider=""
+                            class="swiper mySwiper2 swiper-initialized swiper-horizontal swiper-free-mode swiper-watch-progress swiper-backface-hidden swiper-thumbs">
+                            <div class="swiper-wrapper" id="swiper-wrapper-24fd52a2d8c79b49" aria-live="polite"
+                                style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms; transition-delay: 0ms;">
+
+								  {% for banner in banners %}
+									<div class="swiper-slide" role="group" style="width: 238.4px;">
+										{{ banner.title }}
+									</div>
+									{% endfor %}
+                                 
+
+                            </div>
+                            <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-          {% endfor %}
         </div>
-      </div>
-      {% set banner_row = banner_row + 1 %}
-    {% endfor %}
-  </div>
-  {% if controls and banners|batch(items)|length > 1 %}
-    <button type="button" class="carousel-control-prev" data-bs-target="#carousel-banner-{{ module }}" data-bs-slide="prev"><span class="fa-solid fa-chevron-left"></span></button>
-    <button type="button" class="carousel-control-next" data-bs-target="#carousel-banner-{{ module }}" data-bs-slide="next"><span class="fa-solid fa-chevron-right"></span></button>
-  {% endif %}
-</div>
-<script type="text/javascript"><!--
-$(document).ready(function () {
-    new bootstrap.Carousel(document.querySelector('#carousel-banner-{{ module }}'), {
-        ride: 'carousel',
-        interval: {{ interval|escape('js') }},
-        wrap: true
-    });
-});
-//--></script>
+
+        <!--end slideshow-->
