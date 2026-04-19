@@ -1,0 +1,24 @@
+{
+  "name": "Hot Products Module",
+  "code": "hotproducts",
+  "version": "1.0",
+  "author": "Custom",
+  "link": "https://cxhome.vn",
+  "instruction": "",
+  "type": "module",
+  "files": [
+    "admin/controller/module/hot.php",
+    "admin/language/en-gb/module/hot.php",
+    "admin/view/template/module/hot.twig",
+    "catalog/controller/module/hot.php",
+    "catalog/language/en-gb/module/hot.php",
+    "catalog/view/template/module/hot.twig"
+  ],
+  "modules": [
+    {
+      "code": "hot",
+      "name": "Hot Products",
+      "version": "1.0"
+    }
+  ]
+}

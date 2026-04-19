@@ -1,0 +1,39 @@
+ 
+
+
+
+ <div id="sale-special" class="row" style="background-color:#f56134;">
+                        <div class="col-12 sale-special-banner">
+                             <img src="{{config_url}}/Content/designs/Banner-hotsale.jpg"
+                            
+                                title="" class="img-fluid" alt="Background banner hot sale">
+                        </div>
+                        <div class="col col-12">
+                            <div class="owl-carousel-5 owl-carousel owl-theme owl-loaded owl-drag"
+                                data-control-load="carousel4">
+ 
+                                <div class="owl-stage-outer">
+                                    <div class="owl-stage"
+                                        style="transform: translate3d(-5310px, 0px, 0px); transition: 0.25s; width: 11800px;">
+                                        {% for product in products %}
+                                          <div class="owl-item cloned" style="width: 285px; margin-right: 10px;">
+                                              {{ product }} 
+                                          </div>
+                                        {% endfor %}
+
+                                      
+                                          
+                                         
+                                    </div>
+                                </div>
+                                <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i
+                                            class="fa fa-angle-left" aria-hidden="true"></i></button><button
+                                        type="button" role="presentation" class="owl-next"><i class="fa fa-angle-right"
+                                            aria-hidden="true"></i></button></div>
+                                <div class="owl-dots disabled"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <br>
