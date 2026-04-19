@@ -7275,7 +7275,10 @@ body {
 .mySwiper2 {
     height: auto;
     box-sizing: border-box;
-    padding: 10px 0 0 0;
+    /* update by SungTV on 20260401 start  */
+    /* padding: 10px 0 0 0; */
+    padding: 0;
+     /* update by SungTV on 20260401 end  */
 }
 
     .mySwiper2 .swiper-slide {
@@ -7285,7 +7288,11 @@ body {
     }
 
     .swiper-slide-thumb-active {
-        border-color: #FCB415 !important;
+       /* update by SungTV on 20260401 start  */
+        /* border-color: #FCB415 !important; */
+        border-color: #b11016 !important;
+        background-color: #b11016 !important;
+         /* update by SungTV on 20260401 end  */
     }
 
 .swiper-slide img {
