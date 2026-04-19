@@ -1,4 +1,4 @@
-<form method="post" data-oc-toggle="ajax" data-oc-load="{{ cart }}" data-oc-target="#header-cart">
+{#<form method="post" data-oc-toggle="ajax" data-oc-load="{{ cart }}" data-oc-target="#header-cart">
   <div class="product-thumb">
     <div class="image"><a href="{{ href }}"><img src="{{ thumb }}" alt="{{ name }}" title="{{ name }}" class="img-fluid"/></a></div>
     <div class="content">
@@ -39,3 +39,76 @@
     <input type="hidden" name="quantity" value="{{ minimum }}"/>
   </div>
 </form>
+#}
+  <form method="post" data-oc-toggle="ajax" data-oc-load="{{ cart }}" data-oc-target="#header-cart">
+  
+
+
+                                                <div class="item-product">
+                                                    <div class="hover-mask">
+                                                        <a href="{{ href }}"
+                                                            title="{{ name }}"
+                                                            class="rounded">
+                                                            <img data-lazy="thumb"
+                                                                data-src="{{ thumb }}"
+                                                                data-width="255" data-height="255"
+                                                                src="{{ thumb }}"
+                                                                title="{{ name }}"
+                                                                alt="{{ name }}"
+                                                                class="img-fluid">
+                                                            <div>
+                                                                <i class="fa fa-search"></i>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                    <div class="item-content">
+                                                        <a href="{{ href }}"
+                                                            class="link-none link-black col-clear-fix font-15">
+                                                            <h3 class="font-15">
+                                                                {{ name }}
+                                                            </h3>
+                                                        </a>
+                                                    </div>
+
+													{% if not special %}
+														<div class="item-sale-price">
+															{{ special }}
+														</div>
+													{% else %}
+														 <div class="item-base-price">
+															<span class="base-price font-11">{{ price }}</span>
+															<span class="item-sale-off-ratio  font-11">(Tiết kiệm: 20%)
+															</span>
+														</div>
+
+														<div class="item-sale-price">
+															{{ special }}
+														</div>
+													{% endif %}
+													{% if tax %}
+													  <span class="price-tax">{{ text_tax }} {{ tax }}</span>
+													{% endif %}
+													
+                                                   
+
+
+                                                    <div class="item-sale-vote">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                                    class="fa fa-star"></i><i class="fa fa-star"></i><i
+                                                                    class="fa fa-star"></i>
+                                                                <span>(5)</span>
+
+
+                                                                <i data-product-id="10057" data-control-load="addCart"
+                                                                    class="fa fa-shopping-cart color-black font-20 hover-pointer float-right"
+                                                                    title="Thêm vào giỏ hàng"></i>
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+</form>
+
+ 
