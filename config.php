@@ -3,13 +3,14 @@
 define('APPLICATION', 'Catalog');
 
 // HTTP
-define('HTTP_SERVER', 'http://localhost:8888/opencart_dev/');
+define('HTTP_SERVER', 'http://localhost:8888/opencart/opencart_v4.0.2.0/');
 
 // DIR
-define('DIR_OPENCART', 'C:/wamp64/www/opencart_dev/');
+define('DIR_OPENCART', 'C:/wamp64/www/opencart/opencart_v4.0.2.0/');
 define('DIR_APPLICATION', DIR_OPENCART . 'catalog/');
 define('DIR_EXTENSION', DIR_OPENCART . 'extension/');
-define('DIR_IMAGE', DIR_OPENCART . 'image/');
+// define('DIR_IMAGE', DIR_OPENCART . 'image/');
+define('DIR_IMAGE', DIR_OPENCART . 'Content/');
 define('DIR_SYSTEM', DIR_OPENCART . 'system/');
 define('DIR_STORAGE', 'C:/wamp64/storage/');
 define('DIR_LANGUAGE', DIR_APPLICATION . 'language/');
@@ -29,3 +30,4 @@ define('DB_PASSWORD', '');
 define('DB_DATABASE', 'opencart');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'oc_');
+define('THEME', 'cxhome');
