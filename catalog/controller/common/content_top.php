@@ -59,10 +59,14 @@ class ContentTop extends \Opencart\System\Engine\Controller {
 				$module_data = $this->load->controller('extension/' .  $part[0] . '/module/' . $part[1]);
 
 				if ($module_data) {
-					$data['modules'][] = $module_data;
+					//$data['modules'][] = $module_data;
+					$data['modules'][] = [
+											'code'     => $part[1],
+											'content' => $module_data
+										];
 				}
 			}
-
+			 
 			if (isset($part[2])) {
 				$setting_info = $this->model_setting_module->getModule($part[2]);
 
@@ -70,12 +74,16 @@ class ContentTop extends \Opencart\System\Engine\Controller {
 					$output = $this->load->controller('extension/' .  $part[0] . '/module/' . $part[1], $setting_info);
 
 					if ($output) {
-						$data['modules'][] = $output;
+						//$data['modules'][] = $output;
+						$data['modules'][] = [
+													'code'     => $part[1],
+													'content' => $output
+												];
 					}
 				}
 			}
 		}
-
+		$data['config_url'] = $this->config->get('config_url') ;
 		return $this->load->view('common/content_top', $data);
 	}
 }
