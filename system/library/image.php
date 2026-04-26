@@ -44,7 +44,11 @@ class Image {
 			if ($this->mime == 'image/gif') {
 				$this->image = imagecreatefromgif($file);
 			} elseif ($this->mime == 'image/png') {
-				$this->image = imagecreatefrompng($file);
+				//update by SungTV on 20260426 start
+				// handle  warrning show ICC/sRGB profile 
+				//$this->image = imagecreatefrompng($file);
+				$this->image = @imagecreatefrompng($file);
+				//update by SungTV on 20260426 end
 
 				imageinterlace($this->image, false);
 			} elseif ($this->mime == 'image/jpeg') {
