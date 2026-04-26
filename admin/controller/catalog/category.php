@@ -34,6 +34,9 @@ class Category extends \Opencart\System\Engine\Controller {
 
 		$data['repair'] = $this->url->link('catalog/category.repair', 'user_token=' . $this->session->data['user_token']);
 		$data['add'] = $this->url->link('catalog/category.form', 'user_token=' . $this->session->data['user_token'] . $url);
+		//add by SungTV on 20260425 start
+		$data['copy'] = $this->url->link('catalog/category.copy', 'user_token=' . $this->session->data['user_token']);
+		//add by SungTV on 20260425 end
 		$data['delete'] = $this->url->link('catalog/category.delete', 'user_token=' . $this->session->data['user_token']);
 
 		$data['list'] = $this->getList();
@@ -467,7 +470,36 @@ class Category extends \Opencart\System\Engine\Controller {
 		$this->response->addHeader('Content-Type: application/json');
 		$this->response->setOutput(json_encode($json));
 	}
+	//add by SungTV on 20260425 start
+	public function copy(): void {
+		$this->load->language('catalog/category');
 
+		$json = [];
+
+		if (isset($this->request->post['selected'])) {
+			$selected = $this->request->post['selected'];
+		} else {
+			$selected = [];
+		}
+
+		if (!$this->user->hasPermission('modify', 'catalog/category')) {
+			$json['error'] = $this->language->get('error_permission');
+		}
+
+		if (!$json) {
+			$this->load->model('catalog/category');
+
+			foreach ($selected as $category_id) {
+				$this->model_catalog_category->copyCategory($category_id);
+			}
+
+			$json['success'] = $this->language->get('text_success');
+		}
+
+		$this->response->addHeader('Content-Type: application/json');
+		$this->response->setOutput(json_encode($json));
+	}
+	//add by SungTV on 20260425 end
 	public function autocomplete(): void {
 		$json = [];
 

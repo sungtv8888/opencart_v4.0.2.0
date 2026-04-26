@@ -216,7 +216,44 @@ class Category extends \Opencart\System\Engine\Model {
 			$this->deleteCategory($result['category_id']);
 		}
 	}
+//add by SungTV on 20260425 start
+// Copy category
+	public function copyCategory(int $category_id): void {
+		$category_info = $this->model_catalog_category->getCategory($category_id);
 
+		if ($category_info) {
+			$category_data = $category_info;
+
+			$category_data['status'] = '0';
+			$category_data['category_description'] = $this->model_catalog_category->getDescriptions($category_id);
+			$category_data['category_filter'] = $this->model_catalog_category->getFilters($category_id);
+			$category_data['category_store'] = $this->model_catalog_category->getStores($category_id);
+			$category_data['category_seo_url'] = [];
+			$category_data['category_layout'] = $this->model_catalog_category->getLayouts($category_id);
+
+			$timestamp = date('YmdHis');
+			$category_seo_urls = $this->model_catalog_category->getSeoUrls($category_id);
+			//to avoid duplicate seo url, we will add timestamp to the end of keyword
+			//eg: if the original keyword is "sen-voi", then new keyword will be "sen-voi-20260425123030"
+			foreach ($category_seo_urls as $store_id => $language) {
+				foreach ($language as $language_id => $keyword) {
+					$parts = explode('/', $keyword);
+					$keyword = end($parts);
+
+					if (preg_match('/\d{14}$/', $keyword)) {
+						$keyword = preg_replace('/-?\d{14}$/', '-' . $timestamp, $keyword);
+					} else {
+						$keyword .= '-' . $timestamp;
+					}
+
+					$category_data['category_seo_url'][$store_id][$language_id] = $keyword;
+				}
+			}
+
+			$this->model_catalog_category->addCategory($category_data);
+		}
+	}
+//add by SungTV on 20260425 end
 	public function repairCategories(int $parent_id = 0): void {
 		$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "category` WHERE `parent_id` = '" . (int)$parent_id . "'");
 

@@ -5,6 +5,8 @@
       <div class="float-end">
         <button type="button" id="button-repair" data-bs-toggle="tooltip" title="{{ button_rebuild }}" class="btn btn-light"><i class="fa-solid fa-rotate"></i></button>
         <a href="{{ add }}" data-bs-toggle="tooltip" title="{{ button_add }}" class="btn btn-primary"><i class="fa-solid fa-plus"></i></a>
+        
+        <button type="submit" form="form-category" formaction="{{ copy }}" data-bs-toggle="tooltip" title="{{ button_copy }}" class="btn btn-light"><i class="fa-regular fa-copy"></i></button>
         <button type="submit" form="form-category" formaction="{{ delete }}" data-bs-toggle="tooltip" title="{{ button_delete }}" onclick="return confirm('{{ text_confirm }}');" class="btn btn-danger"><i class="fa-regular fa-trash-can"></i></button>
       </div>
       <h1>{{ heading_title }}</h1>
