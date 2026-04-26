@@ -1,0 +1,88 @@
+<div class="row col-clear-fix slide-product white-radius mb-3">
+  <div class="col col-md-5 col-8 col-clear-fix">
+    <h2 class="title-popup">
+      {{ title }}
+    </h2>
+  </div>
+  <div class="col col-md-7 col-4 col-clear-fix title-popup text-right">
+    {% for brand in brands %}
+      {% if brand.image %}
+        <a href="{{ brand.href }}"><img src="{{ brand.image }}" title="{{ brand.name }}" alt="{{ brand.name }}" class="img-fluid branch-home-icon mobile-hide"></a>
+      {% endif %}
+    {% endfor %}
+
+    {% if view_all_href %}
+      <a class="link-black btn-small btn-read-more" href="{{ view_all_href }}">{{ view_all_text }} <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+    {% endif %}
+  </div>
+
+  <div class="col col-12 col-clear-fix">
+    <div class="owl-carousel-5 owl-carousel owl-theme owl-loaded owl-drag" data-control-load="carousel5">
+      <div class="owl-stage-outer">
+        <div class="owl-stage">
+          {% for product in products %}
+            <div class="owl-item cloned">
+              <div class="item">
+                <div class="item-product">
+                  <div class="hover-mask">
+                    <a href="{{ product.href }}" title="{{ product.name }}" class="rounded">
+                      <img data-lazy="thumb" data-src="{{ product.thumb }}" data-width="255" data-height="255" src="{{ product.thumb }}" title="{{ product.name }}" alt="{{ product.name }}" class="img-fluid">
+                      <div>
+                        <i class="fa fa-search"></i>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="item-content">
+                    <a href="{{ product.href }}" class="link-none link-black col-clear-fix font-15">
+                      <h3 class="font-15">
+                        {{ product.name }}
+                      </h3>
+                    </a>
+                  </div>
+
+                  {% if product.special %}
+                    <div class="item-base-price">
+                      <span class="base-price font-11">{{ product.price }}</span>
+                      {% if product.savings_percent %}
+                        <span class="item-sale-off-ratio  font-11">(Tiet kiem: {{ product.savings_percent }}%)</span>
+                      {% endif %}
+                    </div>
+
+                    <div class="item-sale-price">
+                      {{ product.special }}
+                    </div>
+                  {% else %}
+                    <div class="item-sale-price">
+                      {{ product.price }}
+                    </div>
+                  {% endif %}
+
+                  <div class="item-sale-vote">
+                    <div class="row">
+                      <div class="col-12">
+                        {% for i in 1..5 %}
+                          {% if product.rating >= i %}
+                            <i class="fa fa-star"></i>
+                          {% else %}
+                            <i class="fa fa-star-o"></i>
+                          {% endif %}
+                        {% endfor %}
+                        <span>({{ product.rating }})</span>
+
+                        <i data-product-id="{{ product.product_id }}" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button><button type="button" role="presentation" class="owl-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button></div>
+      <div class="owl-dots disabled"></div>
+    </div>
+  </div>
+</div>
+
+<br>

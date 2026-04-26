@@ -171,7 +171,26 @@ class Product extends \Opencart\System\Engine\Model {
 
 		return $product_data;
 	}
+	//add by SungTV on 20260425 start
+	public function getProduct_Manufacture(int $category_id): array {
+		 
+		$str_sql = "SELECT DISTINCT 
+			m.manufacturer_id, 
+			m.name, 
+			m.image 
+		FROM `" . DB_PREFIX . "product` p 
+		INNER JOIN `" . DB_PREFIX . "product_to_category` p2c ON (p.product_id = p2c.product_id) 
+		LEFT JOIN `" . DB_PREFIX . "manufacturer` m ON (p.manufacturer_id = m.manufacturer_id) 
+		WHERE  p2c.category_id IN (SELECT c.category_id FROM `" . DB_PREFIX . "category` c WHERE c.parent_id = '" . (int)$category_id . "') 
+		AND p.status = '1' 
+		AND m.manufacturer_id IS NOT NULL 
+		ORDER BY m.name ASC";
+		 
+    $query = $this->db->query($str_sql);
 
+    return $query->rows;
+}
+	//add by SungTV on 20260425 end
 	public function getCategories(int $product_id): array {
 		$query = $this->db->query("SELECT * FROM `" . DB_PREFIX . "product_to_category` WHERE `product_id` = '" . (int)$product_id . "'");
 

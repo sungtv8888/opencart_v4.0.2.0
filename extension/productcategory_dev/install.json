@@ -1,0 +1,26 @@
+{
+  "name": "Product Category Module",
+  "code": "productcategory",
+  "version": "1.0",
+  "author": "Custom",
+  "link": "https://cxhome.vn",
+  "instruction": "",
+  "type": "module",
+  "files": [
+    "admin/controller/module/product_category.php",
+    "admin/language/en-gb/module/product_category.php",
+    "admin/language/vi-vn/module/product_category.php",
+    "admin/view/template/module/product_category.twig",
+    "catalog/controller/module/product_category.php",
+    "catalog/language/en-gb/module/product_category.php",
+    "catalog/language/vi-vn/module/product_category.php",
+    "catalog/view/template/module/product_category.twig"
+  ],
+  "modules": [
+    {
+      "code": "product_category",
+      "name": "Product Category",
+      "version": "1.0"
+    }
+  ]
+}
