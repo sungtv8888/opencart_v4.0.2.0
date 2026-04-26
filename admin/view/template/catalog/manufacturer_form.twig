@@ -122,4 +122,20 @@
     </div>
   </div>
 </div>
+<script type="text/javascript"> 
+//add by SungTV on 20260401 start to perform event keyup binding to box title, description, keyword
+$('#input-name').keyup(function() {
+   
+     
+     var content=$('#input-name').val();
+     var rm_vn=removevietnamesign(content);
+     
+                //$("#input-meta-title-{{ languages|first.language_id }}").val(content);
+                //$("#input-meta-description-{{ languages|first.language_id }}").val(content);
+                //$("#input-meta-keyword-{{ languages|first.language_id }}").val(content);
+                $("#input-keyword-{{ stores|first.store_id }}-{{ languages|first.language_id }}").val(rm_vn);
+
+});
+//add by SungTV on 20260401 end to perform event keyup binding to box title, description, keyword
+</script>
 {{ footer }}
