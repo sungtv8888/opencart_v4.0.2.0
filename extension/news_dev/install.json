@@ -1,0 +1,44 @@
+{
+  "name": "News",
+  "code": "news",
+  "version": "1.0.0",
+  "author": "Custom",
+  "link": "https://cxhome.vn",
+  "instruction": "Install from Extensions > Extensions > Other, then use Catalog > News Categories and Catalog > News.",
+  "type": "other",
+  "files": [
+    "admin/controller/other/news.php",
+    "admin/controller/event/menu.php",
+    "admin/controller/catalog/news_category.php",
+    "admin/controller/catalog/news.php",
+    "admin/model/catalog/news_category.php",
+    "admin/model/catalog/news.php",
+    "admin/language/en-gb/other/news.php",
+    "admin/language/en-gb/catalog/news_category.php",
+    "admin/language/en-gb/catalog/news.php",
+    "admin/language/vi-vn/other/news.php",
+    "admin/language/vi-vn/catalog/news_category.php",
+    "admin/language/vi-vn/catalog/news.php",
+    "admin/view/template/other/news.twig",
+    "admin/view/template/catalog/news_category.twig",
+    "admin/view/template/catalog/news_category_list.twig",
+    "admin/view/template/catalog/news_category_form.twig",
+    "admin/view/template/catalog/news.twig",
+    "admin/view/template/catalog/news_list.twig",
+    "admin/view/template/catalog/news_form.twig",
+    "catalog/controller/news/news_category.php",
+    "catalog/controller/news/news.php",
+    "catalog/model/news/news.php",
+    "catalog/language/en-gb/news/news.php",
+    "catalog/language/vi-vn/news/news.php",
+    "catalog/view/template/news/news_category.twig",
+    "catalog/view/template/news/news.twig"
+  ],
+  "modules": [
+    {
+      "code": "news",
+      "name": "News",
+      "version": "1.0.0"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{{ header }}
+<div id="news-category" class="container">
+  <ul class="breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+      <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+    {% endfor %}
+  </ul>
+  <div class="row">{{ column_left }}
+    <div id="content" class="col">{{ content_top }}
+      <h1>{{ heading_title }}</h1>
+      {% if thumb or description %}
+        <div class="row mb-3">
+          {% if thumb %}
+            <div class="col-sm-3"><img src="{{ thumb }}" alt="{{ heading_title }}" title="{{ heading_title }}" class="img-thumbnail"/></div>
+          {% endif %}
+          {% if description %}
+            <div class="col">{{ description }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+      {% if categories %}
+        <div class="list-group mb-4">
+          {% for category in categories %}
+            <a href="{{ category.href }}" class="list-group-item list-group-item-action">{{ category.name }}</a>
+          {% endfor %}
+        </div>
+      {% endif %}
+      {% if articles %}
+        <div class="row row-cols-1 row-cols-md-2 g-3">
+          {% for article in articles %}
+            <div class="col">
+              <article class="border rounded p-3 h-100">
+                {% if article.thumb %}
+                  <a href="{{ article.href }}"><img src="{{ article.thumb }}" alt="{{ article.name }}" title="{{ article.name }}" class="img-fluid mb-3"/></a>
+                {% endif %}
+                <h2 class="h5"><a href="{{ article.href }}">{{ article.name }}</a></h2>
+                <div class="text-muted small mb-2">{% if article.author %}{{ text_by }} {{ article.author }} · {% endif %}{{ text_date_available }} {{ article.date_available }}</div>
+                <p>{{ article.description }}</p>
+              </article>
+            </div>
+          {% endfor %}
+        </div>
+        <div class="row mt-3">
+          <div class="col-sm-6 text-start">{{ pagination }}</div>
+          <div class="col-sm-6 text-end">{{ results }}</div>
+        </div>
+      {% else %}
+        <p>{{ text_empty }}</p>
+      {% endif %}
+      {{ content_bottom }}</div>
+    {{ column_right }}</div>
+</div>
+{{ footer }}

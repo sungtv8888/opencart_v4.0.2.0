@@ -1,0 +1,26 @@
+{{ header }}
+<div id="news-info" class="container">
+  <ul class="breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+      <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+    {% endfor %}
+  </ul>
+  <div class="row">{{ column_left }}
+    <div id="content" class="col">{{ content_top }}
+      <article>
+        <h1>{{ heading_title }}</h1>
+        <div class="text-muted mb-3">
+          {% if author %}{{ text_by }} {{ author }} · {% endif %}{{ text_date_available }} {{ date_available }} · {{ text_views }} {{ viewed }}
+        </div>
+        {% if thumb %}
+          <p><img src="{{ thumb }}" alt="{{ heading_title }}" title="{{ heading_title }}" class="img-fluid"/></p>
+        {% endif %}
+        <div>{{ description }}</div>
+      </article>
+      <div class="mt-4">
+        <a href="{{ continue }}" class="btn btn-primary">{{ button_continue }}</a>
+      </div>
+      {{ content_bottom }}</div>
+    {{ column_right }}</div>
+</div>
+{{ footer }}
