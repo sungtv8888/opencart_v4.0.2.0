@@ -1,5 +1,5 @@
 {{ header }}
-<div id="product-info" class="container">
+{#<div id="product-info" class="container">
   <ul class="breadcrumb">
     {% for breadcrumb in breadcrumbs %}
       <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
@@ -13,12 +13,12 @@
           {% if thumb or images %}
             <div class="image magnific-popup">
               {% if thumb %}
-                <a href="{{ popup }}" title="{{ heading_title }}"><img src="{{ thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" class="img-thumbnail mb-3"/></a>
+                img src="{{ thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" class="img-thumbnail mb-3"/>
               {% endif %}
               {% if images %}
                 <div>
                   {% for image in images %}
-                    <a href="{{ image.popup }}" title="{{ heading_title }}"><img src="{{ image.thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}" class="img-thumbnail"/></a>&nbsp;
+                    <img src="{{ image.popup }}" title="{{ heading_title }}" alt="{{ heading_title }}" class="img-thumbnail"/>&nbsp;
                   {% endfor %}
                 </div>
               {% endif %}
@@ -350,4 +350,2079 @@ $(document).ready(function () {
     });
 });
 //--></script>
+#}
+
+
+
+
+
+
+
+
+
+<div class="row" data-control-load="productListLoaded">
+<div class="col-12">
+        <div class="container background-white background-grey">
+            <div class="row">
+                 <div class="col-12">
+                      <ul class="breadcrumb-cx background-grey breadcrumb-fixbrowser" >
+                          {% for breadcrumb in breadcrumbs %}
+                            <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+                          {% endfor %}
+                      </ul>
+                  </div>
+               
+            </div>
+            <div class="row">
+                
+
+<div class="col-md-12">
+    <div class="row background-white py-3" data-control-load="carouselActive">
+        <div class="col-md-6 sticky">
+            <div>
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper swiper-initialized swiper-horizontal swiper-backface-hidden" data-control-load="activeSwipperThumbImage">
+                    {% if images %}
+                        <div class="swiper-wrapper" id="swiper-wrapper-a10a82f8d9742610fe" aria-live="off" style="transition-duration: 0ms; transform: translate3d(-1160px, 0px, 0px); transition-delay: 0ms;">
+                            {% if thumb %}
+                            <div class="swiper-slide" role="group" aria-label="1 / 8" style="width: 570px; margin-right: 10px;">
+                                <img src="{{ thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}"  class="img-fluid"/> 
+                            </div>
+                            {% endif %}   
+                            {% if images %}
+                                {% for image in images %}
+                                 <div class="swiper-slide swiper-slide-prev" data-control-load="" data-iframe="" "="" role="group" aria-label="2 / 8" >
+                                     <img src="{{ image.slide }}" title="{{ heading_title }}" alt="{{ heading_title }}"  class="img-fluid"/> &nbsp;
+                                </div>
+                                {% endfor %}
+                        
+                            {% endif %}
+                        </div>
+                    {% else %}
+                        <div class="swiper-wrapper" id="swiper-wrapper-a10a82f8d9742610fe" aria-live="off" >
+                            {% if thumb %}
+                            <div class="swiper-slide" role="group" aria-label="1 / 8" style="width: 570px; margin-right: 10px;">
+                                <img src="{{ thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}"  class="img-fluid"/> 
+                            </div>
+                            {% endif %}   
+                            {% if images %}
+                                {% for image in images %}
+                                 <div class="swiper-slide swiper-slide-prev" data-control-load="" data-iframe="" "="" role="group" aria-label="2 / 8" >
+                                     <img src="{{ image.slide }}" title="{{ heading_title }}" alt="{{ heading_title }}"  class="img-fluid"/> &nbsp;
+                                </div>
+                                {% endfor %}
+                        
+                            {% endif %}
+                        </div>
+                    {% endif %}
+                    <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide" aria-controls="swiper-wrapper-a10a82f8d9742610fe" aria-disabled="false"></div>
+                    <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide" aria-controls="swiper-wrapper-a10a82f8d9742610fe" aria-disabled="false"></div>
+                    
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+                <div thumbsslider="" class="swiper mySwiperThumb mySwiperThumbGray pt-3 pb-3 swiper-initialized swiper-horizontal swiper-free-mode swiper-watch-progress swiper-backface-hidden swiper-thumbs">
+                    <div class="swiper-wrapper" id="swiper-wrapper-7544cd61ea72b91d" aria-live="polite" style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms; transition-delay: 0ms;">
+                         {% if thumb %}
+                            <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-active" role="group" aria-label="1 / 8" style="width: 86.6667px; margin-right: 10px;">
+                                <img data-lazy="thumb" data-src="{{ thumb }}" data-width="120" data-height="120"  src="{{ thumb }}" title="{{ heading_title }}" alt="{{ heading_title }}"  class="img-100"/> 
+                            </div>
+                        {% endif %}   
+                        {% if images %}
+                            {% for image in images %}
+                                <div class="swiper-slide swiper-slide-visible swiper-slide-fully-visible swiper-slide-next" role="group"  aria-label="2 / 8"  style="width: 86.6667px; margin-right: 10px;">
+                                    <img  data-lazy="thumb" data-src="{{ image.slide }}" data-width="120" data-height="120"  src="{{ image.slide }}" title="{{ heading_title }}" alt="{{ heading_title }}"   class="img-100"/> &nbsp;
+                            </div>
+                            {% endfor %}
+                    
+                        {% endif %}
+                        
+                        
+                            
+                    </div>
+                <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+
+                 
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="product-detail-title pl-0 mb-0">{{ heading_title }}</h1>
+                </div>
+                
+                <div class="col-12 font-15">
+                    <span class="sort-total-1">Thương hiệu: <strong class="text-danger">{{ manufacturer }}</strong></span>&nbsp;&nbsp;
+                    <span class="sort-total-1 hide">|&nbsp;Xuất xứ: <strong class="text-danger"></strong></span>
+                </div>  
+                <div class="col-12 font-15 my-2">
+                    <span class="sort-total-1">Tình trạng: <strong class="text-danger">Liên hệ để biết thêm thông tin</strong></span>&nbsp;&nbsp;
+                 </div>
+                <div class="col-md-12 padding-top-15 padding-top-15-mb item-sale-vote">
+                    <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                    <span>(5)</span>
+
+                    <a class="sort-total-1 font-11" href="#" data-control-load="clickToComments">(Xem đánh giá)</a>
+                </div>                
+
+            </div>
+                
+            <div class="row">
+                <div class="col-md-12 margin-15 margin-15-mb">
+                    {% if not special %}
+                         <span class="sale-cost-detail">{{ price }}</span> &nbsp; &nbsp; &nbsp;
+                         
+                    {% else %}
+                         <span class="sale-cost-detail">{{ special }}</span> &nbsp; &nbsp; &nbsp;
+                         <span class="sale-public-cost-detail">{{ price }}</span> &nbsp; &nbsp; &nbsp;
+                         <span class="sort-total-1">-35%</span>
+                    {% endif %}
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col col-6 text-center margin-bottom-10" style="padding-right: 5px">
+                    <button type="button" style="padding-bottom: 0px; padding-top: 0px;" class="btn btn-buy-now-50 btn-license btn-cart btn-buy-now" data-product-id="{{ product_id }}" data-quantity="{{ minimum }}">
+                        MUA NGAY
+                    </button>
+                </div>
+                <div class="col col-6 text-center margin-bottom-10" style="padding-left: 5px">
+                    <button type="button" style="padding-bottom: 0px; padding-top: 0px; background-color: #2F80ED;" class="btn btn-buy-now-50 btn-license btn-cart btn-add-to-cart" data-product-id="{{ product_id }}" data-quantity="{{ minimum }}">
+                        <i class="fa fa-shopping-basket font-16 color-white"></i>
+                        THÊM VÀO GIỎ HÀNG
+                    </button>
+                </div>
+            </div>
+            {#edit by SungTV on 2026/09/20 start#}
+            <script type="text/javascript">
+            $('.btn-add-to-cart, .btn-buy-now').on('click', function () {
+                var button = $(this);
+
+                $.ajax({
+                    url: 'index.php?route=checkout/cart.add&language={{ language }}',
+                    type: 'post',
+                    data: {
+                        product_id: button.data('product-id'),
+                        quantity: button.data('quantity') || 1
+                    },
+                    dataType: 'json',
+                    beforeSend: function () {
+                        button.prop('disabled', true);
+                    },
+                    complete: function () {
+                        button.prop('disabled', false);
+                    },
+                    success: function (json) {
+                        if (json['error'] && json['error']['warning']) {
+                            $.toast({message: '<i class="fa fa-times" aria-hidden="true"></i> ' + json['error']['warning'], type: 'error'});
+                        }
+
+                        if (json['success']) {
+                            $('#header-cart').load('index.php?route=common/cart.info');
+
+                            if (button.hasClass('btn-buy-now')) {
+                                window.location.href = 'index.php?route=checkout/cart';
+                            } else {
+                                $.toast('<i class="fa fa-check" aria-hidden="true"></i> ' + json['success']);
+                            }
+                        }
+                    },
+                    error: function (xhr, ajaxOptions, thrownError) {
+                        console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+                    }
+                });
+            });
+            </script>
+            {#edit by SungTV on 2026/09/20 end#}
+
+
+            <div class="row">
+                
+                <div class="col-12 py-1">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" style="margin-bottom: -3px;">
+                            <path d="M18.75 16.2501H17.5V9.02748C17.5 8.85448 17.4641 8.68336 17.3946 8.52494C17.3251 8.36653 17.2234 8.22427 17.0961 8.10717L10.8461 2.21029C10.843 2.20763 10.8402 2.20476 10.8375 2.2017C10.6074 1.99243 10.3075 1.87646 9.99648 1.87646C9.68545 1.87646 9.38558 1.99243 9.15547 2.2017L9.14688 2.21029L2.90391 8.10717C2.77656 8.22427 2.67491 8.36653 2.60538 8.52494C2.53586 8.68336 2.49997 8.85448 2.5 9.02748V16.2501H1.25C1.08424 16.2501 0.925268 16.316 0.808058 16.4332C0.690848 16.5504 0.625 16.7094 0.625 16.8751C0.625 17.0409 0.690848 17.1999 0.808058 17.3171C0.925268 17.4343 1.08424 17.5001 1.25 17.5001H18.75C18.9158 17.5001 19.0747 17.4343 19.1919 17.3171C19.3092 17.1999 19.375 17.0409 19.375 16.8751C19.375 16.7094 19.3092 16.5504 19.1919 16.4332C19.0747 16.316 18.9158 16.2501 18.75 16.2501ZM3.75 9.02748L3.75859 9.01967L10 3.12514L16.2422 9.01811L16.2508 9.02592V16.2501H12.5V12.5001C12.5 12.1686 12.3683 11.8507 12.1339 11.6163C11.8995 11.3818 11.5815 11.2501 11.25 11.2501H8.75C8.41848 11.2501 8.10054 11.3818 7.86612 11.6163C7.6317 11.8507 7.5 12.1686 7.5 12.5001V16.2501H3.75V9.02748ZM11.25 16.2501H8.75V12.5001H11.25V16.2501Z" fill="black"></path>
+                        </svg>
+                        Sản phẩm chất lượng cao
+                    </div>
+                </div>
+                <div class="col-12 py-1">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22" fill="none" style="margin-bottom: -3px;">
+                            <path d="M17.875 3.4375H4.125C3.76033 3.4375 3.41059 3.58237 3.15273 3.84023C2.89487 4.09809 2.75 4.44783 2.75 4.8125V9.86391C2.75 17.5648 9.26578 20.1197 10.5703 20.5537C10.8489 20.6484 11.1511 20.6484 11.4297 20.5537C12.7359 20.1197 19.25 17.5648 19.25 9.86391V4.8125C19.25 4.44783 19.1051 4.09809 18.8473 3.84023C18.5894 3.58237 18.2397 3.4375 17.875 3.4375ZM17.875 9.86477C17.875 16.604 12.173 18.8555 11 19.2474C9.83727 18.8598 4.125 16.61 4.125 9.86477V4.8125H17.875V9.86477ZM7.07609 12.1739C6.94709 12.0449 6.87462 11.8699 6.87462 11.6875C6.87462 11.5051 6.94709 11.3301 7.07609 11.2011C7.2051 11.0721 7.38006 10.9996 7.5625 10.9996C7.74494 10.9996 7.9199 11.0721 8.04891 11.2011L9.625 12.7772L13.9511 8.45109C14.015 8.38722 14.0908 8.33655 14.1743 8.30198C14.2577 8.26741 14.3472 8.24962 14.4375 8.24962C14.5278 8.24962 14.6173 8.26741 14.7007 8.30198C14.7842 8.33655 14.86 8.38722 14.9239 8.45109C14.9878 8.51497 15.0385 8.5908 15.073 8.67426C15.1076 8.75772 15.1254 8.84717 15.1254 8.9375C15.1254 9.02783 15.1076 9.11728 15.073 9.20074C15.0385 9.2842 14.9878 9.36003 14.9239 9.42391L10.1114 14.2364C10.0476 14.3003 9.97173 14.351 9.88827 14.3856C9.80481 14.4202 9.71535 14.438 9.625 14.438C9.53465 14.438 9.44519 14.4202 9.36173 14.3856C9.27827 14.351 9.20244 14.3003 9.13859 14.2364L7.07609 12.1739Z" fill="black"></path>
+                        </svg>
+                        Bảo hành chính hãng
+                    </div>
+                </div>
+                <div class="col-12 py-1">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" style="margin-bottom: -3px;">
+                            <path d="M19.3297 9.14062L18.2359 6.40625C18.1431 6.1749 17.983 5.97674 17.7763 5.83745C17.5696 5.69815 17.3258 5.62414 17.0766 5.625H14.375V5C14.375 4.83424 14.3092 4.67527 14.1919 4.55806C14.0747 4.44085 13.9158 4.375 13.75 4.375H1.875C1.54348 4.375 1.22554 4.5067 0.991117 4.74112C0.756696 4.97554 0.625 5.29348 0.625 5.625V14.375C0.625 14.7065 0.756696 15.0245 0.991117 15.2589C1.22554 15.4933 1.54348 15.625 1.875 15.625H3.20312C3.34081 16.1628 3.65356 16.6394 4.09207 16.9798C4.53057 17.3202 5.06989 17.5049 5.625 17.5049C6.18011 17.5049 6.71943 17.3202 7.15793 16.9798C7.59644 16.6394 7.90919 16.1628 8.04688 15.625H11.9531C12.0908 16.1628 12.4036 16.6394 12.8421 16.9798C13.2806 17.3202 13.8199 17.5049 14.375 17.5049C14.9301 17.5049 15.4694 17.3202 15.9079 16.9798C16.3464 16.6394 16.6592 16.1628 16.7969 15.625H18.125C18.4565 15.625 18.7745 15.4933 19.0089 15.2589C19.2433 15.0245 19.375 14.7065 19.375 14.375V9.375C19.3752 9.29468 19.3598 9.21508 19.3297 9.14062ZM14.375 6.875H17.0766L17.8266 8.75H14.375V6.875ZM1.875 5.625H13.125V10.625H1.875V5.625ZM5.625 16.25C5.37777 16.25 5.1361 16.1767 4.93054 16.0393C4.72498 15.902 4.56476 15.7068 4.47015 15.4784C4.37554 15.2499 4.35079 14.9986 4.39902 14.7561C4.44725 14.5137 4.5663 14.2909 4.74112 14.1161C4.91593 13.9413 5.13866 13.8222 5.38114 13.774C5.62361 13.7258 5.87495 13.7505 6.10335 13.8451C6.33176 13.9398 6.52699 14.1 6.66434 14.3055C6.80169 14.5111 6.875 14.7528 6.875 15C6.875 15.3315 6.7433 15.6495 6.50888 15.8839C6.27446 16.1183 5.95652 16.25 5.625 16.25ZM11.9531 14.375H8.04688C7.90919 13.8372 7.59644 13.3606 7.15793 13.0202C6.71943 12.6798 6.18011 12.4951 5.625 12.4951C5.06989 12.4951 4.53057 12.6798 4.09207 13.0202C3.65356 13.3606 3.34081 13.8372 3.20312 14.375H1.875V11.875H13.125V12.8367C12.8376 13.0028 12.586 13.2243 12.3849 13.4884C12.1837 13.7525 12.037 14.0538 11.9531 14.375ZM14.375 16.25C14.1278 16.25 13.8861 16.1767 13.6805 16.0393C13.475 15.902 13.3148 15.7068 13.2201 15.4784C13.1255 15.2499 13.1008 14.9986 13.149 14.7561C13.1972 14.5137 13.3163 14.2909 13.4911 14.1161C13.6659 13.9413 13.8887 13.8222 14.1311 13.774C14.3736 13.7258 14.6249 13.7505 14.8534 13.8451C15.0818 13.9398 15.277 14.1 15.4143 14.3055C15.5517 14.5111 15.625 14.7528 15.625 15C15.625 15.3315 15.4933 15.6495 15.2589 15.8839C15.0245 16.1183 14.7065 16.25 14.375 16.25ZM18.125 14.375H16.7969C16.6575 13.8385 16.3442 13.3635 15.9059 13.0242C15.4677 12.6849 14.9293 12.5005 14.375 12.5V10H18.125V14.375Z" fill="black"></path>
+                        </svg>
+                        Giao hàng toàn quốc
+                    </div>
+                </div>
+                <div class="col-12 py-1">
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none" style="margin-bottom: -3px;">
+                            <path d="M17.3727 12.3795L13.6922 10.7303L13.682 10.7256C13.491 10.6439 13.2825 10.6111 13.0756 10.6302C12.8687 10.6493 12.6698 10.7197 12.4969 10.835C12.4765 10.8484 12.457 10.8631 12.4383 10.8787L10.5367 12.4998C9.33204 11.9147 8.08829 10.6803 7.50313 9.49125L9.12657 7.56078C9.14219 7.54125 9.15704 7.52172 9.1711 7.50062C9.28394 7.3282 9.35239 7.13056 9.37039 6.92529C9.38838 6.72002 9.35534 6.51348 9.27423 6.32406V6.31469L7.62032 2.62797C7.51309 2.38052 7.3287 2.17438 7.09468 2.04034C6.86067 1.9063 6.58958 1.85153 6.32188 1.88422C5.26326 2.02352 4.29155 2.54341 3.58824 3.34679C2.88492 4.15017 2.49809 5.1821 2.50001 6.24984C2.50001 12.453 7.54688 17.4998 13.75 17.4998C14.8177 17.5018 15.8497 17.1149 16.6531 16.4116C17.4564 15.7083 17.9763 14.7366 18.1156 13.678C18.1484 13.4104 18.0937 13.1393 17.9598 12.9053C17.8259 12.6713 17.62 12.4869 17.3727 12.3795ZM13.75 16.2498C11.0987 16.2469 8.55687 15.1924 6.68214 13.3177C4.8074 11.443 3.7529 8.90112 3.75001 6.24984C3.74707 5.48694 4.02192 4.74906 4.52324 4.17399C5.02456 3.59892 5.71806 3.22599 6.47423 3.12484C6.47392 3.12796 6.47392 3.1311 6.47423 3.13422L8.11485 6.80609L6.50001 8.7389C6.48362 8.75776 6.46873 8.77788 6.45548 8.79906C6.33791 8.97947 6.26894 9.18718 6.25525 9.40208C6.24157 9.61697 6.28362 9.83176 6.37735 10.0256C7.08516 11.4733 8.54376 12.9209 10.007 13.628C10.2023 13.7208 10.4184 13.7614 10.634 13.7458C10.8497 13.7302 11.0576 13.6589 11.2375 13.5389C11.2576 13.5254 11.2769 13.5108 11.2953 13.4952L13.1945 11.8748L16.8664 13.5194C16.8664 13.5194 16.8727 13.5194 16.875 13.5194C16.7751 14.2766 16.4027 14.9715 15.8275 15.4741C15.2524 15.9766 14.5138 16.2524 13.75 16.2498Z" fill="black"></path>
+                        </svg>
+                        
+                        Hotline: <a href="tel:{{ telephone }}">{{ telephone }}</a> (8h00 - 21h00 mỗi ngày)
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 sale-off-popup">
+                    <div class="sale-off-content">
+                        <div class="row">
+                            <div class="col-md-12" style="position: relative; height: 30px">
+                                <div class="header-product-detail-sale-off-right">
+                                    <p class="content">ƯU ĐÃI ĐẶC BIỆT TẠI CX HOME</p>
+                                </div>
+                                <div class="header-product-detail-sale-off-skew">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            
+                        </div>
+                        <form data-control-load="registerCustomer">
+                            <div class="row register-user-combox">
+                                <div class="col-12 text-center padding-bottom-5">
+                                    ĐĂNG KÝ ĐỂ NHẬN CHƯƠNG TRÌNH KHUYẾN MÃI
+                                </div>
+                                <div class="col-9" style="padding-left: 0px; padding-right: 5px;">
+                                    <input type="text" class="form-control form-control-sm" name="Phone" length="15" placeholder="Nhập số điện thoại nhận thông tin khuyến mãi">
+                                    <input type="hidden" class="form-control form-control-sm" name="ProductId" value="31463">
+                                </div>
+                                <div class="col-3  col-clear-fix">
+                                    <button id="phone-register-product" type="submit" class="btn btn-buy-now-100  form-control-sm" style="font-size: 9px !important; line-height: 21px;">
+                                        ĐĂNG KÝ
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-md-12" style="position: relative; height: 35px">
+                    <div class="icon-round-product-detail text-white text-center"><i class="fa fa-shopping-bag font-15"></i></div>
+                    <div class="header-product-detail-side-right">
+                        <p class="content">TẠI SAO MUA HÀNG Ở CX HOME</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row padding-10px">
+                <div class="col-6 col-md-3">
+                    <div class="row p-2">
+                        <div class="col-md-12 text-center btn-buy-now-100 btn-hotline p-2 rounded">
+                            <img class="img-fluid" src="{{config_url}}/Content/designs/quality_assurance.png" alt="chính sách bán hàng CX Home">
+                            <div class="font-12 padding-top-10" style="height: 3em">
+                                Cam kết chất lượng tốt nhất
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="row p-2">
+                        <div class="col-md-12 text-center btn-buy-now-100 btn-hotline p-2 rounded">
+                            <img class="img-fluid" src="{{config_url}}/Content/designs/warranty.png" alt="chính sách bán hàng CX Home">
+                            <div class="font-12 padding-top-10" style="height: 3em">
+                                Bảo trì nhanh chóng
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="row p-2">
+                        <div class="col-md-12 text-center btn-buy-now-100 btn-hotline p-2 rounded">
+                            <img class="img-fluid" src="{{config_url}}/Content/designs/truck_delivery.png" alt="chính sách bán hàng CX Home">
+                            <div class="font-12 padding-top-10" style="height: 3em">
+                                Giao hàng toàn quốc
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <div class="row p-2">
+                        <div class="col-md-12 text-center btn-buy-now-100 btn-hotline p-2 rounded">
+                            <img class="img-fluid" src="{{config_url}}/Content/designs/thanhtoan.png" alt="chính sách bán hàng S.Home">
+                            <div class="font-12 padding-top-10" style="height: 3em">
+                                Thanh toán khi nhận hàng
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+            </div>
+
+ 
+
+
+            <div class="row background-white margin-top-30 only-for-mobile" style="position: relative; padding: 15px; overflow: hidden;">
+                <div class="col-12 font-14 detail-product-box-mobile" style="height: 310px; overflow: hidden;">
+                    <h3>Thông số kỹ thuật</h3>
+                    <div class="row">
+                        
+                    </div>
+                    <div class="font-20 text-danger margin-top-15 "><strong>Bồn cầu đặt sàn DeMuhler ML366307</strong></div>
+                    <table class="table table-striped">
+                        <tbody>
+                            <tr>
+                                <td><strong>Mã Sản phẩm</strong></td>
+                                <td>ML366307</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Tên sản phẩm</strong></td>
+                                <td>Bồn cầu đặt sàn DeMuhler ML366307</td>
+                            </tr>
+
+                            <tr>
+                                <td><strong>Thương hiệu</strong></td>
+                                <td>DeMuhler</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+                <div class=" col-md-12 bg-article-mobile"></div>
+            </div>
+
+            <div class="row only-for-mobile">
+                <div class="col-12 text-center margin-top-15">
+                    <button class="btn background-white load-more-product-detail-mobile" style="border: 0.5px solid #1F252C; border-radius: 5px; width: 178px">
+                        Xem thêm <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row background-white margin-top-30 px-0" style="position: relative; padding: 15px; overflow: hidden;">
+                <div class="col-md-7 detail-product-box-1 article-content" style="height: auto; border-right: 1px solid rgb(242, 242, 242); overflow: hidden;" data-control-load="descriptionEvent">
+                    {{ description }}
+                </div>
+                <div class="col-md-5 font-14 detail-product-box-2 hide-for-mobile" style="height: auto; overflow: hidden;">
+                    <h3>Thông số kỹ thuật</h3>
+                    <div class="row">
+                        <div class="col-12">
+                            
+                        </div>
+                    </div>
+                    <div class="font-20 text-danger margin-top-15 "><strong>{{ heading_title }}</strong></div>
+                    <table class="table table-striped">
+                        <tbody>
+                            {% for attribute_group in attribute_groups %}
+                             {% for attribute in attribute_group.attribute %}
+                                <tr>
+                                <td><strong>{{ attribute.name }}</strong></td>
+                                <td>{{ attribute.text }}</td>
+                                </tr>
+                            {% endfor %}
+                            {% endfor %}
+                             
+                                
+                        </tbody>
+                    </table>
+                </div>
+                <div class=" col-md-12 bg-article" style="display: none;"></div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center margin-top-15">
+                    <button class="btn background-white load-more-product-detail" style="border: 0.5px solid rgb(31, 37, 44); border-radius: 5px; width: 178px; display: none;">
+                        Xem thêm <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="row margin-bottom-30">
+                <div class="col-md-12">
+                    <div class="title-popup title-popup-normal">
+                        Sản phẩm tương tự
+                    </div>
+                </div>
+                <div class="col col-12">
+                    <div class="owl-carousel-5 owl-carousel owl-theme owl-loaded owl-drag" data-control-load="carousel5">
+                  
+                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2596px, 0px, 0px); transition: 0.25s; width: 9440px;"><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-roi-grohe-than-bon-cau-dat-san-1-khoi-3948500h" title="Bồn cầu rời GROHE, thân bồn cầu đặt sàn 1 khối 3948500H" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Grohe/bon-cau-grohe-3948500H_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu rời GROHE, thân bồn cầu đặt sàn 1 khối 3948500H" alt="Bồn cầu rời GROHE, thân bồn cầu đặt sàn 1 khối 3948500H" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-roi-grohe-than-bon-cau-dat-san-1-khoi-3948500h" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu rời GROHE, thân bồn cầu đặt sàn 1 khối 3948500H
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">43,988,891₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 19%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        35,191,113₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31018" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-treo-tuong-american-standard-acacia-vf-3119b-nap-ctss1808-m" title="Bồn cầu treo tường AMERICAN STANDARD Acacia VF-3119B, nắp CTSS1808-M" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/AMERICAN-STANDARD/bon-cau-AMERICAN-STANDARD-VF-3119B_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu treo tường AMERICAN STANDARD Acacia VF-3119B, nắp CTSS1808-M" alt="Bồn cầu treo tường AMERICAN STANDARD Acacia VF-3119B, nắp CTSS1808-M" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-treo-tuong-american-standard-acacia-vf-3119b-nap-ctss1808-m" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu treo tường AMERICAN STANDARD Acacia VF-3119B, nắp CTSS1808-M
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">7,850,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 51%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        3,800,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31017" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-1-khoi-toto-ms625dw11-kem-nap-rua-ien-tu-washlet-dong-s7-tcf4911z" title="Bồn cầu 1 khối TOTO MS625DW11 kèm nắp rửa điện tử WASHLET dòng S7 TCF4911Z" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Toto/bon-cau-toto-MS625DW11_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu 1 khối TOTO MS625DW11 kèm nắp rửa điện tử WASHLET dòng S7 TCF4911Z" alt="Bồn cầu 1 khối TOTO MS625DW11 kèm nắp rửa điện tử WASHLET dòng S7 TCF4911Z" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-1-khoi-toto-ms625dw11-kem-nap-rua-ien-tu-washlet-dong-s7-tcf4911z" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu 1 khối TOTO MS625DW11 kèm nắp rửa điện tử WASHLET dòng S7 TCF4911Z
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">49,759,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 17%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        41,190,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31009" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-dat-san-1-khoi-american-standard-signature-vf-2141p-nap-wp-c119" title="Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Signature VF-2141P, nắp WP-C119" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/AMERICAN-STANDARD/bon-cau-AMERICAN-STANDARD-VF-2141P_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Signature VF-2141P, nắp WP-C119" alt="Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Signature VF-2141P, nắp WP-C119" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-dat-san-1-khoi-american-standard-signature-vf-2141p-nap-wp-c119" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Signature VF-2141P, nắp WP-C119
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">8,800,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 11%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        7,790,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31001" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-dat-san-1-khoi-american-standard-flexio-vf-2530" title="Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Flexio VF-2530" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/AMERICAN-STANDARD/bon-cau-AMERICAN-STANDARD-VF-2530_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Flexio VF-2530" alt="Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Flexio VF-2530" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-dat-san-1-khoi-american-standard-flexio-vf-2530" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Flexio VF-2530
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">8,000,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 11%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        7,090,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31000" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-dat-san-1-khoi-american-standard-cadet-wp-1841" title="Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Cadet WP-1841" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/AMERICAN-STANDARD/bon-cau-AMERICAN-STANDARD-WP-1841_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Cadet WP-1841" alt="Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Cadet WP-1841" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-dat-san-1-khoi-american-standard-cadet-wp-1841" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Cadet WP-1841
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">7,900,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 12%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        6,890,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="30999" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-dat-san-1-khoi-inax-bc-ac-2700vn" title="Bồn cầu đặt sàn 1 khối INAX BC_ AC-2700VN/BW1" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Inax/bon-cau-inax-AC-2700VN_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu đặt sàn 1 khối INAX BC_ AC-2700VN/BW1" alt="Bồn cầu đặt sàn 1 khối INAX BC_ AC-2700VN/BW1" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-dat-san-1-khoi-inax-bc-ac-2700vn" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu đặt sàn 1 khối INAX BC_ AC-2700VN/BW1
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">22,200,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 45%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        12,090,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="30994" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-dat-san-1-khoi-inax-ac-1008vrn" title="Bồn cầu đặt sàn 1 khối INAX  AC-1008VRN/BW1" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Inax/bon-cau-inax-AC-1008VRN_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu đặt sàn 1 khối INAX  AC-1008VRN/BW1" alt="Bồn cầu đặt sàn 1 khối INAX  AC-1008VRN/BW1" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-dat-san-1-khoi-inax-ac-1008vrn" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu đặt sàn 1 khối INAX  AC-1008VRN/BW1
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">15,280,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 12%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        13,320,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="30993" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-dat-san-1-khoi-inax-ac-919vrn-nap-cf-606vs" title="Bồn cầu đặt sàn 1 khối INAX  AC-919VRN/BW1 nắp CF-606VS" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Inax/bon-cau-inax-AC-919VRN_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu đặt sàn 1 khối INAX  AC-919VRN/BW1 nắp CF-606VS" alt="Bồn cầu đặt sàn 1 khối INAX  AC-919VRN/BW1 nắp CF-606VS" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-dat-san-1-khoi-inax-ac-919vrn-nap-cf-606vs" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu đặt sàn 1 khối INAX  AC-919VRN/BW1 nắp CF-606VS
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">11,970,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 9%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        10,790,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="30992" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-dat-san-1-khoi-inax-ac-1032vn" title="Bồn cầu đặt sàn 1 khối INAX  AC-1032VN/BW1" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Inax/bon-cau-inax-AC-1032VN_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu đặt sàn 1 khối INAX  AC-1032VN/BW1" alt="Bồn cầu đặt sàn 1 khối INAX  AC-1032VN/BW1" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-dat-san-1-khoi-inax-ac-1032vn" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu đặt sàn 1 khối INAX  AC-1032VN/BW1
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">15,630,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 30%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        10,800,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="30991" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-dat-san-demuhler-ml366306" title="Bồn cầu đặt sàn DeMuhler ML366306" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/ML366306-1_w255_h255_n.jpg" data-width="255" data-height="255" src="/Thumb/Web/Resources/Uploaded/18/images/ML366306-1_w255_h255_n.jpg" title="Bồn cầu đặt sàn DeMuhler ML366306" alt="Bồn cầu đặt sàn DeMuhler ML366306" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-dat-san-demuhler-ml366306" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu đặt sàn DeMuhler ML366306
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">8,790,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 35%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        5,713,500₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31462" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item active" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-thuong-at-san-demuhler-ml366304" title="Bồn cầu thường đặt sàn DeMuhler ML366304" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/demuhler/ML366304_w255_h255_n.jpg" data-width="255" data-height="255" src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/demuhler/ML366304_w255_h255_n.jpg" title="Bồn cầu thường đặt sàn DeMuhler ML366304" alt="Bồn cầu thường đặt sàn DeMuhler ML366304" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-thuong-at-san-demuhler-ml366304" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu thường đặt sàn DeMuhler ML366304
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">11,690,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 35%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        7,598,500₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31083" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item active" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-roi-american-standard-nap-bon-cau-pristine-star-wp-7sr1-dien-tu" title="Bồn cầu rời AMERICAN STANDARD, nắp bồn cầu Pristine Star WP-7SR1 điện tử" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/AMERICAN-STANDARD/bon-cau-AMERICAN-STANDARD-WP-7SR1_w255_h255_n.jpg" data-width="255" data-height="255" src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/AMERICAN-STANDARD/bon-cau-AMERICAN-STANDARD-WP-7SR1_w255_h255_n.jpg" title="Bồn cầu rời AMERICAN STANDARD, nắp bồn cầu Pristine Star WP-7SR1 điện tử" alt="Bồn cầu rời AMERICAN STANDARD, nắp bồn cầu Pristine Star WP-7SR1 điện tử" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-roi-american-standard-nap-bon-cau-pristine-star-wp-7sr1-dien-tu" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu rời AMERICAN STANDARD, nắp bồn cầu Pristine Star WP-7SR1 điện tử
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">18,655,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 54%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        8,460,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31055" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item active" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-mot-khoi-grohe-bau-39990000" title="Bồn cầu một khối Grohe Bau 39990000" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Grohe/bon-cau-grohe-39990000_w255_h255_n.jpg" data-width="255" data-height="255" src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Grohe/bon-cau-grohe-39990000_w255_h255_n.jpg" title="Bồn cầu một khối Grohe Bau 39990000" alt="Bồn cầu một khối Grohe Bau 39990000" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-mot-khoi-grohe-bau-39990000" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu một khối Grohe Bau 39990000
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">14,500,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 20%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        11,600,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="30507" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item active" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-mot-khoi-grohe-39316000" title="Bồn cầu một khối Grohe 39316000" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Grohe/bon-cau-grohe-39316000_w255_h255_n.jpg" data-width="255" data-height="255" src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Grohe/bon-cau-grohe-39316000_w255_h255_n.jpg" title="Bồn cầu một khối Grohe 39316000" alt="Bồn cầu một khối Grohe 39316000" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-mot-khoi-grohe-39316000" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu một khối Grohe 39316000
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">22,000,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 20%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        17,600,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="30508" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item active" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-nap-dien-tu-inax-ac-902-cw-h18vn" title="Bồn Cầu Nắp Điện Tử INAX AC-902/CW-H18VN" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Inax/bon-cau-inax-AC-902-CW-H18VN_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn Cầu Nắp Điện Tử INAX AC-902/CW-H18VN" alt="Bồn Cầu Nắp Điện Tử INAX AC-902/CW-H18VN" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-nap-dien-tu-inax-ac-902-cw-h18vn" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn Cầu Nắp Điện Tử INAX AC-902/CW-H18VN
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">22,060,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 43%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        12,500,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31051" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-treo-tuong-grohe-3932100a" title="Bồn cầu treo tường GROHE 3932100A" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Grohe/bon-cau-grohe-3932100A_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu treo tường GROHE 3932100A" alt="Bồn cầu treo tường GROHE 3932100A" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-treo-tuong-grohe-3932100a" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu treo tường GROHE 3932100A
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">15,900,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 20%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        12,720,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31049" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-dat-san-1-khoi-inax-ac-989vn-nap-dien-tu-cw-h18vn" title="Bồn cầu đặt sàn 1 khối INAX AC-989VN nắp điện tử CW-H18VN" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Inax/bon-cau-inax-AC-989-CW-H18VN_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu đặt sàn 1 khối INAX AC-989VN nắp điện tử CW-H18VN" alt="Bồn cầu đặt sàn 1 khối INAX AC-989VN nắp điện tử CW-H18VN" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-dat-san-1-khoi-inax-ac-989vn-nap-dien-tu-cw-h18vn" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu đặt sàn 1 khối INAX AC-989VN nắp điện tử CW-H18VN
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">17,310,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 33%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        11,450,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31021" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-roi-grohe-than-bon-cau-dat-san-1-khoi-euro-ceramic-3933900h" title="Thân bồn cầu đặt sàn 1 khối Euro Ceramic 3933900H của Bồn cầu rời GROHE" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Grohe/bon-cau-grohe-3933900H_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Thân bồn cầu đặt sàn 1 khối Euro Ceramic 3933900H của Bồn cầu rời GROHE" alt="Thân bồn cầu đặt sàn 1 khối Euro Ceramic 3933900H của Bồn cầu rời GROHE" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-roi-grohe-than-bon-cau-dat-san-1-khoi-euro-ceramic-3933900h" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Thân bồn cầu đặt sàn 1 khối Euro Ceramic 3933900H của Bồn cầu rời GROHE
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">21,205,800₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 20%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        16,964,640₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31020" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-roi-grohe-than-bon-cau-dat-san-1-khoi-3957300h" title="Thân bồn cầu đặt sàn 1 khối 3957300H của Bồn cầu rời GROHE" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Grohe/bon-cau-grohe-3957300H_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Thân bồn cầu đặt sàn 1 khối 3957300H của Bồn cầu rời GROHE" alt="Thân bồn cầu đặt sàn 1 khối 3957300H của Bồn cầu rời GROHE" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-roi-grohe-than-bon-cau-dat-san-1-khoi-3957300h" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Thân bồn cầu đặt sàn 1 khối 3957300H của Bồn cầu rời GROHE
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">20,900,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 20%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        16,720,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31019" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-roi-grohe-than-bon-cau-dat-san-1-khoi-3948500h" title="Bồn cầu rời GROHE, thân bồn cầu đặt sàn 1 khối 3948500H" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Grohe/bon-cau-grohe-3948500H_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu rời GROHE, thân bồn cầu đặt sàn 1 khối 3948500H" alt="Bồn cầu rời GROHE, thân bồn cầu đặt sàn 1 khối 3948500H" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-roi-grohe-than-bon-cau-dat-san-1-khoi-3948500h" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu rời GROHE, thân bồn cầu đặt sàn 1 khối 3948500H
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">43,988,891₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 19%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        35,191,113₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31018" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-treo-tuong-american-standard-acacia-vf-3119b-nap-ctss1808-m" title="Bồn cầu treo tường AMERICAN STANDARD Acacia VF-3119B, nắp CTSS1808-M" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/AMERICAN-STANDARD/bon-cau-AMERICAN-STANDARD-VF-3119B_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu treo tường AMERICAN STANDARD Acacia VF-3119B, nắp CTSS1808-M" alt="Bồn cầu treo tường AMERICAN STANDARD Acacia VF-3119B, nắp CTSS1808-M" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-treo-tuong-american-standard-acacia-vf-3119b-nap-ctss1808-m" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu treo tường AMERICAN STANDARD Acacia VF-3119B, nắp CTSS1808-M
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">7,850,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 51%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        3,800,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31017" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-1-khoi-toto-ms625dw11-kem-nap-rua-ien-tu-washlet-dong-s7-tcf4911z" title="Bồn cầu 1 khối TOTO MS625DW11 kèm nắp rửa điện tử WASHLET dòng S7 TCF4911Z" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Toto/bon-cau-toto-MS625DW11_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu 1 khối TOTO MS625DW11 kèm nắp rửa điện tử WASHLET dòng S7 TCF4911Z" alt="Bồn cầu 1 khối TOTO MS625DW11 kèm nắp rửa điện tử WASHLET dòng S7 TCF4911Z" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-1-khoi-toto-ms625dw11-kem-nap-rua-ien-tu-washlet-dong-s7-tcf4911z" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu 1 khối TOTO MS625DW11 kèm nắp rửa điện tử WASHLET dòng S7 TCF4911Z
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">49,759,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 17%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        41,190,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31009" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-dat-san-1-khoi-american-standard-signature-vf-2141p-nap-wp-c119" title="Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Signature VF-2141P, nắp WP-C119" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/AMERICAN-STANDARD/bon-cau-AMERICAN-STANDARD-VF-2141P_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Signature VF-2141P, nắp WP-C119" alt="Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Signature VF-2141P, nắp WP-C119" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-dat-san-1-khoi-american-standard-signature-vf-2141p-nap-wp-c119" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Signature VF-2141P, nắp WP-C119
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">8,800,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 11%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        7,790,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31001" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-dat-san-1-khoi-american-standard-flexio-vf-2530" title="Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Flexio VF-2530" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/AMERICAN-STANDARD/bon-cau-AMERICAN-STANDARD-VF-2530_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Flexio VF-2530" alt="Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Flexio VF-2530" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-dat-san-1-khoi-american-standard-flexio-vf-2530" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Flexio VF-2530
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">8,000,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 11%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        7,090,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31000" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-dat-san-1-khoi-american-standard-cadet-wp-1841" title="Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Cadet WP-1841" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/AMERICAN-STANDARD/bon-cau-AMERICAN-STANDARD-WP-1841_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Cadet WP-1841" alt="Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Cadet WP-1841" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-dat-san-1-khoi-american-standard-cadet-wp-1841" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu đặt sàn 1 khối AMERICAN STANDARD Cadet WP-1841
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">7,900,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 12%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        6,890,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="30999" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-dat-san-1-khoi-inax-bc-ac-2700vn" title="Bồn cầu đặt sàn 1 khối INAX BC_ AC-2700VN/BW1" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Inax/bon-cau-inax-AC-2700VN_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu đặt sàn 1 khối INAX BC_ AC-2700VN/BW1" alt="Bồn cầu đặt sàn 1 khối INAX BC_ AC-2700VN/BW1" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-dat-san-1-khoi-inax-bc-ac-2700vn" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu đặt sàn 1 khối INAX BC_ AC-2700VN/BW1
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">22,200,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 45%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        12,090,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="30994" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-dat-san-1-khoi-inax-ac-1008vrn" title="Bồn cầu đặt sàn 1 khối INAX  AC-1008VRN/BW1" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Inax/bon-cau-inax-AC-1008VRN_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu đặt sàn 1 khối INAX  AC-1008VRN/BW1" alt="Bồn cầu đặt sàn 1 khối INAX  AC-1008VRN/BW1" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-dat-san-1-khoi-inax-ac-1008vrn" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu đặt sàn 1 khối INAX  AC-1008VRN/BW1
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">15,280,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 12%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        13,320,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="30993" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-dat-san-1-khoi-inax-ac-919vrn-nap-cf-606vs" title="Bồn cầu đặt sàn 1 khối INAX  AC-919VRN/BW1 nắp CF-606VS" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Inax/bon-cau-inax-AC-919VRN_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu đặt sàn 1 khối INAX  AC-919VRN/BW1 nắp CF-606VS" alt="Bồn cầu đặt sàn 1 khối INAX  AC-919VRN/BW1 nắp CF-606VS" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-dat-san-1-khoi-inax-ac-919vrn-nap-cf-606vs" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu đặt sàn 1 khối INAX  AC-919VRN/BW1 nắp CF-606VS
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">11,970,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 9%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        10,790,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="30992" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-dat-san-1-khoi-inax-ac-1032vn" title="Bồn cầu đặt sàn 1 khối INAX  AC-1032VN/BW1" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Inax/bon-cau-inax-AC-1032VN_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu đặt sàn 1 khối INAX  AC-1032VN/BW1" alt="Bồn cầu đặt sàn 1 khối INAX  AC-1032VN/BW1" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-dat-san-1-khoi-inax-ac-1032vn" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu đặt sàn 1 khối INAX  AC-1032VN/BW1
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">15,630,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 30%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        10,800,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="30991" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-dat-san-demuhler-ml366306" title="Bồn cầu đặt sàn DeMuhler ML366306" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/ML366306-1_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu đặt sàn DeMuhler ML366306" alt="Bồn cầu đặt sàn DeMuhler ML366306" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-dat-san-demuhler-ml366306" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu đặt sàn DeMuhler ML366306
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">8,790,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 35%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        5,713,500₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31462" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-thuong-at-san-demuhler-ml366304" title="Bồn cầu thường đặt sàn DeMuhler ML366304" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/demuhler/ML366304_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu thường đặt sàn DeMuhler ML366304" alt="Bồn cầu thường đặt sàn DeMuhler ML366304" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-thuong-at-san-demuhler-ml366304" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu thường đặt sàn DeMuhler ML366304
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">11,690,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 35%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        7,598,500₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31083" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-roi-american-standard-nap-bon-cau-pristine-star-wp-7sr1-dien-tu" title="Bồn cầu rời AMERICAN STANDARD, nắp bồn cầu Pristine Star WP-7SR1 điện tử" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/AMERICAN-STANDARD/bon-cau-AMERICAN-STANDARD-WP-7SR1_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu rời AMERICAN STANDARD, nắp bồn cầu Pristine Star WP-7SR1 điện tử" alt="Bồn cầu rời AMERICAN STANDARD, nắp bồn cầu Pristine Star WP-7SR1 điện tử" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-roi-american-standard-nap-bon-cau-pristine-star-wp-7sr1-dien-tu" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu rời AMERICAN STANDARD, nắp bồn cầu Pristine Star WP-7SR1 điện tử
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">18,655,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 54%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        8,460,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31055" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-mot-khoi-grohe-bau-39990000" title="Bồn cầu một khối Grohe Bau 39990000" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Grohe/bon-cau-grohe-39990000_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu một khối Grohe Bau 39990000" alt="Bồn cầu một khối Grohe Bau 39990000" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-mot-khoi-grohe-bau-39990000" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu một khối Grohe Bau 39990000
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">14,500,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 20%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        11,600,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="30507" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-mot-khoi-grohe-39316000" title="Bồn cầu một khối Grohe 39316000" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Grohe/bon-cau-grohe-39316000_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu một khối Grohe 39316000" alt="Bồn cầu một khối Grohe 39316000" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-mot-khoi-grohe-39316000" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu một khối Grohe 39316000
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">22,000,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 20%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        17,600,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="30508" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-nap-dien-tu-inax-ac-902-cw-h18vn" title="Bồn Cầu Nắp Điện Tử INAX AC-902/CW-H18VN" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Inax/bon-cau-inax-AC-902-CW-H18VN_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn Cầu Nắp Điện Tử INAX AC-902/CW-H18VN" alt="Bồn Cầu Nắp Điện Tử INAX AC-902/CW-H18VN" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-nap-dien-tu-inax-ac-902-cw-h18vn" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn Cầu Nắp Điện Tử INAX AC-902/CW-H18VN
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">22,060,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 43%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        12,500,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31051" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-treo-tuong-grohe-3932100a" title="Bồn cầu treo tường GROHE 3932100A" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Grohe/bon-cau-grohe-3932100A_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu treo tường GROHE 3932100A" alt="Bồn cầu treo tường GROHE 3932100A" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-treo-tuong-grohe-3932100a" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu treo tường GROHE 3932100A
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">15,900,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 20%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        12,720,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31049" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-dat-san-1-khoi-inax-ac-989vn-nap-dien-tu-cw-h18vn" title="Bồn cầu đặt sàn 1 khối INAX AC-989VN nắp điện tử CW-H18VN" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Inax/bon-cau-inax-AC-989-CW-H18VN_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Bồn cầu đặt sàn 1 khối INAX AC-989VN nắp điện tử CW-H18VN" alt="Bồn cầu đặt sàn 1 khối INAX AC-989VN nắp điện tử CW-H18VN" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-dat-san-1-khoi-inax-ac-989vn-nap-dien-tu-cw-h18vn" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Bồn cầu đặt sàn 1 khối INAX AC-989VN nắp điện tử CW-H18VN
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">17,310,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 33%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        11,450,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31021" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-roi-grohe-than-bon-cau-dat-san-1-khoi-euro-ceramic-3933900h" title="Thân bồn cầu đặt sàn 1 khối Euro Ceramic 3933900H của Bồn cầu rời GROHE" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Grohe/bon-cau-grohe-3933900H_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Thân bồn cầu đặt sàn 1 khối Euro Ceramic 3933900H của Bồn cầu rời GROHE" alt="Thân bồn cầu đặt sàn 1 khối Euro Ceramic 3933900H của Bồn cầu rời GROHE" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-roi-grohe-than-bon-cau-dat-san-1-khoi-euro-ceramic-3933900h" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Thân bồn cầu đặt sàn 1 khối Euro Ceramic 3933900H của Bồn cầu rời GROHE
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">21,205,800₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 20%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        16,964,640₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31020" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div><div class="owl-item cloned" style="width: 226px; margin-right: 10px;"><div class="item-product">
+    <div class="hover-mask">
+        <a href="/bon-cau-roi-grohe-than-bon-cau-dat-san-1-khoi-3957300h" title="Thân bồn cầu đặt sàn 1 khối 3957300H của Bồn cầu rời GROHE" class="rounded">
+            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/bon%20cau/Grohe/bon-cau-grohe-3957300H_w255_h255_n.jpg" data-width="255" data-height="255" src="/Common/Resources/images/noimage.png" title="Thân bồn cầu đặt sàn 1 khối 3957300H của Bồn cầu rời GROHE" alt="Thân bồn cầu đặt sàn 1 khối 3957300H của Bồn cầu rời GROHE" class="img-fluid">
+            <div>
+                <i class="fa fa-search"></i>
+            </div>
+        </a>
+    </div>
+    <div class="item-content">
+        <a href="/bon-cau-roi-grohe-than-bon-cau-dat-san-1-khoi-3957300h" class="link-none link-black col-clear-fix font-15">
+            <h3 class="font-15">
+                Thân bồn cầu đặt sàn 1 khối 3957300H của Bồn cầu rời GROHE
+            </h3>
+        </a>
+    </div>
+    
+    <div class="item-base-price">
+        <span class="base-price font-11">20,900,000₫</span>
+        <span class="item-sale-off-ratio  font-11">(Tiết kiệm: 20%) </span>
+    </div>
+    
+    <div class="item-sale-price">
+        16,720,000₫
+    </div>
+    
+
+    <div class="item-sale-vote">
+        <div class="row">
+            <div class="col-12">
+                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                <span>(5)</span>
+
+                
+                <i data-product-id="31019" data-control-load="addCart" class="fa fa-shopping-cart color-black font-20 hover-pointer float-right" title="Thêm vào giỏ hàng"></i>
+                
+            </div>
+        </div>
+    </div>
+</div></div></div></div><div class="owl-nav"><button type="button" role="presentation" class="owl-prev"><i class="fa fa-angle-left" aria-hidden="true"></i></button><button type="button" role="presentation" class="owl-next"><i class="fa fa-angle-right" aria-hidden="true"></i></button></div><div class="owl-dots disabled"></div></div>
+                </div>
+            </div>
+
+            <div id="comments-header" class="row">
+                <div class="col-lg-8">
+                    <div class="mb-15 font-25 font-bold">Đánh giá và nhận xét</div>
+                    <div class="inner-box">
+                        <div class="inner-rate">
+                            <div class="row">
+                                <div class="col-lg-5">
+                                    <div class="al-center d-flex">
+                                        <div class="font-50 font-bold cl-red pr-7">5/5</div>
+                                        <div>
+                                            <div class="inner-rateimg item-sale-vote padding-3px">
+                                                <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                                            </div>
+                                            <div class="inner-text cl-gray font-12">1 đánh giá và nhận xét</div>
+                                        </div>
+                                    </div>
+                                    <div class="inner-evaluate item-sale-vote padding-3px">
+                                        <span class="font-16">5</span>
+                                        <i class="fa fa-star"></i>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="cl-link font-15">100%</span>
+                                    </div>
+                                    <div class="inner-evaluate item-sale-vote padding-3px">
+                                        <span class="font-16">4</span>
+                                        <i class="fa fa-star"></i>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="cl-link font-15">%</span>
+                                    </div>
+                                    <div class="inner-evaluate item-sale-vote padding-3px">
+                                        <span class="font-16">3</span>
+                                        <i class="fa fa-star"></i>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="cl-link font-15">%</span>
+                                    </div>
+                                    <div class="inner-evaluate item-sale-vote padding-3px">
+                                        <span class="font-16">2</span>
+                                        <i class="fa fa-star"></i>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="cl-link font-15">%</span>
+                                    </div>
+                                    <div class="inner-evaluate item-sale-vote padding-3px">
+                                        <span class="font-16">1</span>
+                                        <i class="fa fa-star"></i>
+                                        <div class="progress">
+                                            <div class="progress-bar" role="progressbar" style="width: 0%" aria-valuenow="" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <span class="cl-link font-15">%</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cl-gray font-12 full-width m-12-0">Bạn đánh giá sao về sản phầm này ?</div>
+                        <div>
+                            <button type="button" data-control-load="commentActive" class="btn bg-yellow br-5 font-17 font-bold d-block m-auto cl-white" style="width: 100%">ĐÁNH GIÁ NGAY</button>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="">
+                        <div class="mb-15 font-25 font-bold">Video nổi bật</div>
+                        <div class="inner-image mb-15">
+                            <div class="video-slideshows">
+                                <div class="youtube active" data-control-load="youtubeOpen">
+                                    <img src="https://nshpos.com/Web/Resources/Uploaded/18/images/Youtube/Nha F.jpg" class="img-fluid" style="position: absolute; top: 0;" alt="video youtube S.Home" data-embed="https://www.youtube.com/embed/SwVyUBz6YRI?si=wp1zDcOnYOiOVKs6">
+                                    <iframe id="video-youtube" frameborder="0" class="youtube-video" width="100%" height="100%" allowfullscreen="" src="" allow="autoplay" style="display: none"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-15 font-25 font-bold">Tin tức nổi bật</div>
+                        <div class="inner-image">
+                            <a href="/tin-tuc/s-home-gui-qua-tang-dong-hanh" title="S.Home gửi quà tặng đồng hành" class="rounded">
+                                <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/T%E1%BB%A7%20l%E1%BA%A1nh/15_w370_h190_n.png" data-width="370" data-height="190" src="/Thumb/Web/Resources/Uploaded/18/images/T%E1%BB%A7%20l%E1%BA%A1nh/15_w370_h190_n.png" title="S.Home gửi quà tặng đồng hành" alt="S.Home gửi quà tặng đồng hành" class="img-fluid">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2"></div>
+                <div class="col-lg-8">
+                    <div class="row inner-form">
+                        <div class="col-md-6">
+
+                            <img data-lazy="thumb" data-src="/Thumb/Web/Resources/Uploaded/18/images/ML366307-1_w410_h410_n.jpg" data-width="410" data-height="410" src="/Thumb/Web/Resources/Uploaded/18/images/ML366307-1_w410_h410_n.jpg" title="Avata" alt="Bồn cầu đặt sàn DeMuhler ML366307" class="img-fluid">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="font-20 cl-yellow font-bold text-center mb-3">Nhập thông tin nhận tư vấn</div>
+                            <form role="form" data-control-load="registerCustomer">
+                                <input type="hidden" name="ProductId" class="form-control" value="31463">
+                                <div class="form-group">
+                                    <input type="text" name="FullName" length="100" class="form-control" placeholder="Họ và tên">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" length="15" name="Phone" class="form-control" placeholder="Số điện thoại">
+                                </div>
+                                <button id="done-register-advise" type="submit" style="padding-bottom: 0px; padding-top: 2px;" class="btn btn-buy-now-100 font-15">
+                                    ĐĂNG KÝ
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+  </div>
 {{ footer }}

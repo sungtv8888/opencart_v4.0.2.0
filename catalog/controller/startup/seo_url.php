@@ -32,6 +32,10 @@ class SeoUrl extends \Opencart\System\Engine\Controller {
                         $this->request->get['route'] = 'product/category';
                     } elseif (isset($this->request->get['information_id'])) {
                         $this->request->get['route'] = 'information/information';
+                    } elseif (isset($this->request->get['news_id'])) {
+                        $this->request->get['route'] = 'extension/news/news';
+                    } elseif (isset($this->request->get['news_path'])) {
+                        $this->request->get['route'] = 'extension/news/news_category';
                     } elseif (isset($this->request->get['manufacturer_id'])) {
                         $this->request->get['route'] = 'product/manufacturer/info';
                     }
@@ -64,6 +68,8 @@ class SeoUrl extends \Opencart\System\Engine\Controller {
                 'product/product',
                 'product/category',
                 'information/information',
+                'extension/news/news',
+                'extension/news/news_category',
                 'product/manufacturer/info'
             ];
 

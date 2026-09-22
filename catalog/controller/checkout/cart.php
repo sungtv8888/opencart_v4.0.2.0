@@ -104,12 +104,19 @@ class Cart extends \Opencart\System\Engine\Controller {
 		$data['product_remove'] = $this->url->link('checkout/cart.remove', 'language=' . $this->config->get('config_language'));
 		$data['voucher_remove'] = $this->url->link('checkout/voucher.remove', 'language=' . $this->config->get('config_language'));
 
+		//edit by SungTV on 2026/09/21 start
+		$data['language'] = $this->config->get('config_language');
+		//edit by SungTV on 2026/09/21 end
+
 		$this->load->model('tool/image');
 		$this->load->model('tool/upload');
 
 		$data['products'] = [];
 
 		$this->load->model('checkout/cart');
+		//edit by SungTV on 2026/09/21 start
+		$this->load->model('catalog/product');
+		//edit by SungTV on 2026/09/21 end
 
 		$products = $this->model_checkout_cart->getProducts();
 
@@ -128,6 +135,19 @@ class Cart extends \Opencart\System\Engine\Controller {
 				$price = false;
 				$total = false;
 			}
+
+			//edit by SungTV on 2026/09/21 start
+			// Original price + discount % (for showing "before/after promotion")
+			$original_price = false;
+			$discount_percentage = 0;
+
+			$product_info = $this->model_catalog_product->getProduct($product['product_id']);
+
+			if ($product_info && !empty($product_info['special']) && ((float)$product_info['special'] < (float)$product_info['price'])) {
+				$original_price = $this->currency->format($this->tax->calculate($product_info['price'], $product['tax_class_id'], $this->config->get('config_tax')), $this->session->data['currency']);
+				$discount_percentage = (int)round((($product_info['price'] - $product_info['special']) / $product_info['price']) * 100);
+			}
+			//edit by SungTV on 2026/09/21 end
 
 			$description = '';
 
@@ -168,6 +188,10 @@ class Cart extends \Opencart\System\Engine\Controller {
 				'minimum'      => $product['minimum'],
 				'reward'       => $product['reward'],
 				'price'        => $price,
+				//edit by SungTV on 2026/09/21 start
+				'original_price'      => $original_price,
+				'discount_percentage' => $discount_percentage,
+				//edit by SungTV on 2026/09/21 end
 				'total'        => $total,
 				'href'         => $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . $product['product_id'])
 			];

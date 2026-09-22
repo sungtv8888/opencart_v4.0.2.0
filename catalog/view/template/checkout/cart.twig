@@ -1,5 +1,5 @@
 {{ header }}
-<div id="checkout-cart" class="container">
+{#<div id="checkout-cart" class="container">
   <ul class="breadcrumb">
     {% for breadcrumb in breadcrumbs %}
       <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
@@ -82,5 +82,35 @@ $('#shopping-cart').on('submit', 'form', function (e) {
         }
     });
 });
-//--></script>
+//--></script>#}
+
+
+
+<div class="container-cart margin-bottom-30 padding-bottom-15">
+      <div class="row background-white">
+          <div class="col-12">
+              <ul class="breadcrumb-cx background-grey breadcrumb-fixbrowser" >
+                  {% for breadcrumb in breadcrumbs %}
+                    <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+                  {% endfor %}
+              </ul>
+          </div>
+      </div>
+    <div class="row background-white">
+        <div class="col-12">
+             {{ list }}     
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-7 font-17">Tổng tiền tạm tính (<span id="total-product">1</span> sản phẩm)</div>
+        <div id="total-money" class="col-md-5 font-16 sale-cost-detail font-15 text-right-only-desktop">14,940,350₫</div>
+        <div class="col-md-12 divider">
+            <hr class="solid">
+        </div>
+        <div class="col col-12 text-center margin-top-30 margin-bottom-10">
+            <a href="/thanh-toan" class="btn btn-buy-now-100">Mua ngay</a>
+        </div>
+        <div class="col-md-12 text-center" style="color: #62666B;">Anh/chị có thể chọn hình thức thanh toán sau khi đặt hàng</div>
+    </div>
+</div>
 {{ footer }}

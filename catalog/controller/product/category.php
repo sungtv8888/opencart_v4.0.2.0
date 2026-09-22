@@ -214,6 +214,15 @@ class Category extends \Opencart\System\Engine\Controller {
 			if (isset($this->request->get['limit'])) {
 				$url .= '&limit=' . $this->request->get['limit'];
 			}
+			//add by SungTV on 20260425 start
+			$manufacture_cate = $this->model_catalog_product->getProduct_Cate_Manufacture((int)$category_id);
+			 
+			 	$data['brands'] = $this->parseBrands( $manufacture_cate);
+
+			 
+			//add by SungTV on 20260425 end
+
+
 
 			$data['sorts'] = [];
 
@@ -403,5 +412,25 @@ class Category extends \Opencart\System\Engine\Controller {
 			$this->response->addHeader($this->request->server['SERVER_PROTOCOL'] . ' 404 Not Found');
 			$this->response->setOutput($this->load->view('error/not_found', $data));
 		}
+	}
+
+	private function parseBrands(  array $manufacture_cate): array {
+		$brands = [];
+		 
+		foreach ($manufacture_cate as $item) {
+			$image='';
+			if ($item['image']) {
+				$image = $this->model_tool_image->resize(html_entity_decode($item['image'], ENT_QUOTES, 'UTF-8'), 100, 50);
+			} else {
+				//$image = $this->model_tool_image->resize('placeholder.png', $setting['width'], $setting['height']);
+			}
+			$brands[] = [
+				'name'  => $item['name'] ?? '',
+				'image' => $image,
+				'href'  => $this->url->link('product/manufacturer.info', 'language=' . $this->config->get('config_language') . '&manufacturer_id=' . $item['manufacturer_id'])
+			];
+		}
+		
+		return $brands;
 	}
 }

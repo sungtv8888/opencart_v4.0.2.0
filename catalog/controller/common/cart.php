@@ -3,7 +3,7 @@ namespace Opencart\Catalog\Controller\Common;
 class Cart extends \Opencart\System\Engine\Controller {
 	public function index(): string {
 		$this->load->language('common/cart');
-
+		/*
 		$totals = [];
 		$taxes = $this->cart->getTaxes();
 		$total = 0;
@@ -104,7 +104,11 @@ class Cart extends \Opencart\System\Engine\Controller {
 
 		$data['cart'] = $this->url->link('checkout/cart', 'language=' . $this->config->get('config_language'));
 		$data['checkout'] = $this->url->link('checkout/checkout', 'language=' . $this->config->get('config_language'));
-
+		*/
+		//add by SungTV on 2026/09/19 start
+		$data['total_item'] = $this->cart->countProducts();
+		$data['shopping_cart'] = $this->url->link('checkout/cart', 'language=' . $this->config->get('config_language'));
+		//add by SungTV on 2026/09/19 end
 		return $this->load->view('common/cart', $data);
 	}
 

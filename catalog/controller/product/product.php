@@ -266,7 +266,6 @@ class Product extends \Opencart\System\Engine\Controller {
 			} else {
 				$data['popup'] = '';
 			}
-
 			if (is_file(DIR_IMAGE . html_entity_decode($product_info['image'], ENT_QUOTES, 'UTF-8'))) {
 				$data['thumb'] = $this->model_tool_image->resize(html_entity_decode($product_info['image'], ENT_QUOTES, 'UTF-8'), $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height'));
 			} else {
@@ -280,7 +279,10 @@ class Product extends \Opencart\System\Engine\Controller {
 			foreach ($results as $result) {
 				if (is_file(DIR_IMAGE . html_entity_decode($result['image'], ENT_QUOTES, 'UTF-8'))) {
 					$data['images'][] = [
-						'popup' => $this->model_tool_image->resize(html_entity_decode($result['image'], ENT_QUOTES, 'UTF-8'), $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height')),
+						//edit by SungTV on 2026/09/19 start
+						//'popup' => $this->model_tool_image->resize(html_entity_decode($result['image'], ENT_QUOTES, 'UTF-8'), $this->config->get('config_image_popup_width'), $this->config->get('config_image_popup_height')),
+						'slide' => $this->model_tool_image->resize(html_entity_decode($result['image'], ENT_QUOTES, 'UTF-8'), $this->config->get('config_image_thumb_width'), $this->config->get('config_image_thumb_height')),
+						//edit by SungTV on 2026/09/19 end
 						'thumb' => $this->model_tool_image->resize(html_entity_decode($result['image'], ENT_QUOTES, 'UTF-8'), $this->config->get('config_image_additional_width'), $this->config->get('config_image_additional_height'))
 					];
 				}
@@ -413,7 +415,7 @@ class Product extends \Opencart\System\Engine\Controller {
 			$data['share'] = $this->url->link('product/product', 'language=' . $this->config->get('config_language') . '&product_id=' . (int)$this->request->get['product_id']);
 
 			$data['attribute_groups'] = $this->model_catalog_product->getAttributes($this->request->get['product_id']);
-
+		 
 			$data['products'] = [];
 
 			$results = $this->model_catalog_product->getRelated($this->request->get['product_id']);
@@ -484,7 +486,11 @@ class Product extends \Opencart\System\Engine\Controller {
 			$data['content_bottom'] = $this->load->controller('common/content_bottom');
 			$data['footer'] = $this->load->controller('common/footer');
 			$data['header'] = $this->load->controller('common/header');
-
+			//add by SungTV on 2026/09/19 start
+			$data['config_url'] = $this->config->get('config_url') ;
+			$data['contact'] = $this->url->link('information/contact', 'language=' . $this->config->get('config_language'));
+			$data['telephone'] = $this->config->get('config_telephone');
+			//add by SungTV on 2026/09/19 end
 			$this->response->setOutput($this->load->view('product/product', $data));
 		} else {
 			$url = '';
@@ -552,7 +558,11 @@ class Product extends \Opencart\System\Engine\Controller {
 			$data['content_bottom'] = $this->load->controller('common/content_bottom');
 			$data['footer'] = $this->load->controller('common/footer');
 			$data['header'] = $this->load->controller('common/header');
-
+			//add by SungTV on 2026/09/19 start
+			$data['config_url'] = $this->config->get('config_url') ;
+			$data['contact'] = $this->url->link('information/contact', 'language=' . $this->config->get('config_language'));
+			$data['telephone'] = $this->config->get('config_telephone');
+			//add by SungTV on 2026/09/19 end
 			$this->response->addHeader($this->request->server['SERVER_PROTOCOL'] . ' 404 Not Found');
 			$this->response->setOutput($this->load->view('error/not_found', $data));
 		}

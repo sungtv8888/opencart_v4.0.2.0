@@ -107,8 +107,8 @@
                     <div class="hide-for-mobile"
                         style="display: flex; line-height: 16px; justify-content: space-between; height: 32px; align-items: center;">
                         <div style="display: flex">
-                            <a href="tel:0828.556.569" class="link-none mx-0"><i class="fa fa-phone hide-for-mobile"
-                                    aria-hidden="true"></i> <span>Hotline: 0828.556.569</span></a>
+                            <a href="tel:{{ telephone }}" class="link-none mx-0"><i class="fa fa-phone hide-for-mobile"
+                                    aria-hidden="true"></i> <span>Hotline: {{ telephone }}</span></a>
                             <a href="https://shome.vn/he-thong-cua-hang" class="link-none"><i class="fa fa-map-marker"
                                     aria-hidden="true"></i> <span>Hệ thống Showroom</span></a>
                         </div>
@@ -320,15 +320,8 @@
                                 </div>
                             </div>
 
-                            <div class="d-inline-block">
-                                <div class="box-top" style="padding-top:0px">
-                                    <a alt="Giỏ hàng" href="https://shome.vn/gio-hang" class="link-none link-black">
-                                        <div class="icon-contain-sup d-inline-block cart" data-total-item="0">
-                                            <i class="fa fa-shopping-basket font-16 color-white" aria-hidden="true"></i>
-                                        </div>
-                                        <div class="d-inline-block">Giỏ hàng</div>
-                                    </a>
-                                </div>
+                            <div class="d-inline-block" id="header-cart">
+                                 {{ cart }}
                             </div>
                         </div>
                     </div>

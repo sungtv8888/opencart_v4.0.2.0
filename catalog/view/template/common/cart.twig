@@ -1,4 +1,4 @@
-<div class="dropdown d-grid">
+{#<div class="dropdown d-grid">
   <button type="button" data-bs-toggle="dropdown" class="btn btn-lg btn-inverse btn-block dropdown-toggle"><i class="fa-solid fa-cart-shopping"></i> {{ text_items }}</button>
   <ul class="dropdown-menu dropdown-menu-right" style="width: 500px;">
     {% if products or vouchers %}
@@ -67,4 +67,14 @@
       </li>
     {% endif %}
   </ul>
-</div>
+</div>#}
+
+
+ <div class="box-top" style="padding-top:0px">
+                                    <a alt="Giỏ hàng" href="{{ shopping_cart }}" class="link-none link-black">
+                                        <div class="icon-contain-sup d-inline-block cart icon-contain-sup-count" data-total-item="{{ total_item }}">
+                                            <i class="fa fa-shopping-basket font-16 color-white" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="d-inline-block">Giỏ hàng</div>
+                                    </a>
+                                </div>

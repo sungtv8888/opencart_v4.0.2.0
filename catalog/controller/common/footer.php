@@ -87,6 +87,14 @@ class Footer extends \Opencart\System\Engine\Controller {
 			$data['footer_html'] = $this->load->controller('extension/opencart/module/html', $module_info);
 		} 
 		$data['config_url'] = $this->config->get('config_url') ;
+		if (is_file(DIR_IMAGE . $this->config->get('config_logo'))) {
+			//edit by SungTV on 20260322 start
+			//$data['logo'] = $this->config->get('config_url') . 'image/' . $this->config->get('config_logo');
+			$data['logo'] = $this->config->get('config_url') . basename(rtrim(DIR_IMAGE, '/')) . '/' . $this->config->get('config_logo');
+			//edit by SungTV on 20260322 end
+		} else {
+			$data['logo'] = '';
+		}
 		return $this->load->view('common/footer', $data);
 	}
 }

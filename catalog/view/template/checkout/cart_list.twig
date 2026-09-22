@@ -1,4 +1,4 @@
-<div class="table-responsive">
+{#<div class="table-responsive">
   <table class="table table-bordered">
     <thead>
       <tr>
@@ -70,4 +70,109 @@
       {% endfor %}
     </tfoot>
   </table>
+</div>#}
+
+
+{#edit by SungTV on 2026/09/21 start#}
+<div id="cart-product-list">
+ {% for product in products %}
+<div class="row" id="pc-{{ product.cart_id }}">
+    <div class="col-md-5">
+      {% if product.thumb %}
+      <a href="{{ product.href }}">
+        <img data-lazy="thumb" data-src="{{ product.thumb }}" src="{{ product.thumb }}" alt="{{ product.name }}" title="{{ product.name }}" class="img-fluid"/>
+        </a>
+      {% endif %}
+
+    </div>
+    <div class="col-md-7">
+        <div class="row margin-top-10">
+            <div class="col-md-12">
+                <div class="product-detail-title font-15">
+
+                    <h3 class="font-15">{{ product.name }}{% if not product.stock %} <span class="text-danger">***</span>{% endif %}</h3>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <span class="sale-cost-detail font-15">{{ product.price }}</span>
+                {% if product.original_price %}
+                    &nbsp; &nbsp; &nbsp;
+                    <span class="sale-public-cost-detail font-14">{{ product.original_price }}</span> &nbsp; &nbsp; &nbsp;
+                    <span class="sort-total-0 font-14">Giảm {{ product.discount_percentage }}%</span>
+                {% endif %}
+            </div>
+            <div class="col-md-12">
+                <div class="sort-total-0 font-16">
+                    <div class="float-left">Chọn số lượng: </div>
+                    <div class="choose-number" data-cart-id="{{ product.cart_id }}">
+                        <div class="minus" style="pointer-events: all;">
+                            <i style="background-color: rgb(40, 138, 214);"></i>
+                        </div>
+                        <input type="number" min="1" maxlength="3" class="number" style="border: none; pointer-events: all;" value="{{ product.quantity }}">
+                        <div class="plus" style="pointer-events: all;">
+                            <i style="background-color: rgb(40, 138, 214);"></i><i style="background-color: rgb(40, 138, 214);"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
+{% endfor %}
+</div>
+<script type="text/javascript">
+function cartUpdateQuantity(cartId, quantity) {
+    $.ajax({
+        url: 'index.php?route=checkout/cart.edit&language={{ language }}',
+        type: 'post',
+        data: {key: cartId, quantity: quantity},
+        dataType: 'json',
+        success: function (json) {
+            if (json['error']) {
+                $.toast({message: '<i class="fa fa-times" aria-hidden="true"></i> ' + json['error'], type: 'error'});
+            }
+
+            $('#cart-product-list').load('index.php?route=checkout/cart.list&language={{ language }} #cart-product-list > *');
+        },
+        error: function (xhr, ajaxOptions, thrownError) {
+            console.log(thrownError + "\r\n" + xhr.statusText + "\r\n" + xhr.responseText);
+        }
+    });
+}
+
+$(document).off('click.cartqty').on('click.cartqty', '.choose-number .minus', function () {
+    var container = $(this).closest('.choose-number');
+    var input = container.find('input.number');
+    var quantity = parseInt(input.val()) - 1;
+
+    if (quantity < 1) {
+        return;
+    }
+
+    input.val(quantity);
+    cartUpdateQuantity(container.data('cart-id'), quantity);
+});
+
+$(document).off('click.cartqtyplus').on('click.cartqtyplus', '.choose-number .plus', function () {
+    var container = $(this).closest('.choose-number');
+    var input = container.find('input.number');
+    var quantity = parseInt(input.val()) + 1;
+
+    input.val(quantity);
+    cartUpdateQuantity(container.data('cart-id'), quantity);
+});
+
+$(document).off('change.cartqty').on('change.cartqty', '.choose-number input.number', function () {
+    var container = $(this).closest('.choose-number');
+    var quantity = parseInt($(this).val());
+
+    if (!quantity || quantity < 1) {
+        quantity = 1;
+    }
+
+    $(this).val(quantity);
+    cartUpdateQuantity(container.data('cart-id'), quantity);
+});
+</script>
+{#edit by SungTV on 2026/09/21 end#}

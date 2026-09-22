@@ -1,11 +1,11 @@
 {{ header }}
-<div id="product-category" class="container">
+{#<div id="product-category" class="container">
   <ul class="breadcrumb">
     {% for breadcrumb in breadcrumbs %}
       <li class="breadcrumb-item"><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
     {% endfor %}
   </ul>
-  <div class="row">{{ column_left }}
+  <div class="row"> 
     <div id="content" class="col">{{ content_top }}
       <h2>{{ heading_title }}</h2>
       {% if thumb or description %}
@@ -97,6 +97,329 @@
         <div class="text-end"><a href="{{ continue }}" class="btn btn-primary">{{ button_continue }}</a></div>
       {% endif %}
       {{ content_bottom }}</div>
-    {{ column_right }}</div>
-</div>
+   </div>
+</div>#}
+
+
+
+
+
+
+
+
+
+   <div class="row" data-control-load="productListLoaded">
+            <div class="col-12">
+                <div class="container background-white background-grey">
+                    <div class="row">
+                        <div class="col-12">
+                            <ul class="breadcrumb-cx background-grey breadcrumb-fixbrowser" >
+                                {% for breadcrumb in breadcrumbs %}
+                                  <li><a href="{{ breadcrumb.href }}">{{ breadcrumb.text }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                     
+
+                    <div id="provider-group-icon" class="row" data-link="true">
+                        <ul class="branchlist">
+                             
+                             {% for brand in brands %}
+                                    {% if brand.image %}
+                                        <li class="branch-item">
+                                            <a href="{{ brand.href }}">
+                                                <img data-lazy="thumb"
+                                                    data-src="{{ brand.image }}"
+                                                    data-width="0" data-height="0"
+                                                    src="{{ brand.image }}" title="{{ brand.name }}" alt="{{ brand.name }}" class="img-fluid">
+                                            </a>
+                                        </li>
+                                    {% endif %}
+                             {% endfor %}
+
+                         </ul>
+
+
+                         
+                    </div>
+
+                    <div class="row background-mobile-white filter-group-item" style="position: relative"
+                        data-link="true">
+                        <div class="col col-12 footer-title">
+                            <strong>Chọn theo tiêu chí</strong>
+                        </div>
+                        <div class="col-md-12 filter-scroll" data-control-load="filterPopup">
+                            <div class="filter-item" data-attribute1="1996">
+                                <div class="filter-item__title jsTitle noselecttext">
+                                    <div class="arrow-filter"></div>
+                                    <span>Giá</span>
+                                </div>
+
+                                <div class="filter-show hide" style="display: none;">
+                                    <div class="filter-list props">
+
+                                        <a class="link-black" href="/bon-cau#pr=4">
+                                            <span class="target-search ">Từ 2tr - 5tr</span>
+                                        </a>
+
+                                        <a class="link-black" href="/bon-cau#pr=5">
+                                            <span class="target-search ">Từ 5tr - 8tr</span>
+                                        </a>
+
+                                        <a class="link-black" href="/bon-cau#pr=6">
+                                            <span class="target-search ">Từ 8tr - 15tr</span>
+                                        </a>
+
+                                        <a class="link-black" href="/bon-cau#pr=7">
+                                            <span class="target-search ">Từ 15tr - 30tr</span>
+                                        </a>
+
+                                        <a class="link-black" href="/bon-cau#pr=8">
+                                            <span class="target-search ">Trên 30tr</span>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="filter-item" data-attribute1="17">
+                                <div class="filter-item__title jsTitle noselecttext">
+                                    <div class="arrow-filter"></div>
+                                    <span>Kiểu bồn cầu</span>
+                                </div>
+
+                                <div class="filter-show hide" data-link="true" style="display: none;">
+                                    <div class="filter-list props">
+
+                                        <a class="link-black" href="/bon-cau-am-tuong">
+                                            <span class="target-search " data-alias="am-tuong">Bồn cầu âm tường</span>
+                                        </a>
+
+                                        <a class="link-black" href="/bon-cau-hai-khoi">
+                                            <span class="target-search " data-alias="hai-khoi">Bồn cầu 2 khối</span>
+                                        </a>
+
+                                        <a class="link-black" href="/bon-cau-mot-khoi">
+                                            <span class="target-search " data-alias="mot-khoi">Bồn cầu 1 khối</span>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="filter-item" data-attribute1="22">
+                                <div class="filter-item__title jsTitle noselecttext">
+                                    <div class="arrow-filter"></div>
+                                    <span>Loại bồn cầu</span>
+                                </div>
+
+                                <div class="filter-show hide" data-link="true" style="display: none;">
+                                    <div class="filter-list props">
+
+                                        <a class="link-black" href="/bon-cau-thong-minh">
+                                            <span class="target-search " data-alias="thong-minh">Bồn cầu thông
+                                                minh</span>
+                                        </a>
+
+                                        <a class="link-black" href="/bon-cau-thuong">
+                                            <span class="target-search " data-alias="thuong">Bồn cầu thường</span>
+                                        </a>
+
+                                        <a class="link-black" href="/bon-cau-trung">
+                                            <span class="target-search " data-alias="trung">Bồn cầu trứng</span>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="filter-item" data-attribute1="28">
+                                <div class="filter-item__title jsTitle noselecttext">
+                                    <div class="arrow-filter"></div>
+                                    <span>Màu sắc</span>
+                                </div>
+
+                                <div class="filter-show hide" data-link="true" style="display: none;">
+                                    <div class="filter-list props">
+
+                                        <a class="link-black" href="/bon-cau#attr=79">
+                                            <span class="target-search " data-alias="mau-sac-trang">Trắng</span>
+                                        </a>
+
+                                        <a class="link-black" href="/bon-cau#attr=83">
+                                            <span class="target-search " data-alias="mau-sac-den">Đen</span>
+                                        </a>
+
+                                        <a class="link-black" href="/bon-cau#attr=97">
+                                            <span class="target-search " data-alias="mau-sac-vang">Vàng</span>
+                                        </a>
+
+                                        <a class="link-black" href="/bon-cau#attr=125">
+                                            <span class="target-search " data-alias="mau-sac-do">Đỏ</span>
+                                        </a>
+
+                                        <a class="link-black" href="/bon-cau#attr=130">
+                                            <span class="target-search " data-alias="mau-sac-khac">Khác</span>
+                                        </a>
+
+                                        <a class="link-black" href="/bon-cau#attr=1272">
+                                            <span class="target-search " data-alias="mau-sac-titan">Titan</span>
+                                        </a>
+
+                                        <a class="link-black" href="/bon-cau#attr=1279">
+                                            <span class="target-search " data-alias="mau-sac-chrome">Chrome</span>
+                                        </a>
+
+                                        <a class="link-black" href="/bon-cau#attr=1327">
+                                            <span class="target-search " data-alias="be">Be</span>
+                                        </a>
+
+                                        <a class="link-black" href="/bon-cau#attr=1328">
+                                            <span class="target-search " data-alias="hong">Hồng</span>
+                                        </a>
+
+                                        <a class="link-black" href="/bon-cau#attr=1329">
+                                            <span class="target-search " data-alias="xanh">Xanh</span>
+                                        </a>
+
+                                        <a class="link-black" href="/bon-cau#attr=1335">
+                                            <span class="target-search " data-alias="xam">Xám</span>
+                                        </a>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div id="filter-container" class="only-for-mobile filter-show">
+                        </div>
+                    </div>
+
+
+                    <div class="row background-mobile-white" id="sort-list">
+                        <div class="col col-12 footer-title">
+                            <strong>Sắp xếp theo</strong>
+                        </div>
+
+                        <div class="col-12  filter-scroll" data-link="true">
+
+                            <div class="filter-item">
+                                <div class="filter-item__title jsTitle noselecttext ">
+                                    <span>
+                                        <a class="link-black" href="/bon-cau#s=1">
+                                            <i class="fa fa-arrow-up" aria-hidden="true"></i>Giá cao
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="filter-item">
+                                <div class="filter-item__title jsTitle noselecttext ">
+                                    <span>
+                                        <a class="link-black" href="/bon-cau#s=2">
+                                            <i class="fa fa-arrow-down" aria-hidden="true"></i>Giá thấp
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="filter-item">
+                                <div class="filter-item__title jsTitle noselecttext ">
+                                    <span>
+                                        <a class="link-black" href="/bon-cau#s=3">
+                                            <i class="fa fa-percent" aria-hidden="true"></i>Khuyến mại
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="filter-item">
+                                <div class="filter-item__title jsTitle noselecttext ">
+                                    <span>
+                                        <a class="link-black" href="/bon-cau#s=4">
+                                            <i class="fa fa-eye" aria-hidden="true"></i>Xem nhiều
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row margin-mobile-top-15" id="product-list">
+                        <div class="col-md-12 product-wrapper">
+
+ 
+                            {% for product in products %}
+                               {{ product }}
+                            {% endfor %}
+
+
+                        </div>
+                        <div class="col col-12 text-center" data-link="true">
+                            <nav>
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item active"><a class="page-link page-link-custom"
+                                            data-page-value="1">1</a></li>
+                                    <li class="page-item"><a class="page-link page-link-custom" href="/bon-cau#p=2"
+                                            data-page-value="2">2</a></li>
+                                    <li class="page-item"><a class="page-link page-link-custom" href="/bon-cau#p=3"
+                                            data-page-value="3">3</a></li>
+                                    <li class="page-item"><a class="page-link page-link-custom" href="/bon-cau#p=4"
+                                            data-page-value="4">4</a></li>
+                                    <li class="page-item"><a class="page-link page-link-custom" href="/bon-cau#p=5"
+                                            data-page-value="5">5</a></li>
+                                    <li class="page-item"><a class="page-link page-link-custom" href="/bon-cau#p=2"
+                                            data-page-value="2">Tiếp</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                
+
+
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div id="policy-popup" class="col-12 policy-popup-base">
+                <div class="text-center 0 margin-bottom-30 content-ask">
+                    Tại sao lại chọn CXHome?
+                </div>
+                <div class="container">
+                    <div class="row" style="display: flex;">
+                        <div class="col-md-3 col-6 policy-item">
+                            <img class="img-fluid" src="/Projects/Web/Resources/image/home/Group 5.png"
+                                alt="Chính sách khách hàng">
+                        </div>
+
+                        <div class="col-md-3 col-6 policy-item">
+                            <img class="img-fluid" src="/Projects/Web/Resources/image/home/Group 6.png"
+                                alt="Chính sách khách hàng">
+                        </div>
+
+                        <div class="col-md-3 col-6 policy-item">
+                            <img class="img-fluid" src="/Projects/Web/Resources/image/home/Group 7.png"
+                                alt="Chính sách khách hàng">
+                        </div>
+
+                        <div class="col-md-3 col-6 policy-item">
+                            <img class="img-fluid" src="/Projects/Web/Resources/image/home/Group 8.png"
+                                alt="Chính sách khách hàng">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 {{ footer }}
