@@ -706,7 +706,7 @@ body {
     position: absolute;
     content: attr(data-total-item);
     border-radius: 50%;
-    background: #1F252C;
+    background: #FF0000;
     width: 15px !important;
     height: 15px !important;
     line-height: 15px;
@@ -715,6 +715,7 @@ body {
     font-size: 10px;
     top: 0;
     right: -4px;
+   
 }
 
 .meta-count {
@@ -1584,7 +1585,7 @@ footer {
     border-color: #FCB415 !important;
 }
 
-.breadcrumb-custom {
+.breadcrumb-cx {
     display: block;
     overflow: hidden;
     background: #fff;
@@ -1594,7 +1595,69 @@ footer {
     margin: 0;
 }
 
-    .breadcrumb-custom li::before {
+
+/* Khung chứa danh sách logo */
+.branchlist {
+  display: flex;
+  flex-wrap: nowrap;       /* Giữ các logo trên cùng một hàng */
+  overflow-x: auto;        /* Cho phép cuộn ngang nếu màn hình nhỏ (responsive tốt) */
+  gap: 15px;               /* Khoảng cách giữa các logo */
+  padding: 15px 10px;
+  list-style: none;        /* Xóa dấu chấm tròn mặc định của ul */
+  margin: 0;
+  
+  /* Thanh cuộn tinh tế cho thiết bị di động (tùy chọn) */
+  scrollbar-width: thin;
+}
+
+/* Thao tác ẩn thanh cuộn trên Chrome/Safari để nhìn đẹp hơn */
+.branchlist::-webkit-scrollbar {
+  height: 6px;
+}
+.branchlist::-webkit-scrollbar-thumb {
+  background-color: #e0e0e0;
+  border-radius: 4px;
+}
+
+/* Từng ô bọc logo */
+.branch-item {
+  flex: 0 0 auto;          /* Không cho các ô bị co bóp méo mó */
+}
+
+/* Thẻ liên kết và phần nền trắng bo góc giống hình */
+.branch-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: 1px solid #f0f0f0;      /* Viền xám rất nhạt */
+  border-radius: 8px;             /* Bo góc nhẹ nhàng */
+  min-width: 120px;               /* Chiều rộng tối thiểu cho mỗi ô */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); /* Đổ bóng mờ nhẹ */
+  transition: all 0.3s ease;       /* Hiệu ứng mượt mà khi di chuột vào */
+  text-decoration: none;
+      min-height: 36px;
+    max-height: 36px;
+    padding: 6px;
+}
+
+/* Hiệu ứng khi rê chuột vào logo (Hover) */
+.branch-item a:hover {
+  border-color: #ddd;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transform: translateY(-1px);    /* Nhích nhẹ lên trên tạo cảm giác tương tác */
+}
+
+/* Định dạng hình ảnh logo bên trong */
+.branch-item .img-fluid {
+  max-height: 100%;               /* Đảm bảo ảnh không vượt quá chiều cao của ô */
+  max-width: 100%;                /* Đảm bảo ảnh không bị tràn chiều ngang */
+  object-fit: contain;            /* Giữ nguyên tỷ lệ hình ảnh không bị méo */
+  display: block;
+}
+
+
+    .breadcrumb-cx li::before {
         border-top: 1px solid #666;
         border-right: 1px solid #666;
         content: '';
@@ -1606,11 +1669,11 @@ footer {
         width: 4px;
     }
 
-    .breadcrumb-custom li:last-child:before {
+    .breadcrumb-cx li:last-child:before {
         display: none;
     }
 
-    .breadcrumb-custom li {
+    .breadcrumb-cx li {
         display: inline-block;
         font-size: 14px;
         line-height: 20px;
@@ -1618,16 +1681,23 @@ footer {
         position: relative;
     }
 
-    .breadcrumb-custom li {
+    .breadcrumb-cx li {
         display: inline-block;
         vertical-align: middle;
         overflow: hidden;
     }
 
-    .breadcrumb-custom .sort-total {
+    .breadcrumb-cx .sort-total {
         margin-bottom: 0;
         padding-top: 0;
     }
+.breadcrumb-fixbrowser
+{
+  white-space: nowrap;
+   overflow-x: auto; 
+   -webkit-overflow-scrolling: touch; 
+   scrollbar-width: none;
+}
 
 .sort-total {
     float: left;
@@ -3471,6 +3541,10 @@ body {
     }
 }
 
+
+.btn-cart {
+    padding: 12px 0px !important;
+}
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 700px) {
     .modal-content-lucky {
